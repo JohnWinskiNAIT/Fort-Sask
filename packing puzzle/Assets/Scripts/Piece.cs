@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
+using UnityEngine.UIElements;
 
 public class Piece
 {
@@ -46,6 +48,34 @@ public class Piece
         foreach (Point point in points)
         {
             point.Move(collider);
+        }
+    }
+
+    public void SnapPiece(GameObject piece)
+    {
+        bool snap = true;
+        List<Vector2> distances = new List<Vector2>();
+        foreach (Point point in points)
+        {
+            distances.Add(point.GetClosestGridPoint(manager.gridPoints));
+        }
+
+        Vector2 avgDistance = new Vector2();
+        Vector2 presumedAvg = new Vector2();
+        foreach (Vector2 distance in distances)
+        {
+            avgDistance += distance;
+            presumedAvg += new Vector2(Math.Abs(distance.x), Math.Abs(distance.y));
+
+            if (Math.Abs(avgDistance.magnitude) < presumedAvg.magnitude) { snap = false; }
+        }
+        avgDistance /= distances.Count;
+        if (avgDistance.magnitude < manager.cellSize)
+        {
+            if (snap)
+            {
+                piece.transform.position += (Vector3)avgDistance;
+            }
         }
     }
 }

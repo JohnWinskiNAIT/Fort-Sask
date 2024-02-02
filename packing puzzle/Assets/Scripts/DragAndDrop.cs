@@ -5,6 +5,7 @@ public class DragAndDrop : MonoBehaviour
 {
     public List<BoxCollider2D> colliders;
     Piece myPiece;
+    GameObject myGameObject;
 
     private bool isDragging;
 
@@ -12,6 +13,7 @@ public class DragAndDrop : MonoBehaviour
     private void Start()
     {
         myPiece = new Piece(colliders);
+        myGameObject = this.gameObject;
     }
 
     void Update()
@@ -32,5 +34,6 @@ public class DragAndDrop : MonoBehaviour
     public void OnMouseUp()
     {
         isDragging = false;
+        myPiece.SnapPiece(myGameObject);
     }
 }

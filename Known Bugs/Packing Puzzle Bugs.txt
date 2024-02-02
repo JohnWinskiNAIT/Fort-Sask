@@ -1,0 +1,4 @@
+Bugs:
+
+- Pieces are able to overlap eachother
+- pieces latch on in weird places when placed slightly outside the grid
