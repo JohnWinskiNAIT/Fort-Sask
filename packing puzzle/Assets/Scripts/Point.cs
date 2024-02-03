@@ -14,15 +14,18 @@ public class Point
         relativeToPieceCenter = relativePosition;
     }
 
+    //Ensures the points always stay in the same position relative to the parenting pieces center
     public void Move(BoxCollider2D collider)
     {
         coordinates = (Vector2)collider.transform.position + relativeToPieceCenter;
     }
 
+    //Gets the closest grid point to this piece point class
     public Vector2 GetClosestGridPoint(List<Vector2> cords)
     {
         Vector2 distance = new Vector2(10,10);
         
+        //Iterates through each grid point and stores the closest one
         foreach(Vector2 cord in cords)
         {
             if (Math.Abs(distance.magnitude) > Math.Abs((cord - coordinates).magnitude))

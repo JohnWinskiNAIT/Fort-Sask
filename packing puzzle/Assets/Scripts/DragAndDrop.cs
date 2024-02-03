@@ -12,7 +12,9 @@ public class DragAndDrop : MonoBehaviour
 
     private void Start()
     {
+        //Class that represents the piece the script resides in
         myPiece = new Piece(colliders);
+
         myGameObject = this.gameObject;
     }
 
@@ -20,8 +22,11 @@ public class DragAndDrop : MonoBehaviour
     {
         if (isDragging)
         {
+            //Pieces move with the mouse when dragging
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
             transform.Translate(mousePosition);
+
+            //Function to move point classes with the piece class
             myPiece.movePoints(colliders[0]);
         }
     }
@@ -34,6 +39,8 @@ public class DragAndDrop : MonoBehaviour
     public void OnMouseUp()
     {
         isDragging = false;
+
+        //Snapping piece into the grid
         myPiece.SnapPiece(myGameObject);
     }
 }
