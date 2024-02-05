@@ -5,8 +5,8 @@ using UnityEngine;
 public class MainGrid : MonoBehaviour
 {
     GameManager manager;
-    int widthCellNum = 7;
-    int heightCellNum = 5;
+    public int widthCellNumber = 7;
+    public int heightCellNumber = 5;
 
     //Positioning grid points
     private void Start()
@@ -18,8 +18,8 @@ public class MainGrid : MonoBehaviour
         float gridHeight = gameObject.transform.localScale.y;
         Vector2 centerPoint = transform.position;
 
-        float cellWidth = gridWidth / widthCellNum;
-        float cellHeight = gridHeight / heightCellNum;
+        float cellWidth = gridWidth / widthCellNumber;
+        float cellHeight = gridHeight / heightCellNumber;
 
         manager.cellSize = (cellHeight + cellWidth) / 2;
         
@@ -29,15 +29,15 @@ public class MainGrid : MonoBehaviour
         originPoint.x += cellWidth / 2;
         
         //Iterate through grid cells to make each grid point and stores in a list in the game manager script
-        for (int i = 0; i < heightCellNum; i++)
+        for (int i = 0; i < heightCellNumber; i++)
         {
-            for (int j = 0; j < widthCellNum; j++)
+            for (int j = 0; j < widthCellNumber; j++)
             {
                 Vector2 newPoint = new Vector2(originPoint.x, originPoint.y);
                 manager.gridPoints.Add(newPoint);
                 originPoint.x += cellWidth;
             }
-            originPoint.x -= cellWidth * (widthCellNum);
+            originPoint.x -= cellWidth * (widthCellNumber);
             originPoint.y -= cellHeight;
         }
     }
