@@ -1,0 +1,3 @@
+Bugs:
+
+- Pieces are able to overlap eachother
