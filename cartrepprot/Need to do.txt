@@ -1,0 +1,8 @@
+Need to do:
+
+> Initial transform/ stacking (100x100)
+> Make efficient
+> Initial Screen (howtoplay)
+> Pause Menu
+>> with exit button/ transition
+
