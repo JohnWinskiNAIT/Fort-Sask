@@ -450,7 +450,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751a53cae65f7d24696ffd32f2c05cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDragging: 0
 --- !u!114 &563524552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -672,7 +671,7 @@ GameObject:
   - component: {fileID: 775819554}
   - component: {fileID: 775819553}
   - component: {fileID: 775819552}
-  - component: {fileID: 775819551}
+  - component: {fileID: 775819555}
   m_Layer: 0
   m_Name: Gunbevwithtile
   m_TagString: Untagged
@@ -747,21 +746,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &775819551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 775819548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3451d4c64f211b499124d237bdd1b25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colliders:
-  - {fileID: 775819553}
-  - {fileID: 775819552}
 --- !u!61 &775819552
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -826,7 +810,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751a53cae65f7d24696ffd32f2c05cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDragging: 0
+--- !u!114 &775819555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775819548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3451d4c64f211b499124d237bdd1b25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colliders:
+  - {fileID: 775819553}
+  - {fileID: 775819552}
 --- !u!1 &864418767
 GameObject:
   m_ObjectHideFlags: 0
@@ -1537,7 +1535,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1316512234}
   - component: {fileID: 1316512233}
-  - component: {fileID: 1316512232}
+  - component: {fileID: 1316512235}
   m_Layer: 0
   m_Name: Box Area Outline
   m_TagString: Untagged
@@ -1545,18 +1543,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1316512232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1316512231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 304531ee43e45f04f97f82c3b3990056, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1316512233
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1624,6 +1610,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1316512235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316512231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304531ee43e45f04f97f82c3b3990056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1631054107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1717,7 +1715,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1709628222}
-  - component: {fileID: 1709628221}
+  - component: {fileID: 1709628223}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1725,20 +1723,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1709628221
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1709628220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4124db85a39bea449928941a5bdc0ea9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gridPoints: []
-  cellSize: 0
 --- !u!4 &1709628222
 Transform:
   m_ObjectHideFlags: 0
@@ -1754,6 +1738,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1709628223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709628220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4124db85a39bea449928941a5bdc0ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridPoints: []
+  cellSize: 0
 --- !u!1 &1850668322
 GameObject:
   m_ObjectHideFlags: 0
