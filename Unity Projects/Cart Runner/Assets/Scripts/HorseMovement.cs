@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.iOS;
 
 public class HorseMovement : MonoBehaviour
 {
     PositionState position;
+
+    int positionValue = 0;
 
     private void Awake()
     {
@@ -14,37 +17,62 @@ public class HorseMovement : MonoBehaviour
 
     private void Update()
     {
+        GetPosition();
+
         switch (position)
         {
             case PositionState.Top:
                 transform.position = new Vector3(transform.position.x, 0, transform.position.z);
-                if(movePosition() == -1) { position = PositionState.Center; }
                 break;
 
             case PositionState.Center:
                 transform.position = new Vector3(transform.position.x, -0.7f, transform.position.z);
-                if (movePosition() == 1) { position = PositionState.Top; }
-                if (movePosition() == -1) { position = PositionState.Bottom; }
                 break;
 
             case PositionState.Bottom:
                 transform.position = new Vector3(transform.position.x, -1.4f, transform.position.z);
-                if (movePosition() == 1) { position = PositionState.Center; }
                 break;
         }
     }
 
-    public int movePosition()
+    void GetPosition()
     {
-        int direction = 0;
+        switch (positionValue)
+        {
+            case 1:
+                position = PositionState.Top;
+                break;
 
-        if (Input.GetKeyDown(KeyCode.W)) { direction = 1;}
-        if (Input.GetKeyDown(KeyCode.S)) { direction = -1; }
+            case 0:
+                position = PositionState.Center;
+                break;
 
-        return direction;
+            case -1:
+                position = PositionState.Bottom;
+                break;
+
+            default:
+                break;
+        }
     }
 
-    public enum PositionState
+    public void moveUp()
+    {
+        if (positionValue != 1)
+        {
+            positionValue++;
+        }
+    }
+
+    public void moveDown()
+    {
+        if (positionValue != -1)
+        {
+            positionValue--;
+        }
+    }
+
+    enum PositionState
     {
         Bottom,
         Center,
