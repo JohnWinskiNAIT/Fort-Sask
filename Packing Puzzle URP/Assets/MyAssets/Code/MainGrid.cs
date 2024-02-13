@@ -1,17 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MainGrid : MonoBehaviour
 {
-    GameManager manager;
+    Manager manager;
     int widthCellNum = 7;
     int heightCellNum = 5;
 
     //Positioning grid points
     private void Start()
     {
-        manager = GameManager.Instance;
+        manager = Manager.Instance;
 
         //Getting grid dimentions off of invisable gameObject
         float gridWidth = gameObject.transform.localScale.x;

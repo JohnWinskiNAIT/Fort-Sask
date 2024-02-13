@@ -1,20 +1,16 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.AI;
-using UnityEngine.UIElements;
 
 public class Piece
 {
-    GameManager manager;
+    Manager manager;
 
     List<Point> points = new List<Point>();
 
     public Piece(List<BoxCollider2D> colliders)
     {
-        manager = GameManager.Instance;
+        manager = Manager.Instance;
         FindPoints(colliders);
     }
 
