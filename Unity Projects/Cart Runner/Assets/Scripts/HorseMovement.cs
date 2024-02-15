@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class HorseMovement : MonoBehaviour
@@ -65,6 +66,26 @@ public class HorseMovement : MonoBehaviour
         if (positionValue != -1)
         {
             positionValue--;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("Detected");
+        if(collision.GetComponent<ObsticleManager>().thisObsticle.GetState() == position.ToString())
+        {
+            StartCoroutine(HorseDamage());
+        }
+    }
+
+    IEnumerator HorseDamage()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            yield return new WaitForSeconds(0.25f);
+            gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            yield return new WaitForSeconds(0.25f);
         }
     }
 
