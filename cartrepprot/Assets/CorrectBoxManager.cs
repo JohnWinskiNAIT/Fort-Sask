@@ -20,15 +20,14 @@ public class CorrectBoxManager : MonoBehaviour
     {
         if (WheelBox.transform.childCount > 0)
         {
-            JointBox.SetActive(true);
+            PinBox.SetActive(true);
 
-            if (JointBox.transform.childCount > 0)
+            if (PinBox.transform.childCount > 0)
             {
-                PinBox.SetActive(true);
+                JointBox.SetActive(true);
 
-                if (PinBox.transform.childCount > 0)
+                if (JointBox.transform.childCount > 0)
                 {
-                    PinBox.SetActive(true);
                     SceneManager.LoadScene(0);
                 }
             }
