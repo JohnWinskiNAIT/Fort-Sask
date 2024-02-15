@@ -21,16 +21,19 @@ public class Point
     }
 
     //Gets the closest grid point to this piece point class
-    public Vector2 GetClosestGridPoint(List<Vector2> cords)
+    public Vector2 GetClosestGridPoint(List<GridPoint> cords)
     {
         Vector2 distance = new Vector2(10,10);
         
         //Iterates through each grid point and stores the closest one
-        foreach(Vector2 cord in cords)
+        foreach(GridPoint cord in cords)
         {
-            if (Math.Abs(distance.magnitude) > Math.Abs((cord - coordinates).magnitude))
+            if (cord.GetActivity())
             {
-                distance = cord - coordinates;
+                if (Math.Abs(distance.magnitude) > Math.Abs((cord.GetPosition() - coordinates).magnitude))
+                {
+                    distance = cord.GetPosition() - coordinates;
+                }
             }
         }
 

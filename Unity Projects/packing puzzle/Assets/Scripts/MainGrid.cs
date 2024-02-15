@@ -33,7 +33,7 @@ public class MainGrid : MonoBehaviour
         {
             for (int j = 0; j < widthCellNumber; j++)
             {
-                Vector2 newPoint = new Vector2(originPoint.x, originPoint.y);
+                GridPoint newPoint = new GridPoint(new Vector2(originPoint.x, originPoint.y));
                 manager.gridPoints.Add(newPoint);
                 originPoint.x += cellWidth;
             }
