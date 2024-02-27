@@ -11,6 +11,7 @@ public class Piece
     GameManager manager;
 
     List<Point> points = new List<Point>();
+    public List<GridPoint> usedGridPoints = new List<GridPoint>();
 
     public Piece(List<BoxCollider2D> colliders)
     {
@@ -71,7 +72,9 @@ public class Piece
         //Calls the function in each point to get the closest grid point
         foreach (Point point in points)
         {
-            distances.Add(point.GetClosestGridPoint(manager.gridPoints));
+            GridData thisData = point.GetClosestGridPoint(manager.gridPoints);
+            distances.Add(thisData.GetDistance());
+            usedGridPoints.Add(thisData.GetGridPoint());
         }
 
         Vector2 avgDistance = new Vector2();
@@ -108,7 +111,38 @@ public class Piece
             if (avgDistance.magnitude < manager.cellSize)
             {
                 piece.transform.position += (Vector3)avgDistance;
+                LockGridPoints();
+                Debug.Log(usedGridPoints.Count);
             }
         }
     }
+
+    void LockGridPoints()
+    {
+        foreach (GridPoint gridPoint in usedGridPoints)
+        {
+            foreach (GridPoint managerGridPoint in manager.gridPoints)
+            {
+                if (gridPoint.GetPosition() == managerGridPoint.GetPosition())
+                {
+                    managerGridPoint.SetActivity(false);
+                }
+            }
+        }
+    }
+
+    //void UnlockGridPoints()
+    //{
+    //    Debug.Log(usedGridPoints.Count);
+    //    foreach (GridPoint gridPoint in usedGridPoints)
+    //    {
+    //        foreach (GridPoint managerGridPoint in manager.gridPoints)
+    //        {
+    //            if (gridPoint.GetPosition() == managerGridPoint.GetPosition())
+    //            {
+    //                managerGridPoint.SetActivity(true);
+    //            }
+    //        }
+    //    }
+    //}
 }

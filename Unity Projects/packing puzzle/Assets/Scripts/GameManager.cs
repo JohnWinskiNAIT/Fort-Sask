@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     }
 }
 
-public struct GridPoint
+public class GridPoint
 {
     Vector2 position;
     bool active;
@@ -37,5 +37,36 @@ public struct GridPoint
     public bool GetActivity()
     {
         return active;
+    }
+
+    public void SetActivity(bool newActivity)
+    {
+        active = newActivity;
+    }
+}
+
+public struct GridData
+{
+    Vector2 distance;
+    GridPoint gridPoint;
+
+    public void SetDistance(Vector2 newDistance)
+    {
+        distance = newDistance;
+    }
+
+    public void SetGridPoint(GridPoint newGridPoint)
+    {
+        gridPoint = newGridPoint;
+    }
+
+    public Vector2 GetDistance()
+    {
+        return distance;
+    }
+
+    public GridPoint GetGridPoint()
+    {
+        return gridPoint;
     }
 }

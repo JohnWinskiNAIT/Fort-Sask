@@ -4,6 +4,7 @@ using UnityEngine;
 public class DragAndDrop : MonoBehaviour
 {
     public List<BoxCollider2D> colliders;
+    GameManager manager;
     Piece myPiece;
     GameObject myGameObject;
 
@@ -12,6 +13,8 @@ public class DragAndDrop : MonoBehaviour
 
     private void Start()
     {
+        manager = GameManager.Instance;
+
         //Class that represents the piece the script resides in
         myPiece = new Piece(colliders);
 
@@ -34,6 +37,17 @@ public class DragAndDrop : MonoBehaviour
     public void OnMouseDown()
     {
         isDragging = true;
+        foreach (GridPoint gridPoint in myPiece.usedGridPoints)
+        {
+            foreach (GridPoint managerGridPoint in manager.gridPoints)
+            {
+                if (gridPoint.GetPosition() == managerGridPoint.GetPosition())
+                {
+                    managerGridPoint.SetActivity(true);
+                }
+            }
+        }
+        myPiece.usedGridPoints = new List<GridPoint>();
     }
 
     public void OnMouseUp()
