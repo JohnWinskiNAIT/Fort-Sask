@@ -23,6 +23,10 @@ public class PackingPuzzleManager : MonoBehaviour
     public void InvokeReset()
     {
         resetEvent.Invoke();
+        foreach (GridPoint p in gridPoints)
+        {
+            p.SetActivity(true);
+        }
     }
 }
 
