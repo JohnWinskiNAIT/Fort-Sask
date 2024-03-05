@@ -15,7 +15,11 @@ public class itemSlot : MonoBehaviour, IDropHandler
         {
             GameObject dropped = eventData.pointerDrag;
             MoveScript draggableItem = dropped.GetComponent<MoveScript>();
+            
+           
             draggableItem.parentAfterDrag = transform;
+
+            
         }
         
     }
@@ -29,6 +33,12 @@ public class itemSlot : MonoBehaviour, IDropHandler
     // Update is called once per frame
     void Update()
     {
-        
+        //if (transform.childCount > 0)
+        //{
+        //    if (transform.GetChild(0).CompareTag("Pin") && transform.GetChild(0).CompareTag("Pin"))
+        //    {
+        //        gameObject.GetComponent<GridLayoutGroup>().cellSize = new Vector2(200f, 200f);
+        //    }
+        //}
     }
 }

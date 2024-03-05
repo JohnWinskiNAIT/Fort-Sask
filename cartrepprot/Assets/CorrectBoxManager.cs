@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CorrectBoxManager : MonoBehaviour
 {
@@ -20,17 +21,28 @@ public class CorrectBoxManager : MonoBehaviour
     {
         if (WheelBox.transform.childCount > 0)
         {
-            PinBox.SetActive(true);
+            WheelBox.transform.GetChild(0).gameObject.transform.localScale = new Vector3(5f, 5f, 5f);
+            WheelBox.transform.GetChild(0).gameObject.transform.GetComponent<Image>().raycastTarget = false;    
+            JointBox.SetActive(true);
+            
 
-            if (PinBox.transform.childCount > 0)
+            if (JointBox.transform.childCount > 0)
             {
-                JointBox.SetActive(true);
+                JointBox.transform.GetChild(0).gameObject.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
+                PinBox.SetActive(true);
 
-                if (JointBox.transform.childCount > 0)
+                if (PinBox.transform.childCount > 0)
                 {
-                    SceneManager.LoadScene(0);
+                    PinBox.transform.GetChild(0).gameObject.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
+                    
+                    
                 }
             }
         }
+    }
+
+    public void ResetGame()
+    {
+        SceneManager.LoadScene(0);
     }
 }
