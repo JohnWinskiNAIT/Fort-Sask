@@ -22,7 +22,6 @@ public class Piece
     //Breaks down the piece to find grid block sized portions and puts a point class in the middle
     void FindPoints(List<BoxCollider2D> colliders)
     {
-        Debug.Log(manager.cellSize);
         foreach (BoxCollider2D collider in colliders)
         {
             //Gets point amount by dividing the collider size by the grid cell size

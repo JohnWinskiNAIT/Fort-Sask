@@ -21,5 +21,10 @@ public class WinCondition : MonoBehaviour
                 win = false;
             }
         }
+
+        if (win)
+        {
+            Debug.Log("You Win");
+        }
    }
 }
