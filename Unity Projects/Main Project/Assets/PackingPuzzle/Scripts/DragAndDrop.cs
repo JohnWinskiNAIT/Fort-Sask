@@ -40,6 +40,7 @@ public class DragAndDrop : MonoBehaviour
     public void OnMouseDown()
     {
         isDragging = true;
+        //Re-enable Grid point activity when the corelating piece is moved
         foreach (GridPoint gridPoint in myPiece.usedGridPoints)
         {
             foreach (GridPoint managerGridPoint in manager.gridPoints)
@@ -61,6 +62,7 @@ public class DragAndDrop : MonoBehaviour
         myPiece.SnapPiece(myGameObject);
     }
 
+    //Move pieces back to there original position
     public void Reset()
     {
         myGameObject.transform.position = originPosition;

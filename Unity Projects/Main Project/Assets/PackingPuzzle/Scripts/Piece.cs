@@ -116,6 +116,7 @@ public class Piece
         }
     }
 
+    //Disables the activity of the occupied grids so other objects cannot be placed over already placed ones
     void LockGridPoints()
     {
         foreach (GridPoint gridPoint in usedGridPoints)
@@ -129,19 +130,4 @@ public class Piece
             }
         }
     }
-
-    //void UnlockGridPoints()
-    //{
-    //    Debug.Log(usedGridPoints.Count);
-    //    foreach (GridPoint gridPoint in usedGridPoints)
-    //    {
-    //        foreach (GridPoint managerGridPoint in manager.gridPoints)
-    //        {
-    //            if (gridPoint.GetPosition() == managerGridPoint.GetPosition())
-    //            {
-    //                managerGridPoint.SetActivity(true);
-    //            }
-    //        }
-    //    }
-    //}
 }

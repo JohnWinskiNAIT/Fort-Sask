@@ -20,6 +20,7 @@ public class PackingPuzzleManager : MonoBehaviour
         }
     }
 
+    //Reset piece locations and enable all grint points
     public void InvokeReset()
     {
         resetEvent.Invoke();
