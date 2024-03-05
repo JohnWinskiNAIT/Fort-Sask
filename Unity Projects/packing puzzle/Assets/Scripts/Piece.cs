@@ -92,8 +92,8 @@ public class Piece
             }
 
             //Round compared variables
-            expectedDistance = new Vector2((float)Math.Round(expectedDistance.x), (float)Math.Round(expectedDistance.y));
-            Vector2 tempDistance = new Vector2((float)Math.Round(distance.x), (float)Math.Round(distance.y));
+            expectedDistance = new Vector2((float)Math.Round(expectedDistance.x,1), (float)Math.Round(expectedDistance.y,1));
+            Vector2 tempDistance = new Vector2((float)Math.Round(distance.x,1), (float)Math.Round(distance.y,1));
 
             //If points try to go different direction the piece does not snap to the grid
             if (expectedDistance != tempDistance)
@@ -112,7 +112,6 @@ public class Piece
             {
                 piece.transform.position += (Vector3)avgDistance;
                 LockGridPoints();
-                Debug.Log(usedGridPoints.Count);
             }
         }
     }

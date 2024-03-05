@@ -7,6 +7,7 @@ public class DragAndDrop : MonoBehaviour
     GameManager manager;
     Piece myPiece;
     GameObject myGameObject;
+    Vector2 originPosition;
 
     private bool isDragging;
 
@@ -14,11 +15,13 @@ public class DragAndDrop : MonoBehaviour
     private void Start()
     {
         manager = GameManager.Instance;
+        manager.resetEvent.AddListener(Reset);
 
         //Class that represents the piece the script resides in
         myPiece = new Piece(colliders);
 
         myGameObject = this.gameObject;
+        originPosition = myGameObject.transform.position;
     }
 
     void Update()
@@ -56,5 +59,10 @@ public class DragAndDrop : MonoBehaviour
 
         //Snapping piece into the grid
         myPiece.SnapPiece(myGameObject);
+    }
+
+    public void Reset()
+    {
+        myGameObject.transform.position = originPosition;
     }
 }

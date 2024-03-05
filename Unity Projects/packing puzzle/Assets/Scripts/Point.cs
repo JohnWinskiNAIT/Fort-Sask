@@ -38,7 +38,6 @@ public class Point
                 }
             }
         }
-
         return thisData;
     }
 }
