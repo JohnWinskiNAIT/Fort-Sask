@@ -43,8 +43,5 @@ public class itemStacking : MonoBehaviour
         return childTransform.IsChildOf(inventoryBoxParent.transform);
     }
 
-    public void ResetGame()
-    {
-        
-    }
+   
 }
