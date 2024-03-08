@@ -1525,7 +1525,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: e0d91262-aa19-42be-99e9-89e4d1495066
-      m_Path: 
+      m_Path: <Mouse>/leftButton
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -1534,12 +1534,28 @@ MonoBehaviour:
     m_Flags: 0
   historyInfo: {fileID: 2079687808}
   testText:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula cursus
+    risus ut euismod. In pharetra enim massa, vel lacinia magna convallis non. Phasellus
+    libero ex, tristique et malesuada vel, vulputate egestas turpis. Nam mattis mollis
+    turpis et auctor.
+  - Quisque interdum urna vitae egestas lobortis. Morbi risus neque, luctus ornare
+    tellus lobortis, bibendum faucibus justo. Proin mollis nisi justo, vel fermentum
+    nulla efficitur iaculis. In hac habitasse platea dictumst. Nulla efficitur justo
+    sed quam congue fermentum. Morbi posuere tempor eros, vitae tincidunt turpis
+    varius et.
+  - Praesent et efficitur purus, ut dignissim lorem. Vestibulum nec nisi eros. Sed
+    urna arcu, sagittis a hendrerit non, imperdiet sit amet ipsum. Sed dictum iaculis
+    est, quis semper orci tincidunt ut. Mauris nec sem eleifend, fringilla lectus
+    sed, ullamcorper libero. In hac habitasse platea dictumst.
+  - Phasellus rutrum vestibulum nibh vel tempus. Ut et nunc ex. Nam fermentum sapien
+    risus. Maecenas pellentesque risus non pulvinar efficitur. Ut dignissim massa
+    ut sapien dapibus tincidunt ac a nisl. Duis laoreet vitae orci non blandit.
+  - Praesent porta viverra dolor quis vehicula. Nam feugiat arcu dapibus nulla fermentum,
+    a maximus mauris imperdiet. Donec eu eleifend dolor, sit amet volutpat arcu.
+    Morbi in leo eu odio volutpat dignissim vitae ut nibh. Fusce eget varius urna.
+  - Morbi consequat est dui. Proin tempor at urna at tristique. Curabitur et faucibus
+    dui. Ut dolor sem, consectetur nec interdum vel, pretium cursus mi. Maecenas
+    condimentum ante eu lacinia posuere.
   charactersPerSecond: 30
   interepunctuationDelay: 0.5
   interepunctuationDelay2: 0.25
