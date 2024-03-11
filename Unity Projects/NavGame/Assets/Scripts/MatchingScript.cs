@@ -16,6 +16,10 @@ public class MatchingScript : MonoBehaviour
 
     [SerializeField]
     public GameObject[] levels;
+
+    [SerializeField]
+    public GameObject[] directions;
+
     public int levelCounter;
 
     public GameObject nextLevelButton;
@@ -33,16 +37,21 @@ public class MatchingScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Check current selected GUI item
         checkDirection();
+
+        // Check current in-game item
         checkItems();
         
         if (selectedDirection == selectedItem)
         {
+
+            //if matching make them non-interactible
             itemDone(selectedItem);
 
             if (stopParent.activeSelf ==true && stopParent.transform.childCount == 3)
             {
-                refreshDirection();
+                //refreshDirections();
 
                 nextLevelButton.SetActive(true);
 
@@ -172,6 +181,8 @@ public class MatchingScript : MonoBehaviour
         transition.SetTrigger("Start");
 
         levels[levelCounter - 1].SetActive(false);
+        directions[levelCounter - 1].SetActive(false);
+
         Scrolling.panelNumber = 2;
 
         if(levelCounter <3)
@@ -179,6 +190,7 @@ public class MatchingScript : MonoBehaviour
             levelCounter += 1;
             Debug.Log(levelCounter);
             levels[levelCounter - 1].SetActive(true);
+            directions[levelCounter - 1].SetActive(true);
         }
         else
         {

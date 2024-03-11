@@ -21,7 +21,7 @@ public class CorrectBoxManager : MonoBehaviour
     {
         if (WheelBox.transform.childCount > 0)
         {
-            WheelBox.transform.GetChild(0).gameObject.transform.localScale = new Vector3(5f, 5f, 5f);
+            WheelBox.transform.GetChild(0).gameObject.transform.localScale = new Vector3(5.4f, 5.4f, 5.4f);
             WheelBox.transform.GetChild(0).gameObject.transform.GetComponent<Image>().raycastTarget = false;    
             JointBox.SetActive(true);
             
