@@ -1271,7 +1271,8 @@ PrefabInstance:
       propertyPath: correctObjectTag
       value: Wheel
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1985125823551530550, guid: b00c1878c759a414987b93e30789dd47, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b00c1878c759a414987b93e30789dd47, type: 3}
 --- !u!224 &1116318534 stripped
 RectTransform:
