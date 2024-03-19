@@ -1007,7 +1007,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 740504067}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1370,6 +1370,14 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Progress Click
       m_Flags: 0
+    - m_Name: 
+      m_Id: ced02d56-19c2-40d8-b732-078ab74eb540
+      m_Path: <Touchscreen>/primaryTouch/tap
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Progress Click
+      m_Flags: 0
     m_Flags: 0
   textRunning: 0
   textLaidOut: 0
@@ -1642,6 +1650,14 @@ MonoBehaviour:
     - m_Name: 
       m_Id: e0d91262-aa19-42be-99e9-89e4d1495066
       m_Path: <Mouse>/leftButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: On Click
+      m_Flags: 0
+    - m_Name: 
+      m_Id: da4ce557-3418-4707-a45d-61084e64db1d
+      m_Path: <Touchscreen>/primaryTouch/delta
       m_Interactions: 
       m_Processors: 
       m_Groups: 
