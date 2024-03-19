@@ -45,7 +45,8 @@ public class MapProgressionScript : MonoBehaviour
     void Update()
     {
         // Progresses after clicking anywhere
-        if (progressClick.WasReleasedThisFrame() && GameProgress.gpInstance.locationCount < 5 
+        if (progressClick.WasPressedThisFrame() 
+            && GameProgress.gpInstance.locationCount < 5 
             && !textLaidOut // Prevents the player from spam tapping/clicking
             && !GameProgress.gpInstance.played) // Hard stop for players from progressing until they play
         {
