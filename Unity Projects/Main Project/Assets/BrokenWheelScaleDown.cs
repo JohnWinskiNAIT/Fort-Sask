@@ -14,6 +14,11 @@ public class BrokenWheelScaleDown : MonoBehaviour
     void Update()
     {
         //if(transform.IsChildOf())
-        //WheelBox.transform.GetChild(0).gameObject.transform.localScale = new Vector3(2.0f, 2.0f, 2.0f);
+        
+        if(gameObject.transform.parent != null)
+        {
+            transform.localScale = new Vector3(2.0f, 2.0f, 2.0f);
+        }
+        
     }
 }
