@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CorrectBoxManager : MonoBehaviour
 {
     [SerializeField] GameObject WheelBox;
     [SerializeField] GameObject JointBox;
     [SerializeField] GameObject PinBox;
+    [SerializeField] GameObject GameWin;
 
     // Start is called before the first frame update
     void Start()
@@ -34,10 +36,15 @@ public class CorrectBoxManager : MonoBehaviour
                 if (PinBox.transform.childCount > 0)
                 {
                     //PinBox.transform.GetChild(0).gameObject.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
-
+                    GameWin.SetActive(true);
 
                 }
             }
         }
+    }
+
+    public void GoNext()
+    {
+        SceneManager.LoadScene(1);
     }
 }
