@@ -15,14 +15,14 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMap.unity
     guid: 40c286093aefdbd44b178d5b0690b988
   - enabled: 1
-    path: Assets/Scenes/DummyGame.unity
-    guid: e010a72acc1bf8e47878a178b4a609c3
+    path: Assets/Scenes/NavigationGame.unity
+    guid: 1c7214d10b4ac8a42ad7de0547f733c2
   - enabled: 1
     path: Assets/Scenes/BalaceBoat.unity
     guid: 235db57fe2090b24c896e7b23070b19f
   - enabled: 1
-    path: Assets/Scenes/DummyGame 2.unity
-    guid: 70b72c9c000b34f4495f5c0405943042
+    path: Assets/Scenes/CartRepair.unity
+    guid: d38afcca09bf024468aa9a47720eecd9
   - enabled: 1
     path: Assets/Scenes/DummyGame 3.unity
     guid: a90865c0987c4a54fa54a4759f51e230
