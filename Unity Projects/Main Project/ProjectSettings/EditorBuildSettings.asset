@@ -17,4 +17,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DummyGame.unity
     guid: e010a72acc1bf8e47878a178b4a609c3
+  - enabled: 1
+    path: Assets/Scenes/DummyGame 1.unity
+    guid: ebbc46683b420b640997633f670cdcaa
+  - enabled: 1
+    path: Assets/Scenes/DummyGame 2.unity
+    guid: 70b72c9c000b34f4495f5c0405943042
+  - enabled: 1
+    path: Assets/Scenes/DummyGame 3.unity
+    guid: a90865c0987c4a54fa54a4759f51e230
+  - enabled: 1
+    path: Assets/Scenes/DummyGame 4.unity
+    guid: bdc679886aad9d54f9b1eecd49b74a7f
   m_configObjects: {}
