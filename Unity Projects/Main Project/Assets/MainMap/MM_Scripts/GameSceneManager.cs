@@ -10,4 +10,5 @@ public class GameSceneManager : MonoBehaviour
     public void LoadBalanceBoatScene() { SceneManager.LoadScene(3); }
     public void LoadCartRepairScene() { SceneManager.LoadScene(4); }
     public void LoadEndingScene() { SceneManager.LoadScene(5); }
+    public void LoadDummy() { SceneManager.LoadScene(2); }
 }
