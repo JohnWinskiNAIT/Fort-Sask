@@ -1,0 +1,3 @@
+Make panels move - transition, buttons
+Progressing condition - matching, use color buttons for now
+Fade to black when moving levels
