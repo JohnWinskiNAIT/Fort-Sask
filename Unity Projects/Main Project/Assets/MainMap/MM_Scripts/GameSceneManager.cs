@@ -5,7 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class GameSceneManager : MonoBehaviour
 {
-    public void LoadMainScene() { SceneManager.LoadScene(0); }
-    public void LoadPlayScene() { SceneManager.LoadScene(1); }
-    public void LoadEndScene() { SceneManager.LoadScene(2); }
+    public GameProgress gameProgress;
+
+    private void Start()
+    {
+        gameProgress = FindFirstObjectByType<GameProgress>();
+    }
+
+    public void LoadMapScene() { SceneManager.LoadScene(1); }
+    //public void LoadBalanceBoatScene() { SceneManager.LoadScene(3); }
+    //public void LoadCartRepairScene() { SceneManager.LoadScene(4); }
+    //public void LoadEndingScene() { SceneManager.LoadScene(5); }
+    //public void LoadDummy() { SceneManager.LoadScene(2); }
+
+    public void LoadGameScene()
+    {
+        SceneManager.LoadScene(gameProgress.locationCount + 2);
+    }
 }
