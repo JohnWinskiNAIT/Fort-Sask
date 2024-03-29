@@ -1,0 +1,1227 @@
+fileFormatVersion: 2
+guid: 88fab49fdf17c5c41b47723a40e1191f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 4777
+        width: 1333
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c316467acc0e14ead1e502809ff386
+      internalID: 415900486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_1
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 4777
+        width: 1330
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36733fb6d893a3a449d8a3fe2d7e128f
+      internalID: -79641396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_2
+      rect:
+        serializedVersion: 2
+        x: 2732
+        y: 4777
+        width: 1331
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86609358fe381984f8f949ae844bb7b8
+      internalID: 1297814700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_3
+      rect:
+        serializedVersion: 2
+        x: 4086
+        y: 4777
+        width: 1330
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eaa8e94d83620f46a8501e9b63ee7ce
+      internalID: -1159861447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_4
+      rect:
+        serializedVersion: 2
+        x: 5437
+        y: 4777
+        width: 1333
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a87f6e231f702ca4db13f2c3919639d7
+      internalID: 813770363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_5
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 4250
+        width: 1333
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e3ad35b44ccb644b7b0776d874df98
+      internalID: -547371321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_6
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 4250
+        width: 1330
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 367cdaa0429058645ae1f951347a2266
+      internalID: -2092465735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_7
+      rect:
+        serializedVersion: 2
+        x: 2732
+        y: 4250
+        width: 1331
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032bb3f051e402e42ae8c0e46bc5b365
+      internalID: 873510929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_8
+      rect:
+        serializedVersion: 2
+        x: 4086
+        y: 4250
+        width: 1330
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aff82a4762baa147be086a3386a83f8
+      internalID: 260225960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_9
+      rect:
+        serializedVersion: 2
+        x: 5437
+        y: 4250
+        width: 1333
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e591a9761f2739541a4fa12407fc7202
+      internalID: 1644162194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_10
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 3722
+        width: 1333
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc980a3a5a81204ba9b6e655ce3dfe6
+      internalID: 1197301701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_11
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 3722
+        width: 1330
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a167edeac32fe49a9040d1467aa917
+      internalID: -1676377240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_12
+      rect:
+        serializedVersion: 2
+        x: 2732
+        y: 3722
+        width: 1331
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971839464d74691418975e13006ff27b
+      internalID: 1537197196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_13
+      rect:
+        serializedVersion: 2
+        x: 4086
+        y: 3722
+        width: 1330
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79278c75f81218849a005fdd3fbe94d2
+      internalID: 593502378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_14
+      rect:
+        serializedVersion: 2
+        x: 5437
+        y: 3722
+        width: 1333
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2530f399eca6a3d4ba9e2ebe7bef4e30
+      internalID: 667212548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_15
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 3194
+        width: 1333
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96418ee55557384488209926850f4361
+      internalID: -1286500560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_16
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 3194
+        width: 1330
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a37ac8750ec2c4faf93eecd8641693
+      internalID: 1166579584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_17
+      rect:
+        serializedVersion: 2
+        x: 2732
+        y: 3194
+        width: 1331
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51852b55010dbef40aea16eff3f7c8e4
+      internalID: -1682887306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_18
+      rect:
+        serializedVersion: 2
+        x: 4086
+        y: 3194
+        width: 1330
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d3dff01856c814489af1016e575d8e
+      internalID: -1718044500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_19
+      rect:
+        serializedVersion: 2
+        x: 5437
+        y: 3194
+        width: 1333
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14dae20840df6e1478166e51555cdfde
+      internalID: -715391265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_20
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 2667
+        width: 1333
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7cf29b7998a4444bb9679ac5f96dc9c
+      internalID: -696678288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_21
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 2667
+        width: 1330
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821a30e9daaf06d4c986c07dbc61f0ec
+      internalID: -474778862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_22
+      rect:
+        serializedVersion: 2
+        x: 2732
+        y: 2667
+        width: 1331
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a934cd3a1e64f6447adbac2e5da26f63
+      internalID: -533895899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_23
+      rect:
+        serializedVersion: 2
+        x: 4086
+        y: 2667
+        width: 1330
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1875e37923335f4c9bc223133a86290
+      internalID: 867068837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_24
+      rect:
+        serializedVersion: 2
+        x: 5437
+        y: 2667
+        width: 1333
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a4293995ae65c4a82af52c98848740
+      internalID: -1030370283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_25
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 2139
+        width: 1333
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a3c57bfcd9c1947bf41a868a82f712
+      internalID: 2054310266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_26
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 2139
+        width: 1330
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b462185167000f4bb6776201f852e73
+      internalID: -2007734909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_27
+      rect:
+        serializedVersion: 2
+        x: 2732
+        y: 2139
+        width: 1331
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea8a486d23d548a4da0ef1f8709c46bc
+      internalID: 1673716834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_28
+      rect:
+        serializedVersion: 2
+        x: 4086
+        y: 2139
+        width: 1330
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c14fdb91bf888048b90cc31f1e9d82c
+      internalID: 888969566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_29
+      rect:
+        serializedVersion: 2
+        x: 5437
+        y: 2139
+        width: 1333
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 586b796eb5a98da43870555d5410e3e0
+      internalID: 1175818328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_30
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1611
+        width: 1333
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b430b6e6382288b46b0541c6802f7615
+      internalID: 781440490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_31
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 1611
+        width: 1330
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf44378e2a573a4b9c69dabbd21c732
+      internalID: 1549996914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_32
+      rect:
+        serializedVersion: 2
+        x: 2732
+        y: 1611
+        width: 1331
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc6560550362de54e9d3c23154abbc37
+      internalID: 520794572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_33
+      rect:
+        serializedVersion: 2
+        x: 4086
+        y: 1611
+        width: 1330
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4acdc85b7ee33f4d83443f0769b4227
+      internalID: 481465241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_34
+      rect:
+        serializedVersion: 2
+        x: 5437
+        y: 1611
+        width: 1333
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f9776dce208cc42bc01a15ea564461
+      internalID: 2058837510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_35
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1084
+        width: 1333
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948cab8e99242a54eabc85baad542d88
+      internalID: 521949232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_36
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 1084
+        width: 1330
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1500e0b8f7efe4dac034711f50801f
+      internalID: 1422080498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_37
+      rect:
+        serializedVersion: 2
+        x: 2732
+        y: 1084
+        width: 1331
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628571722eb3bf146ae5eb707df4bcae
+      internalID: -866021083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_38
+      rect:
+        serializedVersion: 2
+        x: 4086
+        y: 1084
+        width: 1330
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32c2498bbd4a8e34996ea3e5dfcd24fb
+      internalID: -446916980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_39
+      rect:
+        serializedVersion: 2
+        x: 5437
+        y: 1084
+        width: 1333
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38dc4d6e8f5ce1b49a13cc69ea3dc790
+      internalID: 502229916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_40
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 553
+        width: 1333
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a2afadc3999aa4fa9d54c508913eac
+      internalID: -517249506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_41
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 553
+        width: 1330
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d236fba445b5145a11265016fcdb8d
+      internalID: -507243581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_42
+      rect:
+        serializedVersion: 2
+        x: 2732
+        y: 553
+        width: 1331
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b0c4a9ab3422d140ac520dea780e5b2
+      internalID: -49682112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_43
+      rect:
+        serializedVersion: 2
+        x: 4086
+        y: 553
+        width: 1330
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b20630f75ea3447b8b353816c101cd
+      internalID: 495055583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_44
+      rect:
+        serializedVersion: 2
+        x: 5437
+        y: 553
+        width: 1333
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cb08429dca64e34dbf2c8795b74e374
+      internalID: 1151184550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_45
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 25
+        width: 1333
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a2485e2ff5dd64eb2a8c44aeb102a2
+      internalID: 1111392922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_46
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 25
+        width: 1330
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a33139e330d9494e969ae943a418345
+      internalID: -259393972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_47
+      rect:
+        serializedVersion: 2
+        x: 2732
+        y: 25
+        width: 1331
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9551cf81c2594024bb96ef0071e2d5ae
+      internalID: 359898433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_48
+      rect:
+        serializedVersion: 2
+        x: 4086
+        y: 25
+        width: 1330
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0a03d4a379ce440806d95b8f9cc6ba
+      internalID: -509712895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bigger logo Sprite Sheet With more Margins_49
+      rect:
+        serializedVersion: 2
+        x: 5437
+        y: 25
+        width: 1333
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95118d57016b4f94db23fe9162f88f0d
+      internalID: 1193969690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Bigger logo Sprite Sheet With more Margins_0: 415900486
+      Bigger logo Sprite Sheet With more Margins_1: -79641396
+      Bigger logo Sprite Sheet With more Margins_10: 1197301701
+      Bigger logo Sprite Sheet With more Margins_11: -1676377240
+      Bigger logo Sprite Sheet With more Margins_12: 1537197196
+      Bigger logo Sprite Sheet With more Margins_13: 593502378
+      Bigger logo Sprite Sheet With more Margins_14: 667212548
+      Bigger logo Sprite Sheet With more Margins_15: -1286500560
+      Bigger logo Sprite Sheet With more Margins_16: 1166579584
+      Bigger logo Sprite Sheet With more Margins_17: -1682887306
+      Bigger logo Sprite Sheet With more Margins_18: -1718044500
+      Bigger logo Sprite Sheet With more Margins_19: -715391265
+      Bigger logo Sprite Sheet With more Margins_2: 1297814700
+      Bigger logo Sprite Sheet With more Margins_20: -696678288
+      Bigger logo Sprite Sheet With more Margins_21: -474778862
+      Bigger logo Sprite Sheet With more Margins_22: -533895899
+      Bigger logo Sprite Sheet With more Margins_23: 867068837
+      Bigger logo Sprite Sheet With more Margins_24: -1030370283
+      Bigger logo Sprite Sheet With more Margins_25: 2054310266
+      Bigger logo Sprite Sheet With more Margins_26: -2007734909
+      Bigger logo Sprite Sheet With more Margins_27: 1673716834
+      Bigger logo Sprite Sheet With more Margins_28: 888969566
+      Bigger logo Sprite Sheet With more Margins_29: 1175818328
+      Bigger logo Sprite Sheet With more Margins_3: -1159861447
+      Bigger logo Sprite Sheet With more Margins_30: 781440490
+      Bigger logo Sprite Sheet With more Margins_31: 1549996914
+      Bigger logo Sprite Sheet With more Margins_32: 520794572
+      Bigger logo Sprite Sheet With more Margins_33: 481465241
+      Bigger logo Sprite Sheet With more Margins_34: 2058837510
+      Bigger logo Sprite Sheet With more Margins_35: 521949232
+      Bigger logo Sprite Sheet With more Margins_36: 1422080498
+      Bigger logo Sprite Sheet With more Margins_37: -866021083
+      Bigger logo Sprite Sheet With more Margins_38: -446916980
+      Bigger logo Sprite Sheet With more Margins_39: 502229916
+      Bigger logo Sprite Sheet With more Margins_4: 813770363
+      Bigger logo Sprite Sheet With more Margins_40: -517249506
+      Bigger logo Sprite Sheet With more Margins_41: -507243581
+      Bigger logo Sprite Sheet With more Margins_42: -49682112
+      Bigger logo Sprite Sheet With more Margins_43: 495055583
+      Bigger logo Sprite Sheet With more Margins_44: 1151184550
+      Bigger logo Sprite Sheet With more Margins_45: 1111392922
+      Bigger logo Sprite Sheet With more Margins_46: -259393972
+      Bigger logo Sprite Sheet With more Margins_47: 359898433
+      Bigger logo Sprite Sheet With more Margins_48: -509712895
+      Bigger logo Sprite Sheet With more Margins_49: 1193969690
+      Bigger logo Sprite Sheet With more Margins_5: -547371321
+      Bigger logo Sprite Sheet With more Margins_6: -2092465735
+      Bigger logo Sprite Sheet With more Margins_7: 873510929
+      Bigger logo Sprite Sheet With more Margins_8: 260225960
+      Bigger logo Sprite Sheet With more Margins_9: 1644162194
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
