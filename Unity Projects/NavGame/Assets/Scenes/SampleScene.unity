@@ -225,11 +225,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3186754882607711778, guid: ff5f5ba0179f6f74fa9bd2d4fe9ac56d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1826
+      value: -2471
       objectReference: {fileID: 0}
     - target: {fileID: 3186754882607711778, guid: ff5f5ba0179f6f74fa9bd2d4fe9ac56d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -387
+      value: 205
       objectReference: {fileID: 0}
     - target: {fileID: 3186754882607711778, guid: ff5f5ba0179f6f74fa9bd2d4fe9ac56d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2789,7 +2789,7 @@ MonoBehaviour:
   selectedDirection: 
   selectedItem: 
   directionParent: {fileID: 1940332788}
-  findItemsParent: {fileID: 2065378169}
+  findItemsParent: {fileID: 781425330}
   stopParent: {fileID: 1301153313}
   levels:
   - {fileID: 1145478145}
@@ -5527,7 +5527,7 @@ MonoBehaviour:
   selectedDirection: 
   selectedItem: 
   directionParent: {fileID: 1046664987}
-  findItemsParent: {fileID: 110536471}
+  findItemsParent: {fileID: 342752121}
   stopParent: {fileID: 844102485}
   levels:
   - {fileID: 1145478145}
