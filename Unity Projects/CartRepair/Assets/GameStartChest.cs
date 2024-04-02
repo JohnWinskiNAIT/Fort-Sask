@@ -53,7 +53,7 @@ public class GameStartChest : MonoBehaviour
     public void generateBrokenPart()
     {
         int partIndex = Random.Range(1, 4);
-        GameObject whichPart = GameObject.Find("GameStart").transform.GetChild(partIndex - 1).gameObject;
+        GameObject whichPart = GameObject.Find("StartParent").transform.GetChild(partIndex - 1).gameObject;
 
         Debug.Log(partIndex);
 
@@ -64,7 +64,15 @@ public class GameStartChest : MonoBehaviour
 
     public void openStartBoxes()
     {
-        startBoxes.SetActive(true);
+        if (!startBoxes.activeSelf)
+        {
+            startBoxes.SetActive(true);
+        }
+        else
+        {
+            startBoxes.SetActive(false);
+        }
+        
 
     }
 
