@@ -20,7 +20,7 @@ public class PageIndicator : MonoBehaviour
     {
         if (panelNumber == Scrolling.panelNumber)
         {
-            transform.localScale = new Vector2(0.6f, 0.6f);
+            transform.localScale = new Vector2(0.5f, 0.5f);
         }
         else
         {
