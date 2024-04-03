@@ -11,11 +11,12 @@ public class Obsticle
 
     void SetState(Vector2 position)
     {
-        if (position.y > -2.1)
+        Debug.Log(position);
+        if (position.y >= -3.4)
         {
             state = ObsticleState.Top;
         }
-        else if(position.y < 2.1 && position.y > -2.9)
+        else if(position.y < -3.4 && position.y > -3.9)
         {
             state = ObsticleState.Center;
         }
@@ -32,15 +33,15 @@ public class Obsticle
         switch (state)
         {
             case ObsticleState.Top:
-                position = -1.7f;
+                position = -3.3f;
                 break;
 
             case ObsticleState.Center:
-                position = -2.5f;
+                position = -3.7f;
                 break;
 
             case ObsticleState.Bottom:
-                position = -3.3f;
+                position = -4.2f;
                 break;
 
             default:
