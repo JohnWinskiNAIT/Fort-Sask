@@ -72,10 +72,10 @@ public class HorseMovement : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Detected");
-        if(collision.GetComponent<ObsticleManager>().thisObsticle.GetState() == position.ToString())
-        {
+        //if (collision.GetComponent<ObsticleManager>().thisObsticle.GetState() == position.ToString())
+        //{
             StartCoroutine(HorseDamage());
-        }
+        //}
     }
 
     IEnumerator HorseDamage()

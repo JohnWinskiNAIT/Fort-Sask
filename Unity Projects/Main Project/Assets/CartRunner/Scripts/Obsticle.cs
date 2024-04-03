@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Obsticle
 {
-    private ObsticleState state;
+    private LogState state;
 
     public Obsticle(Vector2 position)
     {
@@ -11,18 +11,17 @@ public class Obsticle
 
     void SetState(Vector2 position)
     {
-        Debug.Log(position);
         if (position.y >= -3.4)
         {
-            state = ObsticleState.Top;
+            state = LogState.Top;
         }
         else if(position.y < -3.4 && position.y > -3.9)
         {
-            state = ObsticleState.Center;
+            state = LogState.Center;
         }
         else
         {
-            state = ObsticleState.Bottom;
+            state = LogState.Bottom;
         }
     }
 
@@ -32,15 +31,15 @@ public class Obsticle
 
         switch (state)
         {
-            case ObsticleState.Top:
+            case LogState.Top:
                 position = -3.3f;
                 break;
 
-            case ObsticleState.Center:
+            case LogState.Center:
                 position = -3.7f;
                 break;
 
-            case ObsticleState.Bottom:
+            case LogState.Bottom:
                 position = -4.2f;
                 break;
 
@@ -58,7 +57,7 @@ public class Obsticle
     }
 }
 
-enum ObsticleState
+enum LogState
 {
     Top,
     Center,
