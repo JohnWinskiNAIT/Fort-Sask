@@ -15,10 +15,15 @@ public class BrokenWheelScaleDown : MonoBehaviour
     {
         //if(transform.IsChildOf())
         
-        if(gameObject.transform.parent != null)
+        if(gameObject.transform.parent != null && gameObject.transform.parent.CompareTag("ItemBox"))
+        {
+            transform.localScale = new Vector3(3.5f, 3.5f, 3.5f);
+        }
+
+        if (gameObject.transform.childCount > 0)
         {
             transform.localScale = new Vector3(2.0f, 2.0f, 2.0f);
         }
-        
+
     }
 }

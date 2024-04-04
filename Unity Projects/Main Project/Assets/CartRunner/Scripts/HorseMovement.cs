@@ -81,7 +81,26 @@ public class HorseMovement : MonoBehaviour
 
     IEnumerator HorseDamage()
     {
-        FindObjectOfType<AudioManager>().Play("HorseSqeel");
+        int val = Random.Range(1, 5);
+        switch (val)
+        {
+            case 1:
+                FindObjectOfType<AudioManager>().Play("HorseSqueel6");
+                break;
+
+            case 2:
+                FindObjectOfType<AudioManager>().Play("HorseSqueel7");
+                break;
+
+            case 3:
+                FindObjectOfType<AudioManager>().Play("HorseSqueel8");
+                break;
+
+            case 4:
+                FindObjectOfType<AudioManager>().Play("HorseSqueel9");
+                break;
+        }
+      
         for (int i = 0; i < 3; i++)
         {
             gameObject.GetComponent<SpriteRenderer>().enabled = false;

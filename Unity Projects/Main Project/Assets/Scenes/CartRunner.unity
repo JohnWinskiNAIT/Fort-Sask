@@ -9498,8 +9498,26 @@ MonoBehaviour:
     pitch: 0.98
     loop: 1
     source: {fileID: 0}
-  - name: HorseSqueel
+  - name: HorseSqueel8
     clip: {fileID: 8300000, guid: 873d1dd5e170fb0488c9a96e6eac09da, type: 3}
+    volume: 1
+    pitch: 1.04
+    loop: 0
+    source: {fileID: 0}
+  - name: HorseSqueel9
+    clip: {fileID: 8300000, guid: 85631d35af344b4479d2d328d40fc8a4, type: 3}
+    volume: 1
+    pitch: 1.04
+    loop: 0
+    source: {fileID: 0}
+  - name: HorseSqueel7
+    clip: {fileID: 8300000, guid: f2ceeb05bca66744a973b98090474bb5, type: 3}
+    volume: 1
+    pitch: 1.04
+    loop: 0
+    source: {fileID: 0}
+  - name: HorseSqueel6
+    clip: {fileID: 8300000, guid: 0197749ff232f944cb8a0f9ff4a9486b, type: 3}
     volume: 1
     pitch: 1.04
     loop: 0
