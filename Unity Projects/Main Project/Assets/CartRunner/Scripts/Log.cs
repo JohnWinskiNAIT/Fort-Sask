@@ -7,18 +7,18 @@ public class Log : MonoBehaviour
 {
     public float logSpeed;
     private LogObjState state;
-    GameObject camera;
+    GameObject cam;
 
     void Start()
     {
-        camera = GameObject.Find("Main Camera");
+        cam = GameObject.Find("Main Camera");
         SetState(transform.position);
         transform.position = new Vector2(transform.position.x, SnapPosition());
     }
 
     void Update()
     {
-        if (transform.position.x - camera.transform.position.x < 14)
+        if (transform.position.x - cam.transform.position.x < 14)
         {
             MoveLog();
         }
