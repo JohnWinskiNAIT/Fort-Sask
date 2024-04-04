@@ -9491,7 +9491,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcebf6d3c5c9c894ba6d986f37b2ba8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: HorseGalloping
+    clip: {fileID: 8300000, guid: d1d63ac26a7e12a4aab4e7f1d14fc54e, type: 3}
+    volume: 1
+    pitch: 0.98
+    loop: 1
+    source: {fileID: 0}
+  - name: HorseSqueel
+    clip: {fileID: 8300000, guid: 873d1dd5e170fb0488c9a96e6eac09da, type: 3}
+    volume: 1
+    pitch: 1.04
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &434653314
 Transform:
   m_ObjectHideFlags: 0

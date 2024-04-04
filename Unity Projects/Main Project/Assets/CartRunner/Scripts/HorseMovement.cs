@@ -14,7 +14,7 @@ public class HorseMovement : MonoBehaviour
 
     private void Start()
     {
-        FindObjectOfType<AudioManager>().Play("Galloping");
+        FindObjectOfType<AudioManager>().Play("HorseGalloping");
     }
 
     private void Update()
@@ -81,6 +81,7 @@ public class HorseMovement : MonoBehaviour
 
     IEnumerator HorseDamage()
     {
+        FindObjectOfType<AudioManager>().Play("HorseSqeel");
         for (int i = 0; i < 3; i++)
         {
             gameObject.GetComponent<SpriteRenderer>().enabled = false;
