@@ -12,6 +12,11 @@ public class HorseMovement : MonoBehaviour
         position = PositionState.Center;
     }
 
+    private void Start()
+    {
+        FindObjectOfType<AudioManager>().Play("Galloping");
+    }
+
     private void Update()
     {
         GetPosition();
@@ -71,11 +76,7 @@ public class HorseMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Detected");
-        if(collision.GetComponent<ObsticleManager>().thisObsticle.GetState() == position.ToString())
-        {
-            StartCoroutine(HorseDamage());
-        }
+        StartCoroutine(HorseDamage());
     }
 
     IEnumerator HorseDamage()
