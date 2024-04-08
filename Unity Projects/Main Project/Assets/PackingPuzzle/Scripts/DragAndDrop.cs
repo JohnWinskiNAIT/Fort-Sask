@@ -57,7 +57,7 @@ public class DragAndDrop : MonoBehaviour
     public void OnMouseUp()
     {
         isDragging = false;
-
+        FindAnyObjectByType<AudioManager>().Play(gameObject.name);
         //Snapping piece into the grid
         myPiece.SnapPiece(myGameObject);
     }
