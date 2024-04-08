@@ -52,6 +52,7 @@ public class Scrolling : MonoBehaviour
     {
         if (panelNumber > 1)
         {
+            FindAnyObjectByType<AudioManager>().Play("Click");
             panelNumber--;
         }
 
@@ -63,6 +64,7 @@ public class Scrolling : MonoBehaviour
 
         if (panelNumber < 3)
         {
+            FindAnyObjectByType<AudioManager>().Play("Click");
             panelNumber++;
         }
     }

@@ -23,6 +23,8 @@ public class WheelDragMotion : MonoBehaviour
     public bool usingWheel = false;
     bool fullSpun = false;
     bool spunDown = false;
+
+    bool wheelSound = false;
     void Start()
     {
         
@@ -50,6 +52,12 @@ public class WheelDragMotion : MonoBehaviour
             {
                 usingWheel = true;
 
+                if (!wheelSound)
+                {
+                    FindObjectOfType<AudioManager>().Play("WheelTurn");
+                    wheelSound = true;
+                }
+
                 ferryWheel.transform.Rotate(Vector3.forward, 60f * Time.deltaTime);
                 if (Mathf.Abs(ferryWheel.transform.eulerAngles.z - 360f) <= 1f)
                 {
@@ -76,6 +84,8 @@ public class WheelDragMotion : MonoBehaviour
         else
         {
             usingWheel = false;
+            FindObjectOfType<AudioManager>().Pause("WheelTurn");
+            wheelSound = false;
 
             if (fullSpinsCount > 0)
             {

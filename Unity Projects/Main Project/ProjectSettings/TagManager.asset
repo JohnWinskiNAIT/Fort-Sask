@@ -10,6 +10,8 @@ TagManager:
   - Item1
   - Item2
   - Item3
+  - ItemBox
+  - Broken
   layers:
   - Default
   - TransparentFX

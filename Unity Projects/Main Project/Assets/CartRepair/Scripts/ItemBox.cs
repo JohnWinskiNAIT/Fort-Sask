@@ -40,5 +40,14 @@ public class ItemBox : MonoBehaviour, IDropHandler
         //        gameObject.GetComponent<GridLayoutGroup>().cellSize = new Vector2(200f, 200f);
         //    }
         //}
+
+        if(transform.childCount > 0)
+        {
+            if (transform.GetChild(0).CompareTag("Wheel"))
+            {
+                transform.GetChild(0).localScale = new Vector3(2.0f, 2.0f, 2.0f);
+            }
+        }
+        
     }
 }
