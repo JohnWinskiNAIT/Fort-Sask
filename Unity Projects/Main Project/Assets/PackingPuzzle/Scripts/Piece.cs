@@ -25,7 +25,6 @@ public class Piece
     {
         foreach (BoxCollider2D collider in colliders)
         {
-            Debug.Log("Finding Points");
             //Gets point amount by dividing the collider size by the grid cell size
             int x_Boxes = (int)(Math.Round(collider.size.x / manager.cellSize));
             float y_Boxes = (int)(Math.Round(collider.size.y / manager.cellSize));
