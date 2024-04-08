@@ -186,7 +186,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: c0d92cf34fc9d8340b7848782c869c9f, type: 3}
+  m_Texture: {fileID: 2800000, guid: 17dfa9d74b3a9d948a8c0e6b2345f55b, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -947,7 +947,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 477dedfc8f0923b45ae82ca100a9fea6, type: 3}
+  m_Texture: {fileID: 2800000, guid: e7cab9538c7c5084b85635a7f668b8c2, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1057,11 +1057,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4666657129264674931, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -221.9
+      value: -137
       objectReference: {fileID: 0}
     - target: {fileID: 4666657129264674931, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 157.9
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4666657129264674931, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
