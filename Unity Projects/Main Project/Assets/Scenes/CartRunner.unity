@@ -7139,7 +7139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &218656412
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8301,7 +8301,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &300483898
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12102,7 +12102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8988301254648467849, guid: 0cccb2ecc738a8541ae9b0f310cc0ca0, type: 3}
       propertyPath: logSpeed
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21210,7 +21210,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.67, y: -2.6}
+  m_Offset: {x: 2.26, y: -2.6}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -21221,7 +21221,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.54, y: 0.25}
+  m_Size: {x: 4.93, y: 0.25}
   m_EdgeRadius: 0
 --- !u!50 &1666214135
 Rigidbody2D:
@@ -24013,7 +24013,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &2039641317
 SpriteRenderer:
   m_ObjectHideFlags: 0

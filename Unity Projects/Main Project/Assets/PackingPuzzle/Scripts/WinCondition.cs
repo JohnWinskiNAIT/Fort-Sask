@@ -5,10 +5,13 @@ using UnityEngine;
 public class WinCondition : MonoBehaviour
 {
     PackingPuzzleManager manager;
+    public GameObject button;
+    bool playable = true;
 
     private void Start()
     {
         manager = PackingPuzzleManager.Instance;
+        button.SetActive(false);
     }
 
     private void Update()
@@ -25,7 +28,12 @@ public class WinCondition : MonoBehaviour
 
         if (win)
         {
-            Debug.Log("You Win");
+            if (playable)
+            {
+                FindAnyObjectByType<AudioManager>().Play("Win");
+                playable = false;
+            }
+            button.SetActive(true);
         }
    }
 }
