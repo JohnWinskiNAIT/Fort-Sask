@@ -96,6 +96,7 @@ public class GameStart : MonoBehaviour
             if (child.childCount > 0)
             {
                 winConPicked = true;
+                GameObject.Find("Glow").SetActive(false);
             }
         }
     }
