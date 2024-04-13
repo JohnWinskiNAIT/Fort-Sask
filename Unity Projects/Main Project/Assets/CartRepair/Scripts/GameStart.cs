@@ -24,6 +24,7 @@ public class GameStart : MonoBehaviour
     int winCon = 2;
 
     private bool winConPicked = false;
+    bool winSound = true;
 
     // Start is called before the first frame update
     void Start()
@@ -127,6 +128,11 @@ public class GameStart : MonoBehaviour
 
         if (winCon == 1)
         {
+            if (winSound)
+            {
+                FindAnyObjectByType<AudioManager>().Play("Win");
+                winSound = false;
+            }
             nextLevel.SetActive(true);
         }
         else if (winCon == 0)
