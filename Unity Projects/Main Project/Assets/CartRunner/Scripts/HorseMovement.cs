@@ -103,9 +103,9 @@ public class HorseMovement : MonoBehaviour
       
         for (int i = 0; i < 3; i++)
         {
-            gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(0.9f,0.7f,0.7f);
             yield return new WaitForSeconds(0.25f);
-            gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            gameObject.GetComponent<SpriteRenderer>().color = Color.white;
             yield return new WaitForSeconds(0.25f);
         }
     }
