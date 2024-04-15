@@ -8,6 +8,7 @@ public class BalanceGameManager : MonoBehaviour
     public float startCountTimer = 3.0f;
     public float startCurrentTimer;
     private bool startCountdownStarted = false;
+    bool winSound = true;
 
     [Header("Game Timer")]
     public float gameCountTimer = 50.0f;
@@ -59,6 +60,12 @@ public class BalanceGameManager : MonoBehaviour
 
 
                 gameCountdownStarted = false;
+
+                if (winSound)
+                {
+                    FindAnyObjectByType<AudioManager>().Play("Win");
+                    winSound = false;
+                }
 
                 lobbyButton.SetActive(true);
             }

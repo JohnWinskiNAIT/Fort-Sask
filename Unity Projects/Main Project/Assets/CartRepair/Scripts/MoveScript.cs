@@ -31,6 +31,25 @@ public class MoveScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
         //set transform back
         transform.SetParent(parentAfterDrag);
 
+        if (gameObject.tag == "Pin"  && parentAfterDrag.name == "CorrectPinBox")
+        {
+            FindAnyObjectByType<AudioManager>().Play("Slide");
+        }
+        else
+        {
+            int random;
+            random = Random.Range(1, 3);
+            switch (random)
+            {
+                case 1:
+                    FindAnyObjectByType<AudioManager>().Play("WoodHit1");
+                    break;
+                case 2:
+                    FindAnyObjectByType<AudioManager>().Play("WoodHit2");
+                    break;
+            }
+        }
+
         image.raycastTarget = true;
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine.UIElements;
 
 public class Log : MonoBehaviour
 {
-    public float logSpeed;
+    public float logSpeed = 3;
     private LogObjState state;
     GameObject cam;
 

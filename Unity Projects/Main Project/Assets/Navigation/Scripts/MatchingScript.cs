@@ -24,6 +24,8 @@ public class MatchingScript : MonoBehaviour
 
     public GameObject nextLevelButton;
 
+    bool winSound;
+
     //public Animator transition;
 
     // Start is called before the first frame update
@@ -32,6 +34,7 @@ public class MatchingScript : MonoBehaviour
         selectedDirection = "xd";
         selectedItem = "xdd";
         levelCounter = 1;
+        winSound = true;
     }
 
     // Update is called once per frame
@@ -52,9 +55,12 @@ public class MatchingScript : MonoBehaviour
             if (stopParent.activeSelf == true && stopParent.transform.childCount == 3)
             {
                 //refreshDirections();
-
                 nextLevelButton.SetActive(true);
-
+                if (winSound)
+                {
+                    FindAnyObjectByType<AudioManager>().Play("Win");
+                    winSound = false;
+                }
             }
 
         }
@@ -188,13 +194,12 @@ public class MatchingScript : MonoBehaviour
         if (levelCounter < 3)
         {
             levelCounter += 1;
-            Debug.Log(levelCounter);
             levels[levelCounter - 1].SetActive(true);
             directions[levelCounter - 1].SetActive(true);
         }
         else
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(0);
         }
 
 
