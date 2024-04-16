@@ -29,9 +29,7 @@ public class PauseMenu : MonoBehaviour
         {
             if (!PauseMenuParent.activeSelf)
             {
-                Time.timeScale = 0f;
-                PauseMenuParent.SetActive(true);
-                isPaused = true;
+                openPauseMenu();
             }
             else
             {
@@ -78,6 +76,21 @@ public class PauseMenu : MonoBehaviour
             GameObject.Find("MuteButton").GetComponent<Image>().sprite = audioSprites[0]; // default, not muted
         }
        
+    }
+
+    public void openPauseMenu()
+    {
+        
+        if (!PauseMenuParent.activeSelf)
+        {
+            Time.timeScale = 0f;
+            PauseMenuParent.SetActive(true);
+            isPaused = true;
+        }
+        else
+        {
+            ResumeButton();
+        }
     }
 
 

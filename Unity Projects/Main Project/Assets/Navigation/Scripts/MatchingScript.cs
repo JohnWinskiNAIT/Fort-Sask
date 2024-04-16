@@ -56,7 +56,7 @@ public class MatchingScript : MonoBehaviour
             {
                 //refreshDirections();
                 nextLevelButton.SetActive(true);
-                if (winSound)
+                if (winSound && levels[2].activeSelf)
                 {
                     FindAnyObjectByType<AudioManager>().Play("Win");
                     winSound = false;
