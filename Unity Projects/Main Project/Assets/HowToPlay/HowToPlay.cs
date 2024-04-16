@@ -13,11 +13,12 @@ public class HowToPlay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Time.timeScale = 0;
     }
 
     public void disableHToP()
     {
         gameObject.SetActive(false);
+        Time.timeScale = 1;
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEditor.PackageManager.UI;
 
 public class CorrectBoxManager : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class CorrectBoxManager : MonoBehaviour
     [SerializeField] GameObject JointBox;
     [SerializeField] GameObject PinBox;
    //public static GameObject GameWin;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +23,7 @@ public class CorrectBoxManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if (GameObject.Find(""))
         if (WheelBox.transform.childCount > 0)
         {
             ////WheelBox.transform.GetChild(0).gameObject.transform.localScale = new Vector3(5.4f, 5.4f, 5.4f);
@@ -47,4 +51,21 @@ public class CorrectBoxManager : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    //void checkWinCon()
+    //{
+
+    //    foreach (Transform child in GameObject.Find("CorrectBoxes").transform)
+    //    {
+    //        foreach (Transform grandChild in child)
+    //        {
+    //            if (grandChild.childCount > 0)
+    //            {
+    //                winCon = 0;
+    //            }
+    //        }
+    //    }
+
+    //    showEnd();
+    //}
 }
