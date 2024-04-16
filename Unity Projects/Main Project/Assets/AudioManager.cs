@@ -37,4 +37,20 @@ public class AudioManager : MonoBehaviour
         Sound s = Array.Find(sounds, sound => sound.name == name);
         s.source.volume += volPerFrame;
     }
+
+    public void Mute()
+    {
+        foreach(Sound s in sounds)
+        {
+            s.source.volume = 0;
+        }
+    }
+
+    public void UnMute()
+    {
+        foreach (Sound s in sounds)
+        {
+            s.source.volume = 1;
+        }
+    }
 }
