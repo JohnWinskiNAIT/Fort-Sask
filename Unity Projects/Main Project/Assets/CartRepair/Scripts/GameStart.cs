@@ -21,6 +21,9 @@ public class GameStart : MonoBehaviour
     [SerializeField]
     GameObject nextLevel;
 
+    [SerializeField]
+    GameObject failMessage;
+
     int winCon = 2;
 
     private bool winConPicked = false;
@@ -137,7 +140,7 @@ public class GameStart : MonoBehaviour
         }
         else if (winCon == 0)
         {
-            SceneManager.LoadScene(4);
+            failMessage.SetActive(true);
         }
     }
 
