@@ -492,12 +492,20 @@ PrefabInstance:
       value: Logo
       objectReference: {fileID: 0}
     - target: {fileID: 1777190229135302356, guid: 56dca8e72b44e274d91f59276342e6e2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1777190229135302356, guid: 56dca8e72b44e274d91f59276342e6e2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1777190229135302356, guid: 56dca8e72b44e274d91f59276342e6e2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.9166312
+      value: 4.19
       objectReference: {fileID: 0}
     - target: {fileID: 1777190229135302356, guid: 56dca8e72b44e274d91f59276342e6e2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.02
+      value: -2.38
       objectReference: {fileID: 0}
     - target: {fileID: 1777190229135302356, guid: 56dca8e72b44e274d91f59276342e6e2, type: 3}
       propertyPath: m_LocalPosition.z
