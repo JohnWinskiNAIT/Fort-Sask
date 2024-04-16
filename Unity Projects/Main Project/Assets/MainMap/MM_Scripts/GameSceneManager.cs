@@ -12,7 +12,7 @@ public class GameSceneManager : MonoBehaviour
         gameProgress = FindFirstObjectByType<GameProgress>();
     }
 
-    public void LoadMapScene() { SceneManager.LoadScene(1); }
+    public void LoadMapScene() { SceneManager.LoadScene(2); }
     //public void LoadBalanceBoatScene() { SceneManager.LoadScene(3); }
     //public void LoadCartRepairScene() { SceneManager.LoadScene(4); }
     //public void LoadEndingScene() { SceneManager.LoadScene(5); }
@@ -20,6 +20,6 @@ public class GameSceneManager : MonoBehaviour
 
     public void LoadGameScene()
     {
-        SceneManager.LoadScene(gameProgress.locationCount + 2);
+        SceneManager.LoadScene(gameProgress.locationCount + 3);
     }
 }
