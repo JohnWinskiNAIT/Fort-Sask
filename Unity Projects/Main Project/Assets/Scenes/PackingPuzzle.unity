@@ -218,7 +218,24 @@ PrefabInstance:
     - target: {fileID: 1012236089477532039, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
       propertyPath: m_text
       value: "Pack your Gear To prepare for your journey to Fort Saskatchewan \n\nTap
-        and drag the pieces to the box. Make sure to leave no empty spaces \n"
+        and drag the pieces to the box. Make sure to leave no empty spaces \npress
+        the reset button to reset all the pieces\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526794536741605146, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 113.5868
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526794536741605146, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 113.5868
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526794536741605146, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -428.90005
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526794536741605146, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 209.8451
       objectReference: {fileID: 0}
     - target: {fileID: 3901728046494508157, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
       propertyPath: m_Sprite
@@ -330,11 +347,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8329176015330703223, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 111.5738
+      value: 104.2239
+      objectReference: {fileID: 0}
+    - target: {fileID: 8329176015330703223, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 78.0609
       objectReference: {fileID: 0}
     - target: {fileID: 8329176015330703223, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -379.7
+      value: -428.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8329176015330703223, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -236
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
