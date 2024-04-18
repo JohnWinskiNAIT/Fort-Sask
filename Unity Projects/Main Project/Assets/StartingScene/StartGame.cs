@@ -9,12 +9,14 @@ public class StartGame : MonoBehaviour
     public GameObject button;
     public GameObject logo;
     public GameObject credits;
+    public GameObject credsButton;
 
     public void PlayGame()
     {
         cam.GetComponent<VideoPlayer>().playbackSpeed = 1;
         button.SetActive(false);
         logo.SetActive(false);
+        credsButton.SetActive(false);
     }
 
     public void ShowCreds()

@@ -667,6 +667,7 @@ MonoBehaviour:
   button: {fileID: 1992749239}
   logo: {fileID: 1065155541}
   credits: {fileID: 76220654}
+  credsButton: {fileID: 187366638}
 --- !u!4 &602599703
 Transform:
   m_ObjectHideFlags: 0
