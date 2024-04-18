@@ -217,9 +217,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1012236089477532039, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
       propertyPath: m_text
-      value: "Pack your Gear To prepare for your journey to Fort Saskatchewan \n\nTap
-        and drag the pieces to the box. Make sure to leave no empty spaces \npress
-        the reset button to reset all the pieces\n"
+      value: "Pack all your supplies for your journey to Fort Saskatchewan.  \n\nPress
+        and drag each item into the cargo area on the left, leaving no free spaces
+        remaining.\n\nPress the reset button to reset all pieces.\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1526794536741605146, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
       propertyPath: m_SizeDelta.x
@@ -249,9 +249,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: H2P
       objectReference: {fileID: 0}
-    - target: {fileID: 7467221119663635225, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
+    - target: {fileID: 6183273527864945842, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6771506680365230242, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 432
+      objectReference: {fileID: 0}
+    - target: {fileID: 7467221119663635225, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7589729402128467552, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
       propertyPath: m_Pivot.x
