@@ -891,12 +891,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 355534695}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.8165107, y: 1.509222, z: 0.0090403035}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1768285316}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &387301090
 GameObject:
@@ -3466,6 +3466,12 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: River
+    clip: {fileID: 8300000, guid: 21565db7a37b6cd48976c1b774b190d5, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
 --- !u!4 &1609681348
 Transform:
   m_ObjectHideFlags: 0
@@ -3633,6 +3639,7 @@ Transform:
   - {fileID: 1602980835}
   - {fileID: 82797729}
   - {fileID: 1908345530}
+  - {fileID: 355534697}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1775518754
@@ -4567,5 +4574,4 @@ SceneRoots:
   - {fileID: 181697831}
   - {fileID: 655115173}
   - {fileID: 1344263186}
-  - {fileID: 355534697}
   - {fileID: 1609681348}

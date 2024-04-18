@@ -31,6 +31,8 @@ public class BalanceGameManager : MonoBehaviour
         gameCountdownStarted = false;
 
         lobbyButton.SetActive(false);
+
+        FindAnyObjectByType<AudioManager>().Play("River");
     }
 
     void Update()
