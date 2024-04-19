@@ -10,7 +10,8 @@ public class CorrectBoxManager : MonoBehaviour
     [SerializeField] GameObject WheelBox;
     [SerializeField] GameObject JointBox;
     [SerializeField] GameObject PinBox;
-   //public static GameObject GameWin;
+    [SerializeField] GameObject startParent;
+    //public static GameObject GameWin;
 
 
 
@@ -23,7 +24,11 @@ public class CorrectBoxManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (GameObject.Find(""))
+        if (startParent.transform.childCount == 0)
+        {
+            WheelBox.SetActive(true);
+        }
+
         if (WheelBox.transform.childCount > 0)
         {
             ////WheelBox.transform.GetChild(0).gameObject.transform.localScale = new Vector3(5.4f, 5.4f, 5.4f);
