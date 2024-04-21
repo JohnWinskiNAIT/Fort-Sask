@@ -199,7 +199,7 @@ public class MatchingScript : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(2);
         }
 
 

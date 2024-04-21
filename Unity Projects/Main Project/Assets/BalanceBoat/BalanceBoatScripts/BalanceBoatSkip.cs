@@ -6,16 +6,6 @@ public class BalanceBoatSkip : MonoBehaviour
 {
     public BalanceGameManager bgm;
 
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
-    
     public void SkipToMaxTimer()
     {
         bgm.gameCurrentTimer = bgm.gameCountTimer;
