@@ -5,7 +5,7 @@ using UnityEngine;
 public class BalanceGameManager : MonoBehaviour
 {
     [Header("Start Timer")]
-    public float startCountTimer = 3.0f;
+    public float startCountTimer;
     public float startCurrentTimer;
     private bool startCountdownStarted = false;
     bool winSound = true;

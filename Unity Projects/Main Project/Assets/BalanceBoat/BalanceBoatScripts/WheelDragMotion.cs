@@ -20,6 +20,7 @@ public class WheelDragMotion : MonoBehaviour
 
     int fullSpinsCount = 0;
 
+    public bool controlledWheel = true;
     public bool usingWheel = false;
     bool fullSpun = false;
     bool spunDown = false;
@@ -27,7 +28,7 @@ public class WheelDragMotion : MonoBehaviour
     bool wheelSound = false;
     void Start()
     {
-        
+        controlledWheel = true;
     }
 
     void Update()
@@ -37,84 +38,87 @@ public class WheelDragMotion : MonoBehaviour
         worldPos = cam.ScreenToWorldPoint(new Vector3(screenMousePos.x, screenMousePos.y, cam.nearClipPlane));
         worldPos.z = 0f;
 
-        if (mouseClicked.WasPressedThisFrame())
+        if (controlledWheel)
         {
-            savedLocation = worldPos;
-        }
-        else if (mouseClicked.WasReleasedThisFrame())
-        {
-            savedLocation = Vector3.zero;
-        }
-
-        if (savedLocation != Vector3.zero)
-        {
-            if (worldPos.x < savedLocation.x || worldPos.y < savedLocation.y)
+            if (mouseClicked.WasPressedThisFrame())
             {
-                usingWheel = true;
-
-                if (!wheelSound)
-                {
-                    FindObjectOfType<AudioManager>().Play("WheelTurn");
-                    wheelSound = true;
-                }
-
-                ferryWheel.transform.Rotate(Vector3.forward, 60f * Time.deltaTime);
-                if (Mathf.Abs(ferryWheel.transform.eulerAngles.z - 360f) <= 1f)
-                {
-                    if (!fullSpun)
-                    {
-                        if (fullSpinsCount < 2)
-                        {
-                            fullSpinsCount = 2;
-                        }
-                        else
-                        {
-                            fullSpinsCount++;
-                        }
-                        fullSpun = !fullSpun;
-                    }
-                    ferryWheel.transform.rotation = Quaternion.Euler(ferryWheel.transform.eulerAngles.x, ferryWheel.transform.eulerAngles.y, ferryWheel.transform.eulerAngles.z - 360f);
-                }
-                else
-                {
-                    fullSpun = false;
-                }
+                savedLocation = worldPos;
             }
-        }
-        else
-        {
-            usingWheel = false;
-            FindObjectOfType<AudioManager>().Pause("WheelTurn");
-            wheelSound = false;
-
-            if (fullSpinsCount > 0)
+            else if (mouseClicked.WasReleasedThisFrame())
             {
-                float rotateAmount = 90f * Time.deltaTime * (fullSpinsCount * 1.5f);
-                ferryWheel.transform.Rotate(Vector3.forward, -rotateAmount);
+                savedLocation = Vector3.zero;
+            }
 
-                if (Mathf.Abs(ferryWheel.transform.eulerAngles.z) <= 1f)
+            if (savedLocation != Vector3.zero)
+            {
+                if (worldPos.x < savedLocation.x || worldPos.y < savedLocation.y)
                 {
-                    if (!spunDown)
+                    usingWheel = true;
+
+                    if (!wheelSound)
                     {
-                        fullSpinsCount--;
-                        spunDown = !fullSpun;
+                        FindObjectOfType<AudioManager>().Play("WheelTurn");
+                        wheelSound = true;
                     }
-                }
-                else
-                {
-                    spunDown = false;
+
+                    ferryWheel.transform.Rotate(Vector3.forward, 60f * Time.deltaTime);
+                    if (Mathf.Abs(ferryWheel.transform.eulerAngles.z - 360f) <= 1f)
+                    {
+                        if (!fullSpun)
+                        {
+                            if (fullSpinsCount < 2)
+                            {
+                                fullSpinsCount = 2;
+                            }
+                            else
+                            {
+                                fullSpinsCount++;
+                            }
+                            fullSpun = !fullSpun;
+                        }
+                        ferryWheel.transform.rotation = Quaternion.Euler(ferryWheel.transform.eulerAngles.x, ferryWheel.transform.eulerAngles.y, ferryWheel.transform.eulerAngles.z - 360f);
+                    }
+                    else
+                    {
+                        fullSpun = false;
+                    }
                 }
             }
             else
             {
-                if (Mathf.Abs(ferryWheel.transform.eulerAngles.z) > 1f)
+                usingWheel = false;
+                FindObjectOfType<AudioManager>().Pause("WheelTurn");
+                wheelSound = false;
+
+                if (fullSpinsCount > 0)
                 {
-                    float rotateAmount = 60f * Time.deltaTime;
+                    float rotateAmount = 90f * Time.deltaTime * (fullSpinsCount * 1.5f);
                     ferryWheel.transform.Rotate(Vector3.forward, -rotateAmount);
+
+                    if (Mathf.Abs(ferryWheel.transform.eulerAngles.z) <= 1f)
+                    {
+                        if (!spunDown)
+                        {
+                            fullSpinsCount--;
+                            spunDown = !fullSpun;
+                        }
+                    }
+                    else
+                    {
+                        spunDown = false;
+                    }
                 }
                 else
                 {
-                    ferryWheel.transform.rotation = Quaternion.identity;
+                    if (Mathf.Abs(ferryWheel.transform.eulerAngles.z) > 1f)
+                    {
+                        float rotateAmount = 60f * Time.deltaTime;
+                        ferryWheel.transform.Rotate(Vector3.forward, -rotateAmount);
+                    }
+                    else
+                    {
+                        ferryWheel.transform.rotation = Quaternion.identity;
+                    }
                 }
             }
         }
