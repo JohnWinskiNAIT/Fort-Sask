@@ -26,6 +26,9 @@ public class MatchingScript : MonoBehaviour
 
     bool winSound;
 
+    bool gameComplete;
+    public GameObject gameCompleteCanvas;
+
     //public Animator transition;
 
     // Start is called before the first frame update
@@ -35,6 +38,9 @@ public class MatchingScript : MonoBehaviour
         selectedItem = "xdd";
         levelCounter = 1;
         winSound = true;
+
+        gameComplete = false;
+        gameCompleteCanvas.SetActive(false);
     }
 
     // Update is called once per frame
@@ -199,14 +205,18 @@ public class MatchingScript : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene(2);
+            levels[levelCounter - 1].SetActive(true);
+            directions[levelCounter - 1].SetActive(true);
+            CompletedGame();
         }
-
-
 
         nextLevelButton.SetActive(false);
     }
 
-
+    public void CompletedGame()
+    {
+        gameComplete = true;
+        gameCompleteCanvas.SetActive(true);
+    }
 
 }

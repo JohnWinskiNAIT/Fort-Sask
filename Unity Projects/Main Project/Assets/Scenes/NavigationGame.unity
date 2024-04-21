@@ -847,6 +847,7 @@ MonoBehaviour:
   - {fileID: 999336712}
   levelCounter: 0
   nextLevelButton: {fileID: 1887727776}
+  gameCompleteCanvas: {fileID: 687434049}
 --- !u!224 &226890817 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4666657129264674931, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
@@ -1984,6 +1985,267 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8741491184594780099, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
   m_PrefabInstance: {fileID: 672416102}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &687434047
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 941571651}
+    m_Modifications:
+    - target: {fileID: 1219799465170440280, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_Name
+      value: LobbyButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 2002534638438305038, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_Name
+      value: GoToMap
+      objectReference: {fileID: 0}
+    - target: {fileID: 2014669689327420754, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2014669689327420754, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2014669689327420754, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 2014669689327420754, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -175
+      objectReference: {fileID: 0}
+    - target: {fileID: 2433630889098651510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 2433630889098651510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 2433630889098651510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -131
+      objectReference: {fileID: 0}
+    - target: {fileID: 2433630889098651510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2707615237676605709, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: "           The rail line between Edmonton and Calgary wouldn\u2019t
+        be established until 1891, so settlers before then needed to use the Calgary
+        and Edmonton Trail.  It wouldn\u2019t be until 1905 that the Canadian Northern
+        Railway connected Fort Saskatchewan to a transcontinental line."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2786059901044692908, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 2786059901044692908, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2786059901044692908, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5049837692562150082, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 5049837692562150082, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5049837692562150082, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6422897808145986530, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_fontSize
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6422897808145986530, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728669002254822568, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_text
+      value: "\tThe rail line between Edmonton and Calgary wouldn\u2019t be established
+        until 1891, so settlers before then needed to use the Calgary and Edmonton
+        Trail.  It wouldn\u2019t be until 1905 that the Canadian Northern Railway
+        connected Fort Saskatchewan to a transcontinental line."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728669002254822568, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728669002254822568, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_margin.w
+      value: 89.95329
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728669002254822568, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_margin.x
+      value: 43.67491
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728669002254822568, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_margin.y
+      value: 63.783722
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728669002254822568, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_margin.z
+      value: 188.73395
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728669002254822568, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7612622028221352457, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_text
+      value: You found the landmarks!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7612622028221352457, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_fontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 7612622028221352457, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_margin.y
+      value: 29.797173
+      objectReference: {fileID: 0}
+    - target: {fileID: 7612622028221352457, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 8998636145865592939, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1983602561}
+    - target: {fileID: 8998636145865592939, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadMapScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9094230527803317622, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 636
+      objectReference: {fileID: 0}
+    - target: {fileID: 9094230527803317622, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 9094230527803317622, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 9094230527803317622, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 9094230527803317622, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 9094230527803317622, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 304
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+--- !u!224 &687434048 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+  m_PrefabInstance: {fileID: 687434047}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &687434049 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1219799465170440280, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+  m_PrefabInstance: {fileID: 687434047}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &693033579
 GameObject:
   m_ObjectHideFlags: 0
@@ -2197,6 +2459,7 @@ MonoBehaviour:
   - {fileID: 999336712}
   levelCounter: 0
   nextLevelButton: {fileID: 1887727776}
+  gameCompleteCanvas: {fileID: 687434049}
 --- !u!1 &754275286
 GameObject:
   m_ObjectHideFlags: 0
@@ -3097,6 +3360,7 @@ RectTransform:
   - {fileID: 2128955621}
   - {fileID: 150821170}
   - {fileID: 1676167482}
+  - {fileID: 687434048}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6616,6 +6880,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1983602562}
+    - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResumeButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: MSFinder
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: LevelFinder, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6637,6 +6933,67 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4666657129264674931, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
   m_PrefabInstance: {fileID: 212057151}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1983602559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1983602560}
+  - component: {fileID: 1983602561}
+  - component: {fileID: 1983602562}
+  m_Layer: 0
+  m_Name: GameSceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1983602560
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983602559}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 464.168, y: 701.01636, z: 3338.381}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1983602561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983602559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b475d06b54b66a4da4857aaf3ca161a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameProgress: {fileID: 0}
+--- !u!114 &1983602562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983602559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 326276d0703fa8b4993cb2e2d7e369ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelOne: {fileID: 1996217762}
+  levelTwo: {fileID: 222856014}
+  levelThree: {fileID: 727284935}
 --- !u!1 &1996217760
 GameObject:
   m_ObjectHideFlags: 0
@@ -6700,6 +7057,7 @@ MonoBehaviour:
   - {fileID: 999336712}
   levelCounter: 0
   nextLevelButton: {fileID: 1887727776}
+  gameCompleteCanvas: {fileID: 687434049}
 --- !u!1 &2013881250
 GameObject:
   m_ObjectHideFlags: 0
@@ -7433,3 +7791,4 @@ SceneRoots:
   - {fileID: 1745380764}
   - {fileID: 229426883}
   - {fileID: 1945907688}
+  - {fileID: 1983602560}
