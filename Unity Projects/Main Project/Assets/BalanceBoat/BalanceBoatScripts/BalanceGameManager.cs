@@ -21,6 +21,16 @@ public class BalanceGameManager : MonoBehaviour
     public GameObject mouseTracker;
     public GameObject lobbyButton;
 
+    [Header("Animation Stuff")]
+    public Animator clock;
+    public Animator waterOne;
+    public Animator waterTwo;
+    public Animator waterThree;
+    public Animator backArea;
+    public Rigidbody2D boxOne;
+    public Rigidbody2D boxTwo;
+    public Rigidbody2D boxThree;
+
     void Start()
     {
         hgl.enabled = false;
@@ -72,5 +82,18 @@ public class BalanceGameManager : MonoBehaviour
                 lobbyButton.SetActive(true);
             }
         }
+    }
+
+    public void StopTheAnimation()
+    {
+        clock.enabled = false;
+        waterOne.enabled = false;
+        waterTwo.enabled = false;
+        waterThree.enabled = false;
+        backArea.enabled = false;
+
+        boxOne.constraints = RigidbodyConstraints2D.FreezeAll;
+        boxTwo.constraints = RigidbodyConstraints2D.FreezeAll;
+        boxThree.constraints = RigidbodyConstraints2D.FreezeAll;
     }
 }

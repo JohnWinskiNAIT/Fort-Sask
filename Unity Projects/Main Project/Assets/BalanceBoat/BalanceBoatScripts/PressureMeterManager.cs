@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -8,6 +9,7 @@ public class PressureMeterManager : MonoBehaviour
     [Header("Object References")]
     public GameObject pressureNeedle;
     public GameObject mercuryBar;
+    public TMP_Text endScreen;
 
     [Header("Script References")]
     public WheelDragMotion wdm;
@@ -30,6 +32,8 @@ public class PressureMeterManager : MonoBehaviour
         MercuryBarMover();
 
         boxKept = Mathf.Clamp(boxKept, 0, 3);
+
+        SwitchTexts();
     }
 
     private void PressureNeedleMover()
@@ -58,6 +62,25 @@ public class PressureMeterManager : MonoBehaviour
         if (mercuryBar.transform.localScale.x >= 4)
         {
             wdm.controlledWheel = false;
+        }
+    }
+
+    private void SwitchTexts()
+    {
+        switch(boxKept)
+        {
+            case 0:
+                endScreen.text = "But you lost all of them...";
+                break;
+            case 1:
+                endScreen.text = "But you lost 2 crates";
+                break;
+            case 2:
+                endScreen.text = "But you lost a crate";
+                break;
+            default:
+                endScreen.text = "All in one piece, too!";
+                break;
         }
     }
 }
