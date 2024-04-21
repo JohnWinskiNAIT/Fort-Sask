@@ -29,6 +29,7 @@ public class GameStart : MonoBehaviour
     private bool winConPicked = false;
     bool winSound = true;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -137,7 +138,7 @@ public class GameStart : MonoBehaviour
                 FindAnyObjectByType<AudioManager>().Play("Win");
                 winSound = false;
             }
-            nextLevel.SetActive(true);
+            //nextLevel.SetActive(true);
         }
         else if (winCon == 0)
         {
@@ -157,4 +158,11 @@ public class GameStart : MonoBehaviour
         }
         return count;
     }
+
+    public void SkipGame()
+    {
+        winCon = 1;
+    }
+
+
 }
