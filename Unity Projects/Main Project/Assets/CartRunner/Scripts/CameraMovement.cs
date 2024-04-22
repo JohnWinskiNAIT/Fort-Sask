@@ -23,7 +23,7 @@ public class CameraMovement : MonoBehaviour
         {
             nextCam.GetComponent<Camera>().enabled = true;
             gameObject.GetComponent<Camera>().enabled = false;
-            button.SetActive(true);
+            //button.SetActive(true);
 
             if (playWin )
             {

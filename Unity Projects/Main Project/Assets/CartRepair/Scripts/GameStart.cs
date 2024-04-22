@@ -24,6 +24,8 @@ public class GameStart : MonoBehaviour
     [SerializeField]
     GameObject failMessage;
 
+    public GameObject loreInfo;
+
     int winCon = 2;
 
     private bool winConPicked = false;
@@ -33,6 +35,8 @@ public class GameStart : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        loreInfo.SetActive(false);
+
         startBoxes.SetActive(false);
         brokenTag = GameObject.Find("BrokenTag");
         CorrectBoxes = GameObject.Find("CorrectBoxes");
@@ -139,6 +143,8 @@ public class GameStart : MonoBehaviour
                 winSound = false;
             }
             //nextLevel.SetActive(true);
+
+            loreInfo.SetActive(true);
         }
         else if (winCon == 0)
         {
@@ -161,7 +167,8 @@ public class GameStart : MonoBehaviour
 
     public void SkipGame()
     {
-        winCon = 1;
+        winCon = 2;
+        showEnd();
     }
 
 

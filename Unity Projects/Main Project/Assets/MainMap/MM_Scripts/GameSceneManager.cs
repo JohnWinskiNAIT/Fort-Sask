@@ -18,6 +18,8 @@ public class GameSceneManager : MonoBehaviour
     //public void LoadEndingScene() { SceneManager.LoadScene(5); }
     //public void LoadDummy() { SceneManager.LoadScene(2); }
 
+    public void GoNext() { SceneManager.LoadScene(1); }
+
     public void LoadGameScene()
     {
         SceneManager.LoadScene(gameProgress.locationCount + 3);
