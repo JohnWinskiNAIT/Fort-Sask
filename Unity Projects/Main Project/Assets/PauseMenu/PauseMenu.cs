@@ -69,11 +69,13 @@ public class PauseMenu : MonoBehaviour
         {
             isMuted = true;
             GameObject.Find("MuteButton").GetComponent<Image>().sprite = audioSprites[1]; // muted
+            FindAnyObjectByType<AudioManager>().Mute();
         }
         else
         {
             isMuted = false;
             GameObject.Find("MuteButton").GetComponent<Image>().sprite = audioSprites[0]; // default, not muted
+            FindAnyObjectByType<AudioManager>().UnMute();
         }
        
     }
