@@ -8,12 +8,16 @@ public class EndSceneScript : MonoBehaviour
 
     private void Start()
     {
+        if (GameProgress.gpInstance != null)
+        {
+            GameProgress.gpInstance.locationCount = -1;
+        }
+
         StartCoroutine(ResetGame());
     }
 
     private IEnumerator ResetGame()
     {
         yield return new WaitForSeconds(35f);
-        gsm.LoadStartScene();
     }
 }
