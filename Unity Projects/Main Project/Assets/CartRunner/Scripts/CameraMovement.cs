@@ -6,9 +6,13 @@ public class CameraMovement : MonoBehaviour
     bool playWin = true;
     public GameObject button;
 
+    public GameObject loreInfo;
+
     private void Start()
     {
-        button.SetActive(false);
+        loreInfo.SetActive(false);
+
+        //button.SetActive(false);
     }
 
     private void FixedUpdate()
@@ -24,9 +28,15 @@ public class CameraMovement : MonoBehaviour
             if (playWin )
             {
                 FindAnyObjectByType<AudioManager>().Play("Win");
-                playWin = false;
+                CompletedGame();
             }
             FindAnyObjectByType<AudioManager>().AdjustVolume("HorseGalloping", -0.003f);
         }
+    }
+
+    public void CompletedGame()
+    {
+        playWin = false;
+        loreInfo.SetActive(true);
     }
 }

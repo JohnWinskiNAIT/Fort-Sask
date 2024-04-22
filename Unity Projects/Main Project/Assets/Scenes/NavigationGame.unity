@@ -1985,266 +1985,15 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8741491184594780099, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
   m_PrefabInstance: {fileID: 672416102}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &687434047
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 941571651}
-    m_Modifications:
-    - target: {fileID: 1219799465170440280, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_Name
-      value: LobbyButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 2002534638438305038, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_Name
-      value: GoToMap
-      objectReference: {fileID: 0}
-    - target: {fileID: 2014669689327420754, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 75
-      objectReference: {fileID: 0}
-    - target: {fileID: 2014669689327420754, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 75
-      objectReference: {fileID: 0}
-    - target: {fileID: 2014669689327420754, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 350
-      objectReference: {fileID: 0}
-    - target: {fileID: 2014669689327420754, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -175
-      objectReference: {fileID: 0}
-    - target: {fileID: 2433630889098651510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 2433630889098651510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 2433630889098651510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -131
-      objectReference: {fileID: 0}
-    - target: {fileID: 2433630889098651510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -20
-      objectReference: {fileID: 0}
-    - target: {fileID: 2707615237676605709, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: lines.Array.data[0]
-      value: "           The rail line between Edmonton and Calgary wouldn\u2019t
-        be established until 1891, so settlers before then needed to use the Calgary
-        and Edmonton Trail.  It wouldn\u2019t be until 1905 that the Canadian Northern
-        Railway connected Fort Saskatchewan to a transcontinental line."
-      objectReference: {fileID: 0}
-    - target: {fileID: 2786059901044692908, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 2786059901044692908, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 2786059901044692908, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -15
-      objectReference: {fileID: 0}
-    - target: {fileID: 5049837692562150082, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 5049837692562150082, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 5049837692562150082, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 6422897808145986530, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_fontSize
-      value: 45
-      objectReference: {fileID: 0}
-    - target: {fileID: 6422897808145986530, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 45
-      objectReference: {fileID: 0}
-    - target: {fileID: 6728669002254822568, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_text
-      value: "\tThe rail line between Edmonton and Calgary wouldn\u2019t be established
-        until 1891, so settlers before then needed to use the Calgary and Edmonton
-        Trail.  It wouldn\u2019t be until 1905 that the Canadian Northern Railway
-        connected Fort Saskatchewan to a transcontinental line."
-      objectReference: {fileID: 0}
-    - target: {fileID: 6728669002254822568, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 6728669002254822568, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_margin.w
-      value: 89.95329
-      objectReference: {fileID: 0}
-    - target: {fileID: 6728669002254822568, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_margin.x
-      value: 43.67491
-      objectReference: {fileID: 0}
-    - target: {fileID: 6728669002254822568, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_margin.y
-      value: 63.783722
-      objectReference: {fileID: 0}
-    - target: {fileID: 6728669002254822568, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_margin.z
-      value: 188.73395
-      objectReference: {fileID: 0}
-    - target: {fileID: 6728669002254822568, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 7612622028221352457, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_text
-      value: You found the landmarks!
-      objectReference: {fileID: 0}
-    - target: {fileID: 7612622028221352457, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_fontSize
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: 7612622028221352457, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_margin.y
-      value: 29.797173
-      objectReference: {fileID: 0}
-    - target: {fileID: 7612622028221352457, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: 8998636145865592939, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1983602561}
-    - target: {fileID: 8998636145865592939, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadMapScene
-      objectReference: {fileID: 0}
-    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9094230527803317622, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 636
-      objectReference: {fileID: 0}
-    - target: {fileID: 9094230527803317622, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 800
-      objectReference: {fileID: 0}
-    - target: {fileID: 9094230527803317622, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 9094230527803317622, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 9094230527803317622, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 9094230527803317622, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 304
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
 --- !u!224 &687434048 stripped
 RectTransform:
-  m_CorrespondingSourceObject: {fileID: 9025213427049889510, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-  m_PrefabInstance: {fileID: 687434047}
+  m_CorrespondingSourceObject: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+  m_PrefabInstance: {fileID: 4039995852083524083}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &687434049 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1219799465170440280, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
-  m_PrefabInstance: {fileID: 687434047}
+  m_CorrespondingSourceObject: {fileID: 280575268542160293, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+  m_PrefabInstance: {fileID: 4039995852083524083}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &693033579
 GameObject:
@@ -7782,6 +7531,121 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
+--- !u!1001 &4039995852083524083
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 941571651}
+    m_Modifications:
+    - target: {fileID: 280575268542160293, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_Name
+      value: LobbyButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3934515671628721392, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: "          The rail line between Edmonton and Calgary wouldn\u2019t
+        be established until 1891, so settlers before then needed to use the Calgary
+        and Edmonton Trail. It wouldn\u2019t be until 1905 that the Canadian Northern
+        Railway connected Fort Saskatchewan to a transcontinental line."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649867233318510933, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_text
+      value: "          The rail line between Edmonton and Calgary wouldn\u2019t
+        be established until 1891, so settlers before then needed to use the Calgary
+        and Edmonton Trail. It wouldn\u2019t be until 1905 that the Canadian Northern
+        Railway connected Fort Saskatchewan to a transcontinental line."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8063914464401563030, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1983602561}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

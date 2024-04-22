@@ -5139,6 +5139,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -420
       objectReference: {fileID: 0}
+    - target: {fileID: 2707615237676605709, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: "          Rivers across the prairies were used extensively by different
+        groups throughout history. Indigenous peoples used them for travel, hunting,
+        fishing, and arranging gathering points. When Europeans began expanding through
+        the territory, fur traders used rivers to transport goods and supplies between
+        Canada and Europe.\n          Once the North-West Mounted Police were established
+        in the area, rivers were used to transport officers and supplies between
+        forts using York-boats."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728669002254822568, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_text
+      value: "         Rivers across the prairies were used extensively by different
+        groups throughout history.  Indigenous peoples used them for travel, hunting,
+        fishing, and arranging gathering points.  When Europeans began expanding
+        through the territory, fur traders used rivers to transport goods and supplies
+        between Canada and Europe.  \n          Once the North-West Mounted Police
+        were established in the area, rivers were used to transport officers and
+        supplies between forts using York-boats."
+      objectReference: {fileID: 0}
     - target: {fileID: 6728669002254822568, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
       propertyPath: m_fontSize
       value: 70
