@@ -10,6 +10,7 @@ public class StartGame : MonoBehaviour
     public GameObject logo;
     public GameObject credits;
     public GameObject credsButton;
+    public GameObject exitButton;
 
     public GameSceneManager gsm;
 
@@ -19,6 +20,7 @@ public class StartGame : MonoBehaviour
         button.SetActive(false);
         logo.SetActive(false);
         credsButton.SetActive(false);
+        exitButton.SetActive(false);
 
         StartCoroutine(MoveToPacking());
     }
@@ -37,5 +39,10 @@ public class StartGame : MonoBehaviour
     public void CloseCreds()
     {
         credits.SetActive(false);
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }
