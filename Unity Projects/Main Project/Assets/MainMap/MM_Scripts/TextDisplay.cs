@@ -12,7 +12,7 @@ public class TextDisplay : MonoBehaviour
 
     [SerializeField] private TMP_Text historyInfo;
 
-    [SerializeField] private List<string> testText;
+    [SerializeField][TextArea(5, 50)] private List<string> testText;
 
     private int cVIndex;
     private Coroutine typewriterCoroutine;

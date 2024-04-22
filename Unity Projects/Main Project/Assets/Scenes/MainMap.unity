@@ -1401,26 +1401,29 @@ MonoBehaviour:
     m_Flags: 0
   historyInfo: {fileID: 2079687808}
   testText:
-  - Settlers arriving in Alberta would bring what they needed to start a homestead. 
-    Cookware, building tools, seeds for planting, farming equipment and family heirlooms
-    were common items families would bring to live on the prairies.  Anything else
-    would be built or bought from traders in their new communities.
-  - "The rail line between Edmonton and Calgary wouldn\u2019t be established until
-    1891, so settlers before then needed to use the Calgary and Edmonton Trail. 
-    It wouldn\u2019t be until 1905 that the Canadian Northern Railway connected Fort
-    Saskatchewan to a transcontinental line."
-  - With stagecoaches and carts being the main mode of transportation, it was only
-    a matter of time until their wooden parts would wear out from the bumpy trails. 
-    Travellers needed to make quick repairs with what they had on hand to get to
-    their destinations, including any local wood they could find.
-  - "The Red River cart was the vehicle of choice by most travellers in the area,
-    especially the M\xE9tis.  Connecting them together in long cart-trains called
-    brigades, they could haul hundreds of kilos worth of freight across the prairies. 
-    They could even have their wheels removed to float them across rivers!"
-  - Crossing the North Saskatchewan River could be very dangerous without a boat. 
-    Before the first bridge in the area was built, Frank and Joe Lamoureux established
-    a ferry service in 1882, providing safe passage for settlers and supplies on
-    their way to Fort Saskatchewan.
+  - '          The Calgary and Edmonton Trail which linked the two cities (now Highway
+    2) passed through the vast prairies, forest, and muskegs of southern Alberta. 
+    The trails in the area were originally carved out by Indigenous peoples for transport,
+    trade, and following bison herds. This land makes up the historic territory of
+    the Treaty 6 and Treaty 7 First Nations. '
+  - '          With stagecoaches and carts being the main mode of transportation,
+    it was only a matter of time until their wooden parts would wear out from the
+    bumpy trails.  Travellers needed to make quick repairs with what they had on
+    hand to get to their destinations, including any local wood they could find.'
+  - '          Though the North Saskatchewan River runs between Edmonton and Fort
+    Saskatchewan, The Old Fort Trail was the main transport route used by settlers.
+    The trail was used extensively, with hundreds of wagon teams on the trail daily.
+    Carts and horses had difficulty navigating the bumpy, unkempt road.'
+  - '          Crossing the North Saskatchewan River could be very dangerous without
+    a boat.  Before the first bridge in the area was built, Frank and Joe Lamoureux
+    established a ferry service in 1882, providing safe passage for settlers and
+    supplies on their way to Fort Saskatchewan.'
+  - "          After weeks of travel, your settler family has made it to Fort Saskatchewan! 
+    Despite these challenges you\u2019ve faced trying to make your way across the
+    prairies, your family can now build their homestead and start their new life
+    on the prairies. Though the railroad would eventually make travel much easier,
+    early settlers went through great difficulty for the chance to make Fort Saskatchewan
+    their home."
   charactersPerSecond: 30
   interepunctuationDelay: 0.5
   interepunctuationDelay2: 0.25
