@@ -10,6 +10,7 @@ public class PressureMeterManager : MonoBehaviour
     public GameObject pressureNeedle;
     public GameObject mercuryBar;
     public TMP_Text endScreen;
+    public GameObject wheelBroke;
 
     [Header("Script References")]
     public WheelDragMotion wdm;
@@ -23,6 +24,7 @@ public class PressureMeterManager : MonoBehaviour
     void Start()
     {
         boxKept = 3;
+        wheelBroke.SetActive(false);
     }
 
     void Update()
@@ -62,6 +64,7 @@ public class PressureMeterManager : MonoBehaviour
         if (mercuryBar.transform.localScale.x >= 4)
         {
             wdm.controlledWheel = false;
+            wheelBroke.SetActive(true);
         }
     }
 
