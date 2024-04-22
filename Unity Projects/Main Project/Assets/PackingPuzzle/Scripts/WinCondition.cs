@@ -6,11 +6,13 @@ public class WinCondition : MonoBehaviour
 {
     PackingPuzzleManager manager;
     public GameObject button;
+    public GameObject loreInfo;
     bool playable = true;
 
     private void Start()
     {
         manager = PackingPuzzleManager.Instance;
+        loreInfo.SetActive(false);
         button.SetActive(false);
     }
 
@@ -18,7 +20,7 @@ public class WinCondition : MonoBehaviour
     {
         bool win = true;
         //If all grid pieces are covered
-        foreach(GridPoint point in manager.gridPoints)
+        foreach (GridPoint point in manager.gridPoints)
         {
             if (point.GetActivity())
             {
@@ -33,7 +35,13 @@ public class WinCondition : MonoBehaviour
                 FindAnyObjectByType<AudioManager>().Play("Win");
                 playable = false;
             }
-            button.SetActive(true);
+            //button.SetActive(true);
+            CompleteGame();
         }
-   }
+    }
+
+    public void CompleteGame()
+    {
+        loreInfo.SetActive(true);
+    }
 }
