@@ -35,17 +35,17 @@ public class WheelDragMotion : MonoBehaviour
     void Update()
     {
         #region Wheel Controller
-        screenMousePos = mouseTracker.ReadValue<Vector2>();
-        worldPos = cam.ScreenToWorldPoint(new Vector3(screenMousePos.x, screenMousePos.y, cam.nearClipPlane));
+        //screenMousePos = mouseTracker.ReadValue<Vector2>();
+        worldPos = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, cam.nearClipPlane));
         worldPos.z = 0f;
 
         if (controlledWheel)
         {
-            if (mouseClicked.WasPressedThisFrame())
+            if (Input.GetMouseButtonDown(0))
             {
                 savedLocation = worldPos;
             }
-            else if (mouseClicked.WasReleasedThisFrame())
+            else if (Input.GetMouseButtonUp(0))
             {
                 savedLocation = Vector3.zero;
             }
