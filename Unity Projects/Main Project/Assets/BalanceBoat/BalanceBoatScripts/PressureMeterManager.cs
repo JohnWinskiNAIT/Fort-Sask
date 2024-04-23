@@ -70,6 +70,7 @@ public class PressureMeterManager : MonoBehaviour
 
     private void SwitchTexts()
     {
+        endScreen.text = string.Empty;
         switch(boxKept)
         {
             case 0:
