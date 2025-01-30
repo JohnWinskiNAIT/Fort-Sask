@@ -1,3 +1,7 @@
+# common hidden files for file explorers that store folder view settings
+.DS_Store
+Desktop.ini
+
 # This .gitignore file should be placed at the root of your Unity project directory
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
