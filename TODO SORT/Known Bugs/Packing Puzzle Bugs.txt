@@ -1,3 +1,4 @@
 Bugs:
 
 - Pieces are able to overlap eachother
+- not all possble solutions activates the win condation
