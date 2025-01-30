@@ -1,4 +1,8 @@
 Bugs:
 
 - Pieces are able to overlap eachother
+<<<<<<< Updated upstream
 - not all possble solutions activates the win condation
+=======
+- not all possible solutions brings up the win condation
+>>>>>>> Stashed changes
