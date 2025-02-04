@@ -34,11 +34,13 @@ public class StartGame : MonoBehaviour
     public void ShowCreds()
     {
         credits.SetActive(true);
+		exitButton.SetActive(false);
     }
 
     public void CloseCreds()
     {
         credits.SetActive(false);
+		exitButton.SetActive(true);
     }
 
     public void ExitGame()
