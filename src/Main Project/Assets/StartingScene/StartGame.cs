@@ -11,8 +11,11 @@ public class StartGame : MonoBehaviour
     public GameObject credits;
     public GameObject credsButton;
     public GameObject exitButton;
+    public GameObject skipButton;
 
     public GameSceneManager gsm;
+	
+	bool isPlayingCutscene;
 
     public void PlayGame()
     {
@@ -23,7 +26,23 @@ public class StartGame : MonoBehaviour
         exitButton.SetActive(false);
 
         StartCoroutine(MoveToPacking());
+		
+		isPlayingCutscene = true;
     }
+	
+	void Update()
+	{
+		if (isPlayingCutscene && Input.GetMouseButtonDown(0))
+		{
+			skipButton.SetActive(true);
+		}
+	}
+	
+	public void MoveToPackingInstant()
+	{
+		StopCoroutine(MoveToPacking());
+		gsm.GoNext();
+	}
 
     private IEnumerator MoveToPacking()
     {
