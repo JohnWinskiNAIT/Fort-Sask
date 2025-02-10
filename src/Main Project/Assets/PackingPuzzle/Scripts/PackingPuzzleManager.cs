@@ -7,7 +7,8 @@ public class PackingPuzzleManager : MonoBehaviour
 {
     public static PackingPuzzleManager Instance;
 
-    public List<GridPoint> gridPoints = new List<GridPoint>();
+    // public List<GridPoint> gridPoints = new List<GridPoint>();
+	public GridPoint[,] grid;
     public float cellSize;
 
     public UnityEvent resetEvent;
@@ -24,10 +25,10 @@ public class PackingPuzzleManager : MonoBehaviour
     public void InvokeReset()
     {
         resetEvent.Invoke();
-        foreach (GridPoint p in gridPoints)
-        {
-            p.SetActivity(true);
-        }
+        // foreach (GridPoint p in gridPoints)
+        // {
+        //     p.SetActivity(true);
+        // }
     }
 }
 
