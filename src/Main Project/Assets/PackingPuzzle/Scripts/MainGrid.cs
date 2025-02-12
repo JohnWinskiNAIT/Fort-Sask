@@ -27,18 +27,21 @@ public class MainGrid : MonoBehaviour
         Vector2 originPoint = centerPoint - new Vector2(gridWidth / 2, -gridHeight / 2);
         originPoint.y -= cellHeight / 2;
         originPoint.x += cellWidth / 2;
+		
+		manager.grid = new GridPoint[widthCellNumber, heightCellNumber];
         
         //Iterate through grid cells to make each grid point and stores in a list in the game manager script
-        for (int i = 0; i < heightCellNumber; i++)
+        for (int x = 0; x < widthCellNumber; x++)
         {
-            for (int j = 0; j < widthCellNumber; j++)
+            for (int y = 0; y < heightCellNumber; y++)
             {
-                GridPoint newPoint = new GridPoint(new Vector2(originPoint.x, originPoint.y));
-                manager.gridPoints.Add(newPoint);
-                originPoint.x += cellWidth;
+                GridPoint newPoint = new GridPoint(new Vector2(originPoint.x + cellWidth * (x - 0.5f), originPoint.y - cellHeight * (y + 0.5f)));
+                // manager.gridPoints.Add(newPoint);
+				manager.grid[x,y] = newPoint;
+                // originPoint.x += cellWidth;
             }
-            originPoint.x -= cellWidth * (widthCellNumber);
-            originPoint.y -= cellHeight;
+            // originPoint.x -= cellWidth;
+            // originPoint.y -= cellHeight;
         }
     }
 }

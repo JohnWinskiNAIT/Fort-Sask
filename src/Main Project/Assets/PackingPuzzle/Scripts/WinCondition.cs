@@ -16,11 +16,11 @@ public class WinCondition : MonoBehaviour
         button.SetActive(false);
     }
 
-    private void Update()
+    private void Update() //todo fix this later
     {
         bool win = true;
         //If all grid pieces are covered
-        foreach (GridPoint point in manager.gridPoints)
+        foreach (GridPoint point in manager.grid)
         {
             if (point.GetActivity())
             {
