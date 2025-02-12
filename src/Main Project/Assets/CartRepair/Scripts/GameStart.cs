@@ -24,6 +24,8 @@ public class GameStart : MonoBehaviour
     [SerializeField]
     GameObject failMessage;
 
+    
+
     public GameObject loreInfo;
 
     int winCon = 2;
@@ -62,7 +64,7 @@ public class GameStart : MonoBehaviour
             }
         }
 
-        if (GameObject.Find("CorrectBoxes").transform.GetChild(1).gameObject.transform.childCount > 0)
+        if (GameObject.Find("CorrectBoxes").transform.GetChild(2).gameObject.transform.childCount > 0)
         {
             checkWinCon();
         }
