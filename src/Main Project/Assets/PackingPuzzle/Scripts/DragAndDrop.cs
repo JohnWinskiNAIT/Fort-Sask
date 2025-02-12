@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEditor.Rendering;
 using UnityEngine;
@@ -15,6 +16,10 @@ public class DragAndDrop : MonoBehaviour
 	
 	[TextArea(5,5)]
 	public string collisionGrid; //parsed into bool[,] later
+	
+	//used for fixing relative z ordering of drag n droppable objects
+	const float Z_ORDER_MAX = 0f;
+	const float Z_ORDER_MIN = -1f;
 
     private void Start()
     {
@@ -77,6 +82,13 @@ public class DragAndDrop : MonoBehaviour
             myPiece.MovePoints(transform);
         }
     }
+	
+	int CompareDragDroppable(DragAndDrop a, DragAndDrop b)
+	{
+		float ia = a.gameObject.transform.position.z;
+		float ib = b.gameObject.transform.position.z;
+		return ia > ib ? 1 : ia == ib ? 0 : -1;
+	}
 
     public void OnMouseDown()
     {
@@ -94,7 +106,19 @@ public class DragAndDrop : MonoBehaviour
                 }
             }
         }
-        myPiece.usedGridPoints = new List<GridPoint>();
+        myPiece.ClearGridPoints();
+		
+		//re-shuffle z ordering of all drag n drop things so that the more recently clicked objects are layered on top
+		this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, Z_ORDER_MIN - 1f);
+		
+		DragAndDrop[] draggables = FindObjectsByType<DragAndDrop>(FindObjectsSortMode.None);
+		Array.Sort(draggables, CompareDragDroppable);
+		
+		for (int i = 0; i < draggables.Length; i++)
+		{
+			Vector3 pos = draggables[i].gameObject.transform.position;
+			draggables[i].gameObject.transform.position = new Vector3(pos.x, pos.y, Z_ORDER_MIN + (Z_ORDER_MAX - Z_ORDER_MIN) * (i / (float)(draggables.Length - 1)));
+		}
     }
 
     public void OnMouseUp()
