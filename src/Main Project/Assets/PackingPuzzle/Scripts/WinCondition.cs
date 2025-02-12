@@ -18,26 +18,26 @@ public class WinCondition : MonoBehaviour
 
     private void Update() //todo fix this later
     {
-        // bool win = true;
-        // //If all grid pieces are covered
-        // foreach (GridPoint point in manager.gridPoints)
-        // {
-        //     if (point.GetActivity())
-        //     {
-        //         win = false;
-        //     }
-        // }
+        bool win = true;
+        //If all grid pieces are covered
+        foreach (GridPoint point in manager.grid)
+        {
+            if (point.GetActivity())
+            {
+                win = false;
+            }
+        }
 
-        // if (win)
-        // {
-        //     if (playable)
-        //     {
-        //         FindAnyObjectByType<AudioManager>().Play("Win");
-        //         playable = false;
-        //     }
-        //     //button.SetActive(true);
-        //     CompleteGame();
-        // }
+        if (win)
+        {
+            if (playable)
+            {
+                FindAnyObjectByType<AudioManager>().Play("Win");
+                playable = false;
+            }
+            //button.SetActive(true);
+            CompleteGame();
+        }
     }
 
     public void CompleteGame()

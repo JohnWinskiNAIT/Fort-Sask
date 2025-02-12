@@ -105,6 +105,15 @@ public class Piece
 			}
 		}
 	}
+	
+	public void ClearGridPoints()
+	{
+		foreach (GridPoint p in usedGridPoints)
+		{
+			p.SetActivity(true);
+		}
+		usedGridPoints = new();
+	}
 
     //Function to snap the piece into the grid
     public void SnapPiece(GameObject piece)
@@ -149,22 +158,46 @@ public class Piece
 		{
 			//ok so we need to verify that everything is a) fully in bounds and b) not occupied
 			//position of piece in board
-			Debug.Log(bestData.Item2 + " a " + bestData.Item3);
-			Debug.Log(bestX + " b " + bestY);
 			int pieceX = bestData.Item2 - bestX;
 			int pieceY = bestData.Item3 - bestY;
-			Debug.Log(pieceX + " p " + pieceY);
 			//verify that we're in bounds
 			if (pieceX > -1 && pieceY > -1 && pieceX + points.GetLength(0) <= manager.grid.GetLength(0) && pieceY + points.GetLength(1) <= manager.grid.GetLength(1))
 			{
-				
-				//snap
-				piece.transform.position = bestData.Item1.GetGridPoint().GetPosition() - bestPoint.GetOffset();
-				foreach (Point p in points)
+				//check if we can actually go there
+				bool canPlaceHere = true;
+				for (int dx = 0; dx < points.GetLength(0); dx++)
 				{
-					p?.Move(piece.transform);
+					for (int dy = 0; dy < points.GetLength(1); dy++)
+					{
+						if (points[dx, dy] is not null && !manager.grid[pieceX + dx, pieceY + dy].GetActivity())
+						{
+							canPlaceHere = false;
+						}
+					}
 				}
-				//todo mark points as occupied
+				
+				if (canPlaceHere)
+				{
+					//snap
+					piece.transform.position = bestData.Item1.GetGridPoint().GetPosition() - bestPoint.GetOffset();
+					foreach (Point p in points)
+					{
+						p?.Move(piece.transform);
+					}
+					//mark points as occupied
+					for (int dx = 0; dx < points.GetLength(0); dx++)
+					{
+						for (int dy = 0; dy < points.GetLength(1); dy++)
+						{
+							if (points[dx, dy] is not null)
+							{
+								GridPoint p = manager.grid[pieceX + dx, pieceY + dy];
+								p.SetActivity(false);
+								usedGridPoints.Add(manager.grid[pieceX + dx, pieceY + dy]);
+							}
+						}
+					}
+				}
 			}
 		}
 		
