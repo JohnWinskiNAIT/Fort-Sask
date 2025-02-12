@@ -28,7 +28,7 @@ public class GameStart : MonoBehaviour
 
     int winCon = 2;
 
-    private bool winConPicked = false;
+    public bool winConPicked = false;
     bool winSound = true;
 
 
@@ -40,7 +40,7 @@ public class GameStart : MonoBehaviour
         startBoxes.SetActive(false);
         brokenTag = GameObject.Find("BrokenTag");
         CorrectBoxes = GameObject.Find("CorrectBoxes");
-        GameObject.Find("WheelPin").GetComponent<Image>().raycastTarget = false;
+        GameObject.Find("WheelPin").GetComponent<Image>().raycastTarget = true;
 
         generateBrokenPart();
     }
@@ -56,9 +56,9 @@ public class GameStart : MonoBehaviour
             // If the grandchild is found, do something
             if (winConPicked)
             {
-                startBoxes.SetActive(false);
-                gameObject.GetComponent<Button>().enabled = false;
-                GameObject.Find("WheelPin").GetComponent<Image>().raycastTarget = true;
+                //startBoxes.SetActive(false);
+                //gameObject.GetComponent<Button>().enabled = false;
+                //GameObject.Find("WheelPin").GetComponent<Image>().raycastTarget = true;
             }
         }
 
@@ -67,7 +67,7 @@ public class GameStart : MonoBehaviour
             checkWinCon();
         }
 
-        
+
     }
 
     public void generateBrokenPart()
@@ -106,9 +106,10 @@ public class GameStart : MonoBehaviour
             if (child.childCount > 0)
             {
                 winConPicked = true;
-                GameObject.Find("Glow").SetActive(false);
+                //GameObject.Find("Glow").SetActive(false);
             }
         }
+       
     }
 
     void checkWinCon()

@@ -916,6 +916,7 @@ MonoBehaviour:
   nextLevel: {fileID: 744601372}
   failMessage: {fileID: 1374989103}
   loreInfo: {fileID: 825001134}
+  winConPicked: 0
 --- !u!114 &415090850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2067,6 +2068,10 @@ PrefabInstance:
         the prairies. They could even have their wheels removed to float them across
         rivers!"
       objectReference: {fileID: 0}
+    - target: {fileID: 6104773193366266154, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2491,7 +2496,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1220337264
 RectTransform:
   m_ObjectHideFlags: 0
