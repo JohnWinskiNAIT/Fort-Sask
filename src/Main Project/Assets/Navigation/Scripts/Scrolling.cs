@@ -13,7 +13,8 @@ public class Scrolling : MonoBehaviour
     public GameObject centerTransform;
     public GameObject rightTransform;
 
-
+    public GameObject leftButton;
+    public GameObject rightButton;
 
     // Start is called before the first frame update
     void Start()
@@ -36,14 +37,21 @@ public class Scrolling : MonoBehaviour
         {
             case 1:
                 currentLevel.transform.position = leftTransform.transform.position;
+                // Removes button when on far right panel - Michael Taylor / Feb 12th 2025
+                rightButton.SetActive(false);
                 break;
 
             case 2:
                 currentLevel.transform.position = centerTransform.transform.position;
+                // Add buttons back in when on center panel - Michael Taylor / Feb 12th 2025
+                leftButton.SetActive(true);
+                rightButton.SetActive(true);
                 break;
 
             case 3:
                 currentLevel.transform.position = rightTransform.transform.position;
+                // Removes button when on far left panel - Michael Taylor / Feb 12th 2025
+                leftButton.SetActive(false);
                 break;
         }
     }
