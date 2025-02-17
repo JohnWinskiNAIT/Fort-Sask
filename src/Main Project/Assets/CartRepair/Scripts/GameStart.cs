@@ -24,6 +24,8 @@ public class GameStart : MonoBehaviour
     [SerializeField]
     GameObject failMessage;
 
+    
+
     public GameObject loreInfo;
 
     int winCon = 2;
@@ -62,7 +64,7 @@ public class GameStart : MonoBehaviour
             }
         }
 
-        if (GameObject.Find("CorrectBoxes").transform.GetChild(1).gameObject.transform.childCount > 0)
+        if (GameObject.Find("CorrectBoxes").transform.GetChild(2).gameObject.transform.childCount > 0)
         {
             checkWinCon();
         }
@@ -72,7 +74,9 @@ public class GameStart : MonoBehaviour
 
     public void generateBrokenPart()
     {
-        int partIndex = 1;
+        //int partIndex = 1;
+        //added random
+        int partIndex = Random.Range(1,4);
         GameObject whichPart = GameObject.Find("StartParent").transform.GetChild(partIndex - 1).gameObject;
 
         Debug.Log(partIndex);
