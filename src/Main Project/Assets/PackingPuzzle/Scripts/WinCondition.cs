@@ -43,5 +43,6 @@ public class WinCondition : MonoBehaviour
     public void CompleteGame()
     {
         loreInfo.SetActive(true);
+		manager.DisableReset();
     }
 }

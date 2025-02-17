@@ -10,6 +10,7 @@ public class PackingPuzzleManager : MonoBehaviour
     // public List<GridPoint> gridPoints = new List<GridPoint>();
 	public GridPoint[,] grid;
     public float cellSize;
+	bool allowReset = true;
 
     public UnityEvent resetEvent;
 
@@ -24,12 +25,20 @@ public class PackingPuzzleManager : MonoBehaviour
     //Reset piece locations and enable all grint points
     public void InvokeReset()
     {
-        resetEvent.Invoke();
-        foreach (GridPoint p in grid)
-        {
-            p.SetActivity(true);
-        }
+		if (allowReset)
+		{
+	        resetEvent.Invoke();
+	        foreach (GridPoint p in grid)
+	        {
+	            p.SetActivity(true);
+	        }
+		}
     }
+	
+	public void DisableReset()
+	{
+		allowReset = false;
+	}
 }
 
 public class GridPoint
