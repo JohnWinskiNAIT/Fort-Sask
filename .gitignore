@@ -2,6 +2,9 @@
 .DS_Store
 Desktop.ini
 
+#unity. why.
+desktop.ini.meta
+
 #vscode specific
 .vscode
 
