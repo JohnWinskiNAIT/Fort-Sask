@@ -3819,7 +3819,7 @@ MonoBehaviour:
   m_Texture: {fileID: 2800000, guid: 6a4befe457afd174f8a684a868b086cd, type: 3}
   m_UVRect:
     serializedVersion: 2
-    x: 0.02
+    x: 0
     y: 0
     width: 1
     height: 1

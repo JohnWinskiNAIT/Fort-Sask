@@ -74,7 +74,9 @@ public class GameStart : MonoBehaviour
 
     public void generateBrokenPart()
     {
-        int partIndex = 1;
+        //int partIndex = 1;
+        //added random
+        int partIndex = Random.Range(1,4);
         GameObject whichPart = GameObject.Find("StartParent").transform.GetChild(partIndex - 1).gameObject;
 
         Debug.Log(partIndex);
