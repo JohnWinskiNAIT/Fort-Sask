@@ -70,6 +70,12 @@ public class MatchingScript : MonoBehaviour
             }
 
         }
+
+        else
+        {
+            selectedDirection = "xd";
+            selectedItem = "xdd";
+        }
     }
 
     public void checkDirection()
