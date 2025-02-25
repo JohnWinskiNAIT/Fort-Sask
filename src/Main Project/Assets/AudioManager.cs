@@ -5,7 +5,8 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
-
+	public static bool isMuted;
+	
     private void Awake()
     {
         foreach (Sound s in sounds)
@@ -17,6 +18,7 @@ public class AudioManager : MonoBehaviour
             s.source.pitch = s.pitch;
 
             s.source.loop = s.loop;
+			s.source.mute = isMuted;
         }
     }
 
@@ -42,15 +44,17 @@ public class AudioManager : MonoBehaviour
     {
         foreach(Sound s in sounds)
         {
-            s.source.volume = 0;
+            s.source.mute = true;
         }
+		isMuted = true;
     }
 
     public void UnMute()
     {
         foreach (Sound s in sounds)
         {
-            s.source.volume = 1;
+            s.source.mute = false;
         }
+		isMuted = false;
     }
 }

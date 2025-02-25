@@ -18,7 +18,7 @@ public class PauseMenu : MonoBehaviour
     void Start()
     {
         isPaused = false;
-        isMuted = false;
+        isMuted = AudioManager.isMuted;
 
     }
 
@@ -88,6 +88,7 @@ public class PauseMenu : MonoBehaviour
             Time.timeScale = 0f;
             PauseMenuParent.SetActive(true);
             isPaused = true;
+			GameObject.Find("MuteButton").GetComponent<Image>().sprite = audioSprites[isMuted ? 1 : 0];
         }
         else
         {
