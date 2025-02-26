@@ -94,18 +94,18 @@ public class DragAndDrop : MonoBehaviour
     {
         isDragging = true;
 		dragOffset = transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        //Re-enable Grid point activity when the corelating piece is moved
-        foreach (GridPoint gridPoint in myPiece.usedGridPoints)
-        {
-            // foreach (GridPoint managerGridPoint in manager.gridPoints)
-			foreach (GridPoint managerGridPoint in manager.grid)
-            {
-                if (gridPoint.GetPosition() == managerGridPoint.GetPosition())
-                {
-                    managerGridPoint.SetActivity(true);
-                }
-            }
-        }
+        // //Re-enable Grid point activity when the corelating piece is moved
+        // foreach (GridPoint gridPoint in myPiece.usedGridPoints)
+        // {
+        //     // foreach (GridPoint managerGridPoint in manager.gridPoints)
+		// 	foreach (GridPoint managerGridPoint in manager.grid)
+        //     {
+        //         if (gridPoint.GetPosition() == managerGridPoint.GetPosition())
+        //         {
+        //             managerGridPoint.SetActivity(true);
+        //         }
+        //     }
+        // }
         myPiece.ClearGridPoints();
 		
 		//re-shuffle z ordering of all drag n drop things so that the more recently clicked objects are layered on top

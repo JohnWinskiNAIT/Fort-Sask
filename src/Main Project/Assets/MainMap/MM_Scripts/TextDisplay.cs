@@ -56,7 +56,8 @@ public class TextDisplay : MonoBehaviour
         {
             if (historyInfo.maxVisibleCharacters != historyInfo.textInfo.characterCount - 1)
             {
-                SkipText();
+                // SkipText();
+				InstantSkipText();
             }
         }
 
@@ -88,6 +89,20 @@ public class TextDisplay : MonoBehaviour
             mapProg.textLaidOut = false;
         }
     }
+	
+	//immediately show all text
+	void InstantSkipText()
+	{
+		if (typewriterCoroutine != null)
+		{
+			StopCoroutine(typewriterCoroutine);
+		}
+		
+		TMP_TextInfo textInfo = historyInfo.textInfo;
+		
+		cVIndex = textInfo.characterCount - 1;
+		historyInfo.maxVisibleCharacters = cVIndex;
+	}
 
     private IEnumerator SkipSpeedupReset()
     {

@@ -81,7 +81,7 @@ public class Point
 	            }
 			}
 		}
-		Debug.Log(bestX + "  " + bestY);
+		// Debug.Log(bestX + "  " + bestY);
         return new Tuple<GridData, int, int>(thisData, bestX, bestY);
 	}
 }

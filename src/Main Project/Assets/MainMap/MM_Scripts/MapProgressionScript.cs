@@ -47,7 +47,7 @@ public class MapProgressionScript : MonoBehaviour
     void Update()
     {
         // Progresses after clicking anywhere
-        if (progressClick.WasPressedThisFrame() 
+        if (true //progressClick.WasPressedThisFrame() //needing to explicitly click to move to the next area is odd.
             && GameProgress.gpInstance.locationCount < 5 
             && !textLaidOut // Prevents the player from spam tapping/clicking
             && !GameProgress.gpInstance.played) // Hard stop for players from progressing until they play
@@ -95,7 +95,7 @@ public class MapProgressionScript : MonoBehaviour
         // Moves the icon towards the designated location
         playerCart.transform.position = Vector3.MoveTowards(playerCart.transform.position, 
             mapMarkers[GameProgress.gpInstance.locationCount].transform.position,
-            10 * Time.deltaTime);
+            2 * Time.deltaTime);
 
         // Will constantly shift the player icon until it reaches the main location
         if (playerCart.transform.position == mapMarkers[GameProgress.gpInstance.locationCount].transform.position)
