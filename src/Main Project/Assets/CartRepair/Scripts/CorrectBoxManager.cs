@@ -22,7 +22,7 @@ public class CorrectBoxManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (startParent.transform.childCount == 0)
+        if (startParent.transform.childCount == 1)
         {
             WheelBox.SetActive(true);
         }

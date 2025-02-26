@@ -8,6 +8,7 @@ public class MoveScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
 {
     public Image image;
     [HideInInspector] public Transform parentAfterDrag;
+    [SerializeField] GameObject startinglocation;
 
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -30,6 +31,13 @@ public class MoveScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     {
         //set transform back
         transform.SetParent(parentAfterDrag);
+
+        //checks to see if at the start the item is place in a item box on enddrop
+        if (!(parentAfterDrag.tag == "ItemBox"))
+        {
+            gameObject.transform.position = startinglocation.transform.position;
+            Debug.Log("check");
+        }
 
         if (gameObject.tag == "Pin"  && parentAfterDrag.name == "CorrectPinBox")
         {
