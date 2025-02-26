@@ -858,7 +858,7 @@ PrefabInstance:
     - target: {fileID: 3488057542689684326, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
       propertyPath: m_SpriteState.m_DisabledSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 2d33f8f4dfe8ea24386fe708cb91020c, type: 3}
+      objectReference: {fileID: 21300000, guid: 9c682a3f92202384aab902c6c8c14a7b, type: 3}
     - target: {fileID: 3659239410666043911, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
       propertyPath: m_Name
       value: Item1
@@ -4950,7 +4950,7 @@ PrefabInstance:
     - target: {fileID: 3488057542689684326, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
       propertyPath: m_SpriteState.m_DisabledSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 2d33f8f4dfe8ea24386fe708cb91020c, type: 3}
+      objectReference: {fileID: 21300000, guid: a9bb5d492f6e65c49aa7096f7f54fbb5, type: 3}
     - target: {fileID: 3659239410666043911, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
       propertyPath: m_Name
       value: Item2
@@ -5311,7 +5311,7 @@ PrefabInstance:
     - target: {fileID: 3488057542689684326, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
       propertyPath: m_SpriteState.m_DisabledSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 2d33f8f4dfe8ea24386fe708cb91020c, type: 3}
+      objectReference: {fileID: 21300000, guid: 06163bad9d2e0754dabfb88e90a8a822, type: 3}
     - target: {fileID: 3659239410666043911, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
       propertyPath: m_Name
       value: dSkull
@@ -5460,7 +5460,7 @@ PrefabInstance:
     - target: {fileID: 3488057542689684326, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
       propertyPath: m_SpriteState.m_DisabledSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 2d33f8f4dfe8ea24386fe708cb91020c, type: 3}
+      objectReference: {fileID: 21300000, guid: 8aa5bbf542490ba4da119c79fc4732f9, type: 3}
     - target: {fileID: 3659239410666043911, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
       propertyPath: m_Name
       value: dMountain
@@ -5974,7 +5974,7 @@ PrefabInstance:
     - target: {fileID: 3488057542689684326, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
       propertyPath: m_SpriteState.m_DisabledSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 2d33f8f4dfe8ea24386fe708cb91020c, type: 3}
+      objectReference: {fileID: 21300000, guid: 1b969955904e48f4fab6cac90abc7fed, type: 3}
     - target: {fileID: 3659239410666043911, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
       propertyPath: m_Name
       value: Item1
@@ -6233,7 +6233,7 @@ PrefabInstance:
     - target: {fileID: 3488057542689684326, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
       propertyPath: m_SpriteState.m_DisabledSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 2d33f8f4dfe8ea24386fe708cb91020c, type: 3}
+      objectReference: {fileID: 21300000, guid: 4f81202282145c143a1b5d1ac1c8d555, type: 3}
     - target: {fileID: 3659239410666043911, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
       propertyPath: m_Name
       value: Item3
@@ -7843,7 +7843,7 @@ PrefabInstance:
     - target: {fileID: 3488057542689684326, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
       propertyPath: m_SpriteState.m_DisabledSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 2d33f8f4dfe8ea24386fe708cb91020c, type: 3}
+      objectReference: {fileID: 21300000, guid: 1b22588d716e9924ca7a2188f2059f33, type: 3}
     - target: {fileID: 3659239410666043911, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
       propertyPath: m_Name
       value: Item3
@@ -8054,7 +8054,7 @@ PrefabInstance:
     - target: {fileID: 3488057542689684326, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
       propertyPath: m_SpriteState.m_DisabledSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 2d33f8f4dfe8ea24386fe708cb91020c, type: 3}
+      objectReference: {fileID: 21300000, guid: 39c3afcbea7e70341a35d3e952311d23, type: 3}
     - target: {fileID: 3659239410666043911, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
       propertyPath: m_Name
       value: Item2
@@ -8391,7 +8391,7 @@ PrefabInstance:
     - target: {fileID: 3488057542689684326, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
       propertyPath: m_SpriteState.m_DisabledSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 2d33f8f4dfe8ea24386fe708cb91020c, type: 3}
+      objectReference: {fileID: 21300000, guid: 6bb0ba649f2722f409cf3b86acf3aca0, type: 3}
     - target: {fileID: 3659239410666043911, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
       propertyPath: m_Name
       value: dWell
