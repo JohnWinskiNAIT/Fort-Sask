@@ -12,6 +12,8 @@ TagManager:
   - Item3
   - ItemBox
   - Broken
+  - Obstacle
+  - CheckPoint
   layers:
   - Default
   - TransparentFX
