@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class BoatMovement : MonoBehaviour
 {
+    [Header("Distance the Boat Moves")]
     [SerializeField] private float moveDistance = 1f;
+
+    [Header("Boat Cool down between movements")]
     [SerializeField] private float moveCoolDown = 0.2f;
 
     private Rigidbody2D rb;
