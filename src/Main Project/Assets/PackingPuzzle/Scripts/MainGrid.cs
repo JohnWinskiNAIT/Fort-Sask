@@ -11,6 +11,8 @@ public class MainGrid : MonoBehaviour
     //Positioning grid points
     private void Start()
     {
+		Screen.SetResolution(1920, 1080, true);
+		
         manager = PackingPuzzleManager.Instance;
 
         //Getting grid dimentions off of invisable gameObject
