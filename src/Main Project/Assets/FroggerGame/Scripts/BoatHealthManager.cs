@@ -24,13 +24,13 @@ public class BoatHealthManager : MonoBehaviour
     /// <summary>
     /// Initializes the boat's lives and updates the UI at the start of the game.
     /// </summary>
-    void Start()
+    void Awake()
     {
         // Set the current lives to the maximum value at the start of the game
         currentLives = maxLives;
         UpdateLivesUI();
 
-        //Make sure the respawn point is the starting posiiton
+        //Make sure the respawn point is the starting posiiton on start.
         respawnPoint = transform.position;
     }
 
@@ -90,5 +90,6 @@ public class BoatHealthManager : MonoBehaviour
     void GameOver()
     {
         Debug.Log("Game Over!");
+        //TODO: Create Game over logic
     }
 }

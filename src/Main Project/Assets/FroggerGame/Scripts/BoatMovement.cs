@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class BoatMovement : MonoBehaviour
 {
+    /// <summary>
+    /// Controls the movement of the boat object that needs to make it accross the river.
+    /// Uses buttons to control Left, Right and Up movement.
+    /// Includes a movement cool down to replicate feel of original Frogger game.
+    /// </summary>
     [Header("Distance the Boat Moves")]
     [SerializeField] private float moveDistance = 1f;
 
