@@ -24,4 +24,16 @@ public class ObstacleController : MonoBehaviour
         transform.Translate(movement);
      
     }
+
+    /// <summary>
+    /// Collision to destroy obstacle game objects when they leave the frame.
+    /// </summary>
+    /// <param name="collision"></param>
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("RightBoundary"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }
