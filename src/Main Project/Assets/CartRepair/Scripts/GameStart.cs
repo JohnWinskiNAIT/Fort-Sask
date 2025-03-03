@@ -37,6 +37,7 @@ public class GameStart : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Screen.SetResolution(1920, 1080, true);
         loreInfo.SetActive(false);
 
         startBoxes.SetActive(false);
