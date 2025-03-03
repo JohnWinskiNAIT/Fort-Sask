@@ -10089,7 +10089,7 @@ MonoBehaviour:
   sounds:
   - name: HorseGalloping
     clip: {fileID: 8300000, guid: d1d63ac26a7e12a4aab4e7f1d14fc54e, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 0.98
     loop: 1
     source: {fileID: 0}
