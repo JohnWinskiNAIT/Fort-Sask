@@ -1,11 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Video;
 
 public class EndSceneScript : MonoBehaviour
 {
     public GameSceneManager gsm;
     public GameObject skipButton;
+	
+	public string[] subtitlesText;
+	public float[] subtitlesTime;
+	public TMP_Text subtitles;
+	int subtitlesIndex = 0;
+	
+	VideoPlayer video;
 
     private void Start()
     {
@@ -15,6 +24,11 @@ public class EndSceneScript : MonoBehaviour
         }
 
         StartCoroutine(ResetGame());
+		
+		video = GetComponent<VideoPlayer>();
+		
+		//fix mute not working on this
+		video.SetDirectAudioMute(0, AudioManager.isMuted);
     }
 	
 	void Update()
@@ -22,6 +36,13 @@ public class EndSceneScript : MonoBehaviour
 		if (Input.GetMouseButtonDown(0))
 		{
 			skipButton.SetActive(true);
+		}
+		
+		//handle subtitles
+		if (subtitlesIndex < subtitlesTime.Length && subtitlesTime[subtitlesIndex] < video.clockTime)
+		{
+			subtitles.text = subtitlesText[subtitlesIndex];
+			subtitlesIndex++;
 		}
 	}
 
