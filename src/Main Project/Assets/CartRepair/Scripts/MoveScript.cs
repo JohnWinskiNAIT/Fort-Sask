@@ -36,7 +36,7 @@ public class MoveScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
         if (!(parentAfterDrag.tag == "ItemBox"))
         {
             gameObject.transform.position = startinglocation.transform.position;
-            Debug.Log("check");
+            //Debug.Log("check");
         }
 
         if (gameObject.tag == "Pin"  && parentAfterDrag.name == "CorrectPinBox")

@@ -6,8 +6,11 @@ using UnityEngine.SceneManagement;
 public class CorrectBoxManager : MonoBehaviour
 {
     [SerializeField] GameObject WheelBox;
+    [SerializeField] GameObject Wheel;
     [SerializeField] GameObject JointBox;
+    [SerializeField] GameObject Joint;
     [SerializeField] GameObject PinBox;
+    [SerializeField] GameObject Pin;
     [SerializeField] GameObject startParent;
     //public static GameObject GameWin;
 
@@ -27,6 +30,23 @@ public class CorrectBoxManager : MonoBehaviour
             WheelBox.SetActive(true);
         }
 
+        if (Wheel.transform.childCount == 0 && startParent.transform.childCount == 2)
+        {
+
+            WheelBox.SetActive(true);
+            Wheel.transform.SetParent(WheelBox.transform, false);
+
+        }
+
+       
+        Checkcorrectpalcement();
+       
+       
+       
+    }
+
+    public void Checkcorrectpalcement()
+    {
         if (WheelBox.transform.childCount > 0)
         {
             ////WheelBox.transform.GetChild(0).gameObject.transform.localScale = new Vector3(5.4f, 5.4f, 5.4f);
@@ -34,19 +54,19 @@ public class CorrectBoxManager : MonoBehaviour
             WheelBox.transform.GetChild(0).gameObject.transform.GetComponent<Image>().raycastTarget = false;
             JointBox.SetActive(true);
 
-
             if (JointBox.transform.childCount > 0)
             {
                 //JointBox.transform.GetChild(0).gameObject.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
                 PinBox.SetActive(true);
-
                 if (PinBox.transform.childCount > 0)
                 {
                     //PinBox.transform.GetChild(0).gameObject.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
                     //GameWin.SetActive(true);
 
                 }
+
             }
+
         }
     }
 
