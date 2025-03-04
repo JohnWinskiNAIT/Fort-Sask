@@ -4245,8 +4245,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WheelBox: {fileID: 1306902858}
+  Wheel: {fileID: 542566167}
   JointBox: {fileID: 1285938688}
+  Joint: {fileID: 0}
   PinBox: {fileID: 1893674682}
+  Pin: {fileID: 1873694999}
   startParent: {fileID: 490885990}
 --- !u!1 &1969209333
 GameObject:
