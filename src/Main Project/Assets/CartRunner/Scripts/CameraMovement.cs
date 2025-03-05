@@ -7,31 +7,41 @@ public class CameraMovement : MonoBehaviour
     public GameObject button;
 
     public GameObject loreInfo;
+    public GameObject gameOverScreen;
+	
+	bool isMoving = true;
+	
+	public float topRowY = -3.3f;
+	public float middleRowY = -3.7f;
+	public float bottomRowY = -4.2f;
 
     private void Start()
     {
         loreInfo.SetActive(false);
-
+		gameOverScreen.SetActive(false);
         //button.SetActive(false);
     }
 
     private void FixedUpdate()
     {
-        transform.position += new Vector3(0.1f, 0, 0);
+		if (isMoving)
+		{
+	        transform.position += new Vector3(0.1f, 0, 0);
 
-        if (gameObject.transform.position.x >= nextCam.transform.position.x)
-        {
-            nextCam.GetComponent<Camera>().enabled = true;
-            gameObject.GetComponent<Camera>().enabled = false;
-            //button.SetActive(true);
+	        if (gameObject.transform.position.x >= nextCam.transform.position.x)
+	        {
+	            nextCam.GetComponent<Camera>().enabled = true;
+	            gameObject.GetComponent<Camera>().enabled = false;
+	            //button.SetActive(true);
 
-            if (playWin )
-            {
-                FindAnyObjectByType<AudioManager>().Play("Win");
-                CompletedGame();
-            }
-            FindAnyObjectByType<AudioManager>().AdjustVolume("HorseGalloping", -0.003f);
-        }
+	            if (playWin )
+	            {
+	                FindAnyObjectByType<AudioManager>().Play("Win");
+	                CompletedGame();
+	            }
+	            FindAnyObjectByType<AudioManager>().AdjustVolume("HorseGalloping", -0.003f);
+	        }
+		}
     }
 
     public void CompletedGame()
@@ -39,4 +49,10 @@ public class CameraMovement : MonoBehaviour
         playWin = false;
         loreInfo.SetActive(true);
     }
+	
+	public void GameOver()
+	{
+		isMoving = false;
+		gameOverScreen.SetActive(true);
+	}
 }

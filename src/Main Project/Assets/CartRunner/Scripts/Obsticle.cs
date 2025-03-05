@@ -25,22 +25,25 @@ public class Obsticle
         }
     }
 
-    public float SnapPosition()
+    public float SnapPosition(CartRunnerManager manager)
     {
         float position;
 
         switch (state)
         {
             case LogState.Top:
-                position = -3.3f;
+                // position = -3.3f;
+				position = manager.topRowY;
                 break;
 
             case LogState.Center:
-                position = -3.7f;
+                // position = -3.7f;
+				position = manager.middleRowY;
                 break;
 
             case LogState.Bottom:
-                position = -4.2f;
+                // position = -4.2f;
+				position = manager.bottomRowY;
                 break;
 
             default:
