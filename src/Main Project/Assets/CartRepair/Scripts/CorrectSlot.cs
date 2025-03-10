@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 using UnityEngine.EventSystems;
+using Unity.VisualScripting;
 
 public class CorrectSlot : MonoBehaviour,IDropHandler
 {
@@ -11,6 +12,7 @@ public class CorrectSlot : MonoBehaviour,IDropHandler
     [SerializeField]
     public string correctObjectTag;
 
+   
     public void OnDrop(PointerEventData eventData)
     {
         // prevent 2 items from stacking
@@ -18,7 +20,7 @@ public class CorrectSlot : MonoBehaviour,IDropHandler
         {
             GameObject dropped = eventData.pointerDrag;
             MoveScript draggableItem = dropped.GetComponent<MoveScript>();
-            if (draggableItem.CompareTag(correctObjectTag))
+            if (draggableItem.CompareTag(correctObjectTag) && draggableItem.transform.childCount == 0)
             {
                 draggableItem.parentAfterDrag = transform;
             }
