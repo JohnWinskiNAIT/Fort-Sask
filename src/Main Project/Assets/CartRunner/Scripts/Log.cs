@@ -8,9 +8,12 @@ public class Log : MonoBehaviour
     public float logSpeed = 3;
     private LogObjState state;
     GameObject cam;
+	
+	CartRunnerManager manager;
 
     void Start()
     {
+		manager = FindAnyObjectByType<CartRunnerManager>();
         cam = GameObject.Find("Main Camera");
         SetState(transform.position);
         transform.position = new Vector2(transform.position.x, SnapPosition());
@@ -43,11 +46,13 @@ public class Log : MonoBehaviour
         switch (state)
         {
             case LogObjState.Top:
-                position = -3.54f;
+                // position = -3.54f;
+				position = manager.topRowY - 0.2f;
                 break;
 
             case LogObjState.Bottom:
-                position = -4.337f;
+                // position = -4.337f;
+				position = manager.bottomRowY - 0.1f;
                 break;
 
             default:
