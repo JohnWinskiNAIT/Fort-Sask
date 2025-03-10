@@ -36,7 +36,7 @@ public class Movement : MonoBehaviour
             Debug.Log("Live Lost!");
             Scoring.Score = 0;
             LifeSystem.Lives -= 1;
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(8);
         }
 
 
