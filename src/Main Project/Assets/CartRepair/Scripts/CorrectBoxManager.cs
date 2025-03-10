@@ -30,15 +30,22 @@ public class CorrectBoxManager : MonoBehaviour
             WheelBox.SetActive(true);
         }
 
-        if (Wheel.transform.childCount == 0 && startParent.transform.childCount == 2)
+        if (Wheel.transform.childCount == 0)
         {
-
+            
             WheelBox.SetActive(true);
             Wheel.transform.SetParent(WheelBox.transform, false);
+            if (Joint.transform.childCount == 0)
+            {
+                JointBox.SetActive(true);
+                Joint.transform.SetParent(JointBox.transform, false);
+            }
 
         }
-
+        
        
+
+
         Checkcorrectpalcement();
        
        
@@ -52,7 +59,16 @@ public class CorrectBoxManager : MonoBehaviour
             ////WheelBox.transform.GetChild(0).gameObject.transform.localScale = new Vector3(5.4f, 5.4f, 5.4f);
             WheelBox.transform.GetChild(0).gameObject.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
             WheelBox.transform.GetChild(0).gameObject.transform.GetComponent<Image>().raycastTarget = false;
+            //if (WheelBox.transform.GetChild(0).gameObject.transform.childCount == 1)
+            //{
+            //    Debug.Log("Test");
+            //}
+            //else
+            //{
+            //    JointBox.SetActive(true);
+            //}
             JointBox.SetActive(true);
+
 
             if (JointBox.transform.childCount > 0)
             {

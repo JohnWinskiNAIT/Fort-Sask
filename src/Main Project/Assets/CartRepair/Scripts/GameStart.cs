@@ -77,7 +77,7 @@ public class GameStart : MonoBehaviour
     {
         int partIndex = 2;
         //added random
-        //int partIndex = Random.Range(1,4);
+        //int partIndex = Random.Range(1, 4);
         GameObject whichPart = GameObject.Find("StartParent").transform.GetChild(partIndex - 1).gameObject;
 
         Debug.Log(partIndex);

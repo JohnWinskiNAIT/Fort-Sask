@@ -4247,7 +4247,7 @@ MonoBehaviour:
   WheelBox: {fileID: 1306902858}
   Wheel: {fileID: 542566167}
   JointBox: {fileID: 1285938688}
-  Joint: {fileID: 0}
+  Joint: {fileID: 75196094}
   PinBox: {fileID: 1893674682}
   Pin: {fileID: 1873694999}
   startParent: {fileID: 490885990}
