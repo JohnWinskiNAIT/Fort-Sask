@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
 
-public class Movement : MonoBehaviour
+public class BoatBody : MonoBehaviour
 {
     [SerializeField]
     public Rigidbody2D rb;
@@ -28,7 +28,6 @@ public class Movement : MonoBehaviour
             rb.MovePosition(rb.position + Vector2.down);
         }
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Log")
@@ -36,7 +35,7 @@ public class Movement : MonoBehaviour
             Debug.Log("Live Lost!");
             Scoring.Score = 0;
             LifeSystem.Lives -= 1;
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(8);
         }
 
 
