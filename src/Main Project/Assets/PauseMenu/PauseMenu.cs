@@ -58,7 +58,9 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitButton()
     {
-        Application.Quit();
+        // Application.Quit();
+		GameProgress.gpInstance.locationCount = -1;
+		SceneManager.LoadScene("Starting Scene");
     }
 
     public void MuteButton()
