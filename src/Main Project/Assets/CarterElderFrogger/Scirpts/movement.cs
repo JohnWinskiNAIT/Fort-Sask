@@ -22,13 +22,15 @@ public class movement : MonoBehaviour
    
     [SerializeField] TextMeshProUGUI endText;
 
+    [SerializeField] TextMeshProUGUI BoatNumberText;
+
     [SerializeField] int Boatnumber;
     [SerializeField] int BoatsThatMadeIt;
     // Start is called before the first frame update
     void Start()
     {
 
-        Boatnumber = 0;
+        Boatnumber = 3;
         BoatsThatMadeIt = 0;
         upPositionAdded = new Vector3(0, 1);
         rightPositionAdded = new Vector3(1,0);
@@ -61,7 +63,7 @@ public class movement : MonoBehaviour
         #endregion
         #region end text and pannel
 
-        if (Boatnumber == 3)
+        if (Boatnumber == 0)
         {
             endPannel.SetActive(true);
             endText.text = "you have made "+ BoatsThatMadeIt.ToString() + " Boats";
@@ -72,6 +74,8 @@ public class movement : MonoBehaviour
         }
 
         #endregion
+
+        BoatNumberText.text = "Boats Left = " + Boatnumber.ToString();
     }
     public void moveup()
     {
@@ -124,14 +128,14 @@ public class movement : MonoBehaviour
             transform.position = startLocation.GetComponent<Transform>().position;
 
             //boat number
-            Boatnumber++;
+            Boatnumber--;
         }
         if (collision.gameObject.tag == "Finish")
         {
             //rest the location
             transform.position = startLocation.GetComponent<Transform>().position;
 
-            Boatnumber++;
+            Boatnumber--;
 
             BoatsThatMadeIt++;
         }

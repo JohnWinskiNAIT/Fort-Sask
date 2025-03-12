@@ -7087,7 +7087,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &190575282
 Transform:
   m_ObjectHideFlags: 0
@@ -20689,6 +20689,9 @@ MonoBehaviour:
   button: {fileID: 243186068}
   loreInfo: {fileID: 2130020476}
   gameOverScreen: {fileID: 220040626}
+  topRowY: -3.3
+  middleRowY: -3.7
+  bottomRowY: -4.2
 --- !u!114 &1512830088
 MonoBehaviour:
   m_ObjectHideFlags: 0
