@@ -10,4 +10,12 @@ public class UpMovement : MonoBehaviour
     {
         rb.MovePosition(rb.position + Vector2.up);
     }
+    public void MoveRight()
+    {
+        rb.MovePosition(rb.position + Vector2.right);
+    }
+    public void MoveLeft()
+    {
+        rb.MovePosition(rb.position + Vector2.left);
+    }
 }

@@ -378,8 +378,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1563470111}
-        m_TargetAssemblyTypeName: RightMovement, Assembly-CSharp
+      - m_Target: {fileID: 1563470110}
+        m_TargetAssemblyTypeName: UpMovement, Assembly-CSharp
         m_MethodName: MoveRight
         m_Mode: 1
         m_Arguments:
@@ -679,12 +679,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5616552612387586856, guid: 2872ac28687fd8c4c9a0f532f6e0cfc0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1563470105}
-    - targetCorrespondingSourceObject: {fileID: 5616552612387586856, guid: 2872ac28687fd8c4c9a0f532f6e0cfc0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1563470112}
-    - targetCorrespondingSourceObject: {fileID: 5616552612387586856, guid: 2872ac28687fd8c4c9a0f532f6e0cfc0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1563470111}
     - targetCorrespondingSourceObject: {fileID: 5616552612387586856, guid: 2872ac28687fd8c4c9a0f532f6e0cfc0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1563470110}
@@ -1214,8 +1208,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1563470112}
-        m_TargetAssemblyTypeName: LeftMovement, Assembly-CSharp
+      - m_Target: {fileID: 1563470110}
+        m_TargetAssemblyTypeName: UpMovement, Assembly-CSharp
         m_MethodName: MoveLeft
         m_Mode: 1
         m_Arguments:
@@ -2198,32 +2192,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ebb587c620eba04499cd703f2a877d9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 1563470105}
---- !u!114 &1563470111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1563470101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5650da459f3641b4f8c969f90a4ad333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 1563470105}
---- !u!114 &1563470112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1563470101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 363d6cf915157d74f83c4c494d563f17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1563470105}
