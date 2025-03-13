@@ -15,6 +15,8 @@ TagManager:
   - Obstacle
   - CheckPoint
   - RightBoundary
+  - Trash
+  - End
   layers:
   - Default
   - TransparentFX
