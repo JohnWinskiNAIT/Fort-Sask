@@ -10,6 +10,9 @@ public class BoatBody : MonoBehaviour
     [SerializeField]
     public AudioSource audioSource;
 
+    [SerializeField]
+    public GameObject respawnPoint;
+
     private void Start()
     {
         audioSource = gameObject.GetComponent<AudioSource>();
@@ -40,11 +43,16 @@ public class BoatBody : MonoBehaviour
     {
         if (collision.tag == "Log")
         {
+            audioSource.Play();
             Debug.Log("Live Lost!");
             Scoring.Score = 0;
             LifeSystem.Lives -= 1;
-            SceneManager.LoadScene(8);
-            audioSource.Play();
+            Respawn();
         }
+    }
+
+    public void Respawn()
+    {
+        transform.position = respawnPoint.transform.position;
     }
 }

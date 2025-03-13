@@ -11,6 +11,11 @@ public class Scoring : MonoBehaviour
 
     private void Start()
     {
+        
+    }
+
+    private void Update()
+    {
         scoreText.text = $"Score: {Score}";
     }
 }

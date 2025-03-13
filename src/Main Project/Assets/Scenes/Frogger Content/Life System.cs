@@ -9,11 +9,13 @@ public class LifeSystem : MonoBehaviour
 
     private void Start()
     {
-        livesText.text = $"Lives: {Lives}";
+        
     }
 
     private void Update()
     {
+        livesText.text = $"Lives: {Lives}";
+
         if (Lives < 0)
         {
             Lives = 0;
