@@ -7,6 +7,7 @@ public class TrashSpawner : MonoBehaviour
     private float Timer = 3.0f;
 
     [SerializeField] GameObject Trash;
+    [SerializeField] GameObject Trash2;
     [SerializeField] GameObject log;
 
     int trashnumber;
@@ -26,7 +27,7 @@ public class TrashSpawner : MonoBehaviour
         }
         if (Timer < 0)
         {
-            trashnumber = Random.Range(0, 2);
+            trashnumber = Random.Range(0, 3);
             if (trashnumber == 0)
             {
                 Instantiate(Trash, gameObject.transform);
@@ -34,6 +35,10 @@ public class TrashSpawner : MonoBehaviour
             if (trashnumber == 1)
             {
                 Instantiate(log, gameObject.transform);
+            }
+            if (trashnumber == 2)
+            {
+                Instantiate(Trash2, gameObject.transform);
             }
 
             Timer = 3.0f;

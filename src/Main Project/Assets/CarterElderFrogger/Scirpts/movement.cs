@@ -26,10 +26,12 @@ public class movement : MonoBehaviour
 
     [SerializeField] int Boatnumber;
     [SerializeField] int BoatsThatMadeIt;
+
+    AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
-
+        audioSource = gameObject.GetComponent<AudioSource>();
         Boatnumber = 3;
         BoatsThatMadeIt = 0;
         upPositionAdded = new Vector3(0, 1);
@@ -121,6 +123,7 @@ public class movement : MonoBehaviour
         if (collision.gameObject.tag == "Trash")
         {
             //destory the trash
+            audioSource.Play();
             Destroy(collision.gameObject);
             Debug.Log("hit");
 
@@ -129,6 +132,8 @@ public class movement : MonoBehaviour
 
             //boat number
             Boatnumber--;
+
+
         }
         if (collision.gameObject.tag == "Finish")
         {
