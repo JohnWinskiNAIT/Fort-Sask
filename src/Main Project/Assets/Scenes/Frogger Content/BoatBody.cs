@@ -6,6 +6,14 @@ public class BoatBody : MonoBehaviour
 {
     [SerializeField]
     public Rigidbody2D rb;
+
+    [SerializeField]
+    public AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = gameObject.GetComponent<AudioSource>();
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.RightArrow))
@@ -36,8 +44,7 @@ public class BoatBody : MonoBehaviour
             Scoring.Score = 0;
             LifeSystem.Lives -= 1;
             SceneManager.LoadScene(8);
+            audioSource.Play();
         }
-
-
     }
 }
