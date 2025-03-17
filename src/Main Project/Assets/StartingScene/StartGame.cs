@@ -12,6 +12,8 @@ public class StartGame : MonoBehaviour
     public GameObject credsButton;
     public GameObject exitButton;
     public GameObject skipButton;
+	
+	public GameObject[] hideInCredits;
 
     public GameSceneManager gsm;
 	
@@ -54,12 +56,18 @@ public class StartGame : MonoBehaviour
     {
         credits.SetActive(true);
 		exitButton.SetActive(false);
+        button.SetActive(false);
+        logo.SetActive(false);
+        credsButton.SetActive(false);
     }
 
     public void CloseCreds()
     {
         credits.SetActive(false);
 		exitButton.SetActive(true);
+        button.SetActive(true);
+        logo.SetActive(true);
+        credsButton.SetActive(true);
     }
 
     public void ExitGame()
