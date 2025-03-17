@@ -59,7 +59,10 @@ public class PauseMenu : MonoBehaviour
     public void QuitButton()
     {
         // Application.Quit();
-		GameProgress.gpInstance.locationCount = -1;
+		if (GameProgress.gpInstance is not null)
+		{
+			GameProgress.gpInstance.locationCount = -1;
+		}
 		SceneManager.LoadScene("Starting Scene");
     }
 

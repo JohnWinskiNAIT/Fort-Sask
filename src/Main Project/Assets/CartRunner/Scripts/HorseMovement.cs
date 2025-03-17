@@ -15,6 +15,10 @@ public class HorseMovement : MonoBehaviour
 	public Image[] hearts;
 	public Sprite heartFull;
 	public Sprite heartEmpty;
+	public Sprite[] carts;
+	public SpriteRenderer cart;
+	
+	bool invincibility = false;
 	
     private void Awake()
     {
@@ -27,6 +31,7 @@ public class HorseMovement : MonoBehaviour
 		{
 			hearts[i].sprite = i >= health ? heartEmpty : heartFull;
 		}
+		cart.sprite = health >= carts.Length ? carts[carts.Length - 1] : carts[health - 1];
 	}
 
     private void Start()
@@ -95,7 +100,7 @@ public class HorseMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-		if (health == 0) return; //skip visual stuff if we're already game over'd
+		if (health == 0 || invincibility) return; //skip visual stuff if we're already game over'd
 		
 		health--;
 		UpdateHealthHearts();
@@ -134,6 +139,8 @@ public class HorseMovement : MonoBehaviour
                 break;
         }
       
+		invincibility = true;
+		
         for (int i = 0; i < 3; i++)
         {
             gameObject.GetComponent<SpriteRenderer>().color = new Color(0.9f,0.7f,0.7f);
@@ -141,6 +148,8 @@ public class HorseMovement : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().color = Color.white;
             yield return new WaitForSeconds(0.25f);
         }
+		
+		invincibility = false;
     }
 
     enum PositionState
