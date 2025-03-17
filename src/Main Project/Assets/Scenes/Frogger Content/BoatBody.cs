@@ -7,8 +7,8 @@ public class BoatBody : MonoBehaviour
     [SerializeField]
     public Rigidbody2D rb;
 
-    [SerializeField]
-    public AudioSource audioSource;
+    //[SerializeField]
+     AudioSource audioSource;
 
     [SerializeField]
     public GameObject respawnPoint;
@@ -47,7 +47,12 @@ public class BoatBody : MonoBehaviour
             Debug.Log("Live Lost!");
             Scoring.Score = 0;
             LifeSystem.Lives -= 1;
+<<<<<<< Updated upstream
             Respawn();
+=======
+            SceneManager.LoadScene(8);
+           
+>>>>>>> Stashed changes
         }
     }
 
