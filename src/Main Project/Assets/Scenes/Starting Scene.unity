@@ -357,7 +357,7 @@ MonoBehaviour:
   m_text: Chiamaka Ekenedu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
-  m_sharedMaterial: {fileID: 7167721748242048567, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
+  m_sharedMaterial: {fileID: 6865200828485344883, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -420,7 +420,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &116409939
@@ -564,7 +564,7 @@ GameObject:
   - component: {fileID: 140363576}
   - component: {fileID: 140363575}
   m_Layer: 5
-  m_Name: Animators
+  m_Name: Business Analyst
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -610,7 +610,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Animators
+  m_text: Business Analyst
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
   m_sharedMaterial: {fileID: 7167721748242048567, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
@@ -699,7 +699,7 @@ GameObject:
   - component: {fileID: 168456867}
   - component: {fileID: 168456866}
   m_Layer: 5
-  m_Name: Buisness
+  m_Name: Special Thanks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -745,7 +745,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Business Analyst
+  m_text: Special Thanks
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
   m_sharedMaterial: {fileID: 7167721748242048567, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
@@ -1133,141 +1133,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 187366638}
-  m_CullTransparentMesh: 1
---- !u!1 &208587587
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 208587588}
-  - component: {fileID: 208587590}
-  - component: {fileID: 208587589}
-  m_Layer: 5
-  m_Name: Special Thanks
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &208587588
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 208587587}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1594162347}
-  m_Father: {fileID: 1280695643}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -318.8}
-  m_SizeDelta: {x: 320, y: 334.8}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &208587589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 208587587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Special Thanks To
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
-  m_sharedMaterial: {fileID: 7167721748242048567, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4279971660
-  m_fontColor: {r: 0.29803923, g: 0.18431373, b: 0.105882354, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 17.5
-  m_fontSizeBase: 17.5
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &208587590
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 208587587}
   m_CullTransparentMesh: 1
 --- !u!1 &211247330
 GameObject:
@@ -1674,7 +1539,7 @@ MonoBehaviour:
     Battig, Liam Nordell
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
-  m_sharedMaterial: {fileID: 7167721748242048567, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
+  m_sharedMaterial: {fileID: 6865200828485344883, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1737,7 +1602,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &294423556
@@ -1944,7 +1809,7 @@ MonoBehaviour:
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
-  m_sharedMaterial: {fileID: 7167721748242048567, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
+  m_sharedMaterial: {fileID: 6865200828485344883, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2007,7 +1872,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &355235694
@@ -2770,7 +2635,7 @@ MonoBehaviour:
     Battig
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
-  m_sharedMaterial: {fileID: 7167721748242048567, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
+  m_sharedMaterial: {fileID: 6865200828485344883, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2833,7 +2698,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &560985748
@@ -3089,10 +2954,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Chiamaka Ekenedu
+  m_text: Fonts.Google.com, NAIT, Fort Heritage Precinct, John Winski, Armand Cadieux
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
-  m_sharedMaterial: {fileID: 7167721748242048567, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+  m_sharedMaterial: {fileID: 6865200828485344883, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3684,7 +3549,7 @@ MonoBehaviour:
     Precinct, John Winski, Armand Cadieux, Frank Caparelli
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
-  m_sharedMaterial: {fileID: 7167721748242048567, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
+  m_sharedMaterial: {fileID: 6865200828485344883, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3747,7 +3612,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1230397078
@@ -3928,7 +3793,6 @@ RectTransform:
   - {fileID: 240588145}
   - {fileID: 140363574}
   - {fileID: 168456865}
-  - {fileID: 208587588}
   m_Father: {fileID: 76220655}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -4169,7 +4033,7 @@ MonoBehaviour:
   m_text: Liam Nordell, Cheryl Mertchanski
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
-  m_sharedMaterial: {fileID: 7167721748242048567, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
+  m_sharedMaterial: {fileID: 6865200828485344883, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4232,7 +4096,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1395924377
@@ -4300,11 +4164,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ty Morganstern, Alan Eodgers, Cheryl Mertchanski, Alexander Ellert, Rylan
-    Battig, Liam Nordell
+  m_text: "Christopher Cherlenko, Dallin Harris, \nAwais Mahmood"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
-  m_sharedMaterial: {fileID: 7167721748242048567, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+  m_sharedMaterial: {fileID: 6865200828485344883, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4500,12 +4363,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Jacob Featherstone, Johnne Geograpo, Jose Victor Enriquez
-
-'
+  m_text: "Jayden Pryor, Carter Elder, Michael Taylor, \nSadie Callaghan\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
-  m_sharedMaterial: {fileID: 7167721748242048567, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+  m_sharedMaterial: {fileID: 6865200828485344883, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4578,141 +4439,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1526829155}
-  m_CullTransparentMesh: 1
---- !u!1 &1594162346
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1594162347}
-  - component: {fileID: 1594162349}
-  - component: {fileID: 1594162348}
-  m_Layer: 5
-  m_Name: Names
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1594162347
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1594162346}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 208587588}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.5, y: 121.84}
-  m_SizeDelta: {x: 285.6, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1594162348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1594162346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Brusheezy.com, Pixabay.com, Dafont.com, Pexels.com, NAIT, Fort Heritage
-    Precinct, John Winski, Armand Cadieux, Frank Caparelli
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
-  m_sharedMaterial: {fileID: 7167721748242048567, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1594162349
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1594162346}
   m_CullTransparentMesh: 1
 --- !u!1 &1614091240
 GameObject:
@@ -5041,11 +4767,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ty Morganstern, Alan Eodgers, Cheryl Mertchanski, Alexander Ellert, Rylan
-    Battig
+  m_text: "Christopher Cherlenko, Dallin Harris, \nAwais Mahmood"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
-  m_sharedMaterial: {fileID: 7167721748242048567, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+  m_sharedMaterial: {fileID: 6865200828485344883, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5485,10 +5210,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Liam Nordell, Cheryl Mertchanski
+  m_text: Abdullah Said
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
-  m_sharedMaterial: {fileID: 7167721748242048567, guid: 721e74b6216acca42b7d0921c49318f1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+  m_sharedMaterial: {fileID: 6865200828485344883, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
