@@ -99,7 +99,7 @@ public class TextDisplay : MonoBehaviour
 		}
 		
 		TMP_TextInfo textInfo = historyInfo.textInfo;
-		
+		Debug.Log(historyInfo.textInfo.characterCount);
 		cVIndex = textInfo.characterCount - 1;
 		historyInfo.maxVisibleCharacters = cVIndex;
 	}
@@ -120,7 +120,7 @@ public class TextDisplay : MonoBehaviour
         historyInfo.text = text;
         historyInfo.maxVisibleCharacters = 0;
         cVIndex = 0;
-
+		historyInfo.ForceMeshUpdate(); //fixes historyInfo.textInfo.characterCount not returning the correct value until next tick
         typewriterCoroutine = StartCoroutine(Typewriter());
     }
 
