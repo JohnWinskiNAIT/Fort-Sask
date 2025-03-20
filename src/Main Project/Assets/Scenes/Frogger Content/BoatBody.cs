@@ -50,7 +50,7 @@ public class BoatBody : MonoBehaviour
 
             Respawn();
 
-            SceneManager.LoadScene(7);
+            //SceneManager.LoadScene(7);
            
 
         }
