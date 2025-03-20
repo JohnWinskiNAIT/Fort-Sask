@@ -3867,6 +3867,18 @@ PrefabInstance:
         live on the prairies.  Anything else would be built or bought from traders
         in their new communities.'
       objectReference: {fileID: 0}
+    - target: {fileID: 6728669002254822568, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+    - target: {fileID: 6728669002254822568, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 6865200828485344883, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+    - target: {fileID: 6728669002254822568, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7612622028221352457, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
       propertyPath: m_text
       value: Now you're ready to go!

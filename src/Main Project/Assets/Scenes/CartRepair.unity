@@ -2072,6 +2072,18 @@ PrefabInstance:
         the prairies. They could even have their wheels removed to float them across
         rivers!"
       objectReference: {fileID: 0}
+    - target: {fileID: 5649867233318510933, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+    - target: {fileID: 5649867233318510933, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 6865200828485344883, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+    - target: {fileID: 5649867233318510933, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6104773193366266154, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_IsActive
       value: 1
