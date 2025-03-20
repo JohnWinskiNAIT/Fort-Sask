@@ -1,31 +1,37 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class TrashSpawner : MonoBehaviour
 {
-    private float Timer = 3.0f;
+    private float Timer = 0.0f;
+
+    private float randomtime;
 
     [SerializeField] GameObject Trash;
     [SerializeField] GameObject Trash2;
     [SerializeField] GameObject log;
+
+    [SerializeField] float minvalue;
+    [SerializeField] float maxvalue;
 
     int trashnumber;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        randomtimecreater();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Timer <= 3)
+        if (Timer <= randomtime)
         {
-            Timer -= Time.deltaTime;
+            Timer += Time.deltaTime;
         }
-        if (Timer < 0)
+        if (Timer > randomtime)
         {
             trashnumber = Random.Range(0, 3);
             if (trashnumber == 0)
@@ -41,7 +47,16 @@ public class TrashSpawner : MonoBehaviour
                 Instantiate(Trash2, gameObject.transform);
             }
 
-            Timer = 3.0f;
+            Timer = 0.0f;
+            randomtimecreater();
         }
+
+
+    }
+
+    public void randomtimecreater()
+    {
+        Debug.Log("test");
+        randomtime = Random.Range(minvalue, maxvalue);
     }
 }
