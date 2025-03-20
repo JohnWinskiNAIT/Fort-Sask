@@ -331,8 +331,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 790.2, y: -489}
-  m_SizeDelta: {x: 96.0243, y: 100.8187}
+  m_AnchoredPosition: {x: 255.6, y: -150}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &97728020
 MonoBehaviour:
@@ -1375,8 +1375,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 590, y: -489}
-  m_SizeDelta: {x: 96.0243, y: 100.8187}
+  m_AnchoredPosition: {x: 158.3, y: -150}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &603435322
 MonoBehaviour:
@@ -1889,8 +1889,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 689.80005, y: -389}
-  m_SizeDelta: {x: 96.0243, y: 100.8187}
+  m_AnchoredPosition: {x: 207.3, y: -100.2}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1072587835
 MonoBehaviour:
@@ -2070,6 +2070,16 @@ Transform:
   m_Children: []
   m_Father: {fileID: 73373086}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1297792483 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 280575268542160293, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+  m_PrefabInstance: {fileID: 1959208030}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1297792484 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+  m_PrefabInstance: {fileID: 1959208030}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1430303532
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2360,6 +2370,7 @@ RectTransform:
   - {fileID: 1981118484}
   - {fileID: 9025213426793079713}
   - {fileID: 7589729401420847040}
+  - {fileID: 1297792484}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2451,7 +2462,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1485375688
 Transform:
   m_ObjectHideFlags: 0
@@ -2764,6 +2775,195 @@ Transform:
   m_Children: []
   m_Father: {fileID: 73373086}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1959208030
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1466449249}
+    m_Modifications:
+    - target: {fileID: 280575268542160293, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_Name
+      value: 4by3Lobby
+      objectReference: {fileID: 0}
+    - target: {fileID: 280575268542160293, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3865010037462112849, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 3934515671628721392, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: "          The Red River cart was the vehicle of choice by most travellers
+        in the area, especially the M\xE9tis.  Connecting them together in long cart-trains
+        called brigades, they could haul hundreds of kilos worth of freight across
+        the prairies. They could even have their wheels removed to float them across
+        rivers!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5344615075286629919, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+    - target: {fileID: 5344615075286629919, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 6865200828485344883, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+    - target: {fileID: 5344615075286629919, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649867233318510933, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_text
+      value: "          The Red River cart was the vehicle of choice by most travellers
+        in the area, especially the M\xE9tis.  Connecting them together in long cart-trains
+        called brigades, they could haul hundreds of kilos worth of freight across
+        the prairies. They could even have their wheels removed to float them across
+        rivers!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649867233318510933, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+    - target: {fileID: 5649867233318510933, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 6865200828485344883, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+    - target: {fileID: 5649867233318510933, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6104773193366266154, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.705
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.705
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.705
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8063914464401563030, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2138007249}
+    - target: {fileID: 8063914464401563030, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoToEndScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 8063914464401563030, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Goal, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839479718793676788, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_text
+      value: Hopefully it doesn't break again...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839479718793676788, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+    - target: {fileID: 8839479718793676788, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 6865200828485344883, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+    - target: {fileID: 8839479718793676788, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
 --- !u!1 &1964575018
 GameObject:
   m_ObjectHideFlags: 0
@@ -3306,6 +3506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ba463670d2ed414e968e50517794011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Winscreen: {fileID: 1297792483}
 --- !u!114 &60479147747399754
 MonoBehaviour:
   m_ObjectHideFlags: 0

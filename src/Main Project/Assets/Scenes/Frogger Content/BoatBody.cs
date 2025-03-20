@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
@@ -10,15 +11,22 @@ public class BoatBody : MonoBehaviour
     //[SerializeField]
      AudioSource audioSource;
 
+    [SerializeField] List<GameObject> buttons = new List<GameObject>();
+
     [SerializeField]
     public GameObject respawnPoint;
+
+    [SerializeField] GameObject EndScreen;
 
     private void Start()
     {
         audioSource = gameObject.GetComponent<AudioSource>();
+        LifeSystem.Lives = 3;
+        EndScreen.SetActive(false);
     }
     void Update()
     {
+        #region keymovement
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             rb.MovePosition(rb.position + Vector2.right);
@@ -37,6 +45,16 @@ public class BoatBody : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             rb.MovePosition(rb.position + Vector2.down);
+        }
+        #endregion
+
+        if (LifeSystem.Lives == 0)
+        {
+            EndScreen.SetActive(true);
+            foreach (GameObject gameobject in buttons)
+            {
+                gameobject.SetActive(false);
+            }
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
