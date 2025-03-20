@@ -12105,6 +12105,14 @@ PrefabInstance:
         the distance. \r\n\nTap the image, then tap the landmark to match them. \r\n\nTap
         the arrow buttons to scan the landscape. \r\n"
       objectReference: {fileID: 0}
+    - target: {fileID: 1012236089477532039, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+    - target: {fileID: 1012236089477532039, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6183273527864945842, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
       propertyPath: m_Name
       value: H2P
@@ -13800,6 +13808,14 @@ PrefabInstance:
         and Edmonton Trail. It wouldn\u2019t be until 1905 that the Canadian Northern
         Railway connected Fort Saskatchewan to a transcontinental line."
       objectReference: {fileID: 0}
+    - target: {fileID: 5344615075286629919, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+    - target: {fileID: 5344615075286629919, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5649867233318510933, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_text
       value: "          The rail line between Edmonton and Calgary wouldn\u2019t
@@ -13903,6 +13919,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1983602561}
+    - target: {fileID: 8839479718793676788, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+    - target: {fileID: 8839479718793676788, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

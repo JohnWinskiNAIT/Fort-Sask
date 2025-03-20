@@ -221,6 +221,18 @@ PrefabInstance:
         and drag each item into the cargo area on the left, leaving no free spaces
         remaining.\n\nPress the reset button to reset all pieces.\n"
       objectReference: {fileID: 0}
+    - target: {fileID: 1012236089477532039, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+    - target: {fileID: 1012236089477532039, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 6865200828485344883, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+    - target: {fileID: 1012236089477532039, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1526794536741605146, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
       propertyPath: m_SizeDelta.x
       value: 113.5868
@@ -3859,6 +3871,18 @@ PrefabInstance:
         live on the prairies.  Anything else would be built or bought from traders
         in their new communities.'
       objectReference: {fileID: 0}
+    - target: {fileID: 6422897808145986530, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+    - target: {fileID: 6422897808145986530, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 6865200828485344883, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+    - target: {fileID: 6422897808145986530, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6728669002254822568, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
       propertyPath: m_text
       value: '          Settlers arriving in Alberta would bring what they needed
@@ -3882,6 +3906,18 @@ PrefabInstance:
     - target: {fileID: 7612622028221352457, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
       propertyPath: m_text
       value: Now you're ready to go!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7612622028221352457, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+    - target: {fileID: 7612622028221352457, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 6865200828485344883, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+    - target: {fileID: 7612622028221352457, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8998636145865592939, guid: 74ca8f347857b2e4e8df5fe8a4f06213, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
