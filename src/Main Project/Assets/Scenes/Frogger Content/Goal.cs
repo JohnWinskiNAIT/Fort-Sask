@@ -9,6 +9,6 @@ public class Goal : MonoBehaviour
     {
         Debug.Log("You Win!");
         Scoring.Score += 100;
-        SceneManager.LoadScene(8);
+        SceneManager.LoadScene(7);
     }
 }

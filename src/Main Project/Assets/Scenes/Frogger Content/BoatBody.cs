@@ -47,12 +47,12 @@ public class BoatBody : MonoBehaviour
             Debug.Log("Live Lost!");
             Scoring.Score = 0;
             LifeSystem.Lives -= 1;
-//<<<<<<< Updated upstream
+
             Respawn();
-//=======
-            SceneManager.LoadScene(8);
+
+            SceneManager.LoadScene(7);
            
-//>>>>>>> Stashed changes
+
         }
     }
 
