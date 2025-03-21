@@ -31,7 +31,7 @@ public class HorseMovement : MonoBehaviour
 		{
 			hearts[i].sprite = i >= health ? heartEmpty : heartFull;
 		}
-		cart.sprite = health >= carts.Length ? carts[carts.Length - 1] : carts[health - 1];
+		cart.sprite = health < 1 ? carts[0] : health >= carts.Length ? carts[carts.Length - 1] : carts[health - 1];
 	}
 
     private void Start()
