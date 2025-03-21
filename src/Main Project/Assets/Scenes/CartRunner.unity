@@ -12912,6 +12912,10 @@ PrefabInstance:
       value: "Drive your cart along the Old Fort Trail!  \n\nTap the up and down
         arrows to avoid the obstacles on the road as you make your way to your destination."
       objectReference: {fileID: 0}
+    - target: {fileID: 3887381118624327004, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3901728046494508157, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -12923,7 +12927,7 @@ PrefabInstance:
     - target: {fileID: 6034962895873015047, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: da106a54f467d464a82a5171970f0991, type: 3}
+      objectReference: {fileID: 21300000, guid: 984123cb301eb9443a8336c02cc58440, type: 3}
     - target: {fileID: 6183273527864945842, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
       propertyPath: m_Name
       value: H2P
@@ -13063,6 +13067,10 @@ PrefabInstance:
     - target: {fileID: 7589729402128467552, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8329176015330703223, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
