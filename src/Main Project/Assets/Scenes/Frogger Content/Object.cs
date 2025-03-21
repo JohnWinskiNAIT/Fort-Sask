@@ -11,6 +11,7 @@ public class Object : MonoBehaviour
 
     private void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         speed = Random.Range(minSpeed, maxSpeed);
     }
     void FixedUpdate()

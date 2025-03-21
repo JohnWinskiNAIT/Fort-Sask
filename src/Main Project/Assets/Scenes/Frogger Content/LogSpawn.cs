@@ -8,6 +8,9 @@ public class LogSpawn : MonoBehaviour
     public GameObject log;
 
     [SerializeField]
+    public GameObject crate;
+
+    [SerializeField]
     public Transform[] spawnPoints;
 
     public float spawnDelay = 0.3f;
@@ -29,6 +32,19 @@ public class LogSpawn : MonoBehaviour
 
         Transform spawnPoint = spawnPoints[randomIndex];
 
-        Instantiate(log, spawnPoint.position, spawnPoint.rotation);
+        //Instantiate(log, spawnPoint.position, spawnPoint.rotation);
+
+        //randomize what object spawns
+        int trashspwner = Random.Range(1, 3);
+        if (trashspwner == 1)
+        {
+            Instantiate(log, spawnPoint.position, spawnPoint.rotation);
+        }
+        if (trashspwner == 2)
+        {
+            Instantiate(crate, spawnPoint.position, spawnPoint.rotation);
+        }
     }
+
+   
 }
