@@ -817,9 +817,29 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2916439716256686503, guid: 2872ac28687fd8c4c9a0f532f6e0cfc0, type: 3}
+      propertyPath: EndScreen
+      value: 
+      objectReference: {fileID: 1297792483}
+    - target: {fileID: 2916439716256686503, guid: 2872ac28687fd8c4c9a0f532f6e0cfc0, type: 3}
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 209818186}
+    - target: {fileID: 2916439716256686503, guid: 2872ac28687fd8c4c9a0f532f6e0cfc0, type: 3}
+      propertyPath: buttons.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2916439716256686503, guid: 2872ac28687fd8c4c9a0f532f6e0cfc0, type: 3}
+      propertyPath: buttons.Array.data[0]
+      value: 
+      objectReference: {fileID: 603435320}
+    - target: {fileID: 2916439716256686503, guid: 2872ac28687fd8c4c9a0f532f6e0cfc0, type: 3}
+      propertyPath: buttons.Array.data[1]
+      value: 
+      objectReference: {fileID: 97728018}
+    - target: {fileID: 2916439716256686503, guid: 2872ac28687fd8c4c9a0f532f6e0cfc0, type: 3}
+      propertyPath: buttons.Array.data[2]
+      value: 
+      objectReference: {fileID: 1072587833}
     - target: {fileID: 4320113222235905777, guid: 2872ac28687fd8c4c9a0f532f6e0cfc0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.023
@@ -2797,11 +2817,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3934515671628721392, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: lines.Array.data[0]
-      value: "          The Red River cart was the vehicle of choice by most travellers
-        in the area, especially the M\xE9tis.  Connecting them together in long cart-trains
-        called brigades, they could haul hundreds of kilos worth of freight across
-        the prairies. They could even have their wheels removed to float them across
-        rivers!"
+      value: "   Rivers across the prairies were used extensively by different groups
+        throughout history.  Indigenous peoples used them for travel, hunting, fishing,
+        and arranging gathering points.  When Europeans began expanding through the
+        territory, fur traders used rivers to transport goods and supplies between
+        Canada and Europe.  \n          Once the North-West Mounted Police were established
+        in the area, rivers were used to transport officers and supplies between
+        forts using York-boats."
       objectReference: {fileID: 0}
     - target: {fileID: 5344615075286629919, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_fontAsset
@@ -2817,11 +2839,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5649867233318510933, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_text
-      value: "          The Red River cart was the vehicle of choice by most travellers
-        in the area, especially the M\xE9tis.  Connecting them together in long cart-trains
-        called brigades, they could haul hundreds of kilos worth of freight across
-        the prairies. They could even have their wheels removed to float them across
-        rivers!"
+      value: "         Rivers across the prairies were used extensively by different
+        groups throughout history.  Indigenous peoples used them for travel, hunting,
+        fishing, and arranging gathering points.  When Europeans began expanding
+        through the territory, fur traders used rivers to transport goods and supplies
+        between Canada and Europe.  \n          Once the North-West Mounted Police
+        were established in the area, rivers were used to transport officers and
+        supplies between forts using York-boats."
       objectReference: {fileID: 0}
     - target: {fileID: 5649867233318510933, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_fontAsset
@@ -2836,6 +2860,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6104773193366266154, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7764075669109942141, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
