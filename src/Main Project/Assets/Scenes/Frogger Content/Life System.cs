@@ -18,7 +18,7 @@ public class LifeSystem : MonoBehaviour
 
     private void Update()
     {
-        livesText.text = $"Lives: {Lives}";
+        livesText.text = $"Boats: {Lives}";
         BoatText.text = " You Have Made " + Boats + "/3 Boats Across";
 
         if (Lives < 0)

@@ -12,10 +12,28 @@ public class UpMovement : MonoBehaviour
     }
     public void MoveRight()
     {
-        rb.MovePosition(rb.position + Vector2.right);
+        if (rb.position.x < 8)
+        {
+            rb.MovePosition(rb.position + Vector2.right);
+        }
+
+        if (rb.position.x > 8)
+        {
+            rb.position = new Vector2(8f, rb.position.y);
+        }
     }
     public void MoveLeft()
     {
-        rb.MovePosition(rb.position + Vector2.left);
+        if (rb.position.x > -8)
+        {
+            rb.MovePosition(rb.position + Vector2.left);
+        }
+
+        if (rb.position.x < -8)
+        {
+            rb.position = new Vector2(-8f, rb.position.y);
+        }
     }
+
+    
 }
