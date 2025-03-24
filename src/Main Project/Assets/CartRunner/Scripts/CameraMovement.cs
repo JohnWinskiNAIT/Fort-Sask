@@ -38,6 +38,7 @@ public class CameraMovement : MonoBehaviour
 	            {
 	                FindAnyObjectByType<AudioManager>().Play("Win");
 	                CompletedGame();
+					isMoving = true;
 	            }
 	            FindAnyObjectByType<AudioManager>().AdjustVolume("HorseGalloping", -0.003f);
 	        }
@@ -48,6 +49,7 @@ public class CameraMovement : MonoBehaviour
     {
         playWin = false;
         loreInfo.SetActive(true);
+		isMoving = false;
     }
 	
 	public void GameOver()
