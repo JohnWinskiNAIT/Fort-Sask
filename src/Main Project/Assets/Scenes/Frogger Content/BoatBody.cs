@@ -17,6 +17,7 @@ public class BoatBody : MonoBehaviour
     public GameObject respawnPoint;
 
     [SerializeField] GameObject EndScreen;
+    [SerializeField] GameObject LoseScreen;
 
     public bool gameOver = false;
 
@@ -78,10 +79,18 @@ public class BoatBody : MonoBehaviour
         if (LifeSystem.Lives == 0)
         {
             gameOver = true;
-            EndScreen.SetActive(true);
+           
             foreach (GameObject gameobject in buttons)
             {
                 gameobject.SetActive(false);
+            }
+            if (LifeSystem.Boats == 0)
+            {
+                LoseScreen.SetActive(true);
+            }
+            else 
+            {
+                EndScreen.SetActive(true);
             }
         }
     }
@@ -90,6 +99,7 @@ public class BoatBody : MonoBehaviour
         if (collision.tag == "Log")
         {
             audioSource.Play();
+            
             Debug.Log("Live Lost!");
             //Scoring.Score = 0;
             LifeSystem.Lives -= 1;
