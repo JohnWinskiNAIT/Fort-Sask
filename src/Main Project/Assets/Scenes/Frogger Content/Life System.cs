@@ -13,7 +13,8 @@ public class LifeSystem : MonoBehaviour
 
     private void Start()
     {
-        
+        Lives = 3;
+        Boats = 0;
     }
 
     private void Update()
