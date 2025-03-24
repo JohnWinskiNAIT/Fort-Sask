@@ -19,6 +19,8 @@ public class BoatBody : MonoBehaviour
     [SerializeField] GameObject EndScreen;
     [SerializeField] GameObject LoseScreen;
 
+    public AudioManager audioManager;
+
     public bool gameOver = false;
 
     private void Start()
@@ -98,8 +100,7 @@ public class BoatBody : MonoBehaviour
     {
         if (collision.tag == "Log")
         {
-            audioSource.Play();
-            
+            audioManager.Play("Crash");
             Debug.Log("Live Lost!");
             //Scoring.Score = 0;
             LifeSystem.Lives -= 1;
