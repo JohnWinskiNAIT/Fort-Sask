@@ -2211,7 +2211,7 @@ PrefabInstance:
     - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1430303534}
+      objectReference: {fileID: 2138007249}
     - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -2230,7 +2230,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ResumeButton
+      value: GoToEndScreen
       objectReference: {fileID: 0}
     - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -2242,7 +2242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PauseMenu, Assembly-CSharp
+      value: Goal, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
