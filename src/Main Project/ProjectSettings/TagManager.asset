@@ -17,6 +17,10 @@ TagManager:
   - RightBoundary
   - Trash
   - End
+  - Goal
+  - Log
+  - Raft
+  - Wall
   layers:
   - Default
   - TransparentFX

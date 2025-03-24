@@ -18,38 +18,66 @@ public class BoatBody : MonoBehaviour
 
     [SerializeField] GameObject EndScreen;
 
+    public bool gameOver = false;
+
     private void Start()
     {
         audioSource = gameObject.GetComponent<AudioSource>();
         LifeSystem.Lives = 3;
         EndScreen.SetActive(false);
+        gameOver = false;
     }
     void Update()
     {
+        if (gameOver == false)
+        {
+            if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                if (rb.position.x < 8)
+                {
+                    rb.MovePosition(rb.position + Vector2.right);
+                } 
+
+                if (rb.position.x > 8)
+                {
+                    rb.position = new Vector2(8f, rb.position.y);
+                }
+            }
+
+            else if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                if (rb.position.x > -8)
+                {
+                    rb.MovePosition(rb.position + Vector2.left);
+                }
+
+                if (rb.position.x < -8 )
+                {
+                    rb.position = new Vector2 (-8f, rb.position.y);
+                }
+            }
+
+            else if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                rb.MovePosition(rb.position + Vector2.up);
+            }
+
+            else if (Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                if (rb.position.y < -5)
+                {
+                    rb.MovePosition(rb.position + Vector2.down);
+                }
+            }
+        }
+
         #region keymovement
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            rb.MovePosition(rb.position + Vector2.right);
-        }
-
-        else if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            rb.MovePosition(rb.position + Vector2.left);
-        }
-
-        else if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            rb.MovePosition(rb.position + Vector2.up);
-        }
-
-        else if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            rb.MovePosition(rb.position + Vector2.down);
-        }
+        
         #endregion
 
         if (LifeSystem.Lives == 0)
         {
+            gameOver = true;
             EndScreen.SetActive(true);
             foreach (GameObject gameobject in buttons)
             {
@@ -63,14 +91,17 @@ public class BoatBody : MonoBehaviour
         {
             audioSource.Play();
             Debug.Log("Live Lost!");
-            Scoring.Score = 0;
+            //Scoring.Score = 0;
             LifeSystem.Lives -= 1;
 
             Respawn();
 
-            //SceneManager.LoadScene(7);
-           
+            //SceneManager.LoadScene(7); 
+        }
 
+        if (collision.tag == "Wall")
+        {
+            //Respawn();
         }
     }
 
