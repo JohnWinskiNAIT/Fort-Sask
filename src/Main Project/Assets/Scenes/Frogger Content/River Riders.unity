@@ -4969,11 +4969,11 @@ PrefabInstance:
     - target: {fileID: 5344615075286629919, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+      objectReference: {fileID: 11400000, guid: 1b0a2299a1b53dc4da8977ed60f9e382, type: 2}
     - target: {fileID: 5344615075286629919, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 6865200828485344883, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+      objectReference: {fileID: -711647183983300044, guid: 1b0a2299a1b53dc4da8977ed60f9e382, type: 2}
     - target: {fileID: 5344615075286629919, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
@@ -4984,18 +4984,26 @@ PrefabInstance:
         groups throughout history.  Indigenous peoples used them for travel, hunting,
         fishing, and arranging gathering points.  When Europeans began expanding
         through the territory, fur traders used rivers to transport goods and supplies
-        between Canada and Europe.  \n          Once the North-West Mounted Police
+        between Canada and Europe.  \n\n          Once the North-West Mounted Police
         were established in the area, rivers were used to transport officers and
         supplies between forts using York-boats."
       objectReference: {fileID: 0}
     - target: {fileID: 5649867233318510933, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_fontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649867233318510933, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+      objectReference: {fileID: 11400000, guid: 1b0a2299a1b53dc4da8977ed60f9e382, type: 2}
+    - target: {fileID: 5649867233318510933, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 5649867233318510933, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 6865200828485344883, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+      objectReference: {fileID: -711647183983300044, guid: 1b0a2299a1b53dc4da8977ed60f9e382, type: 2}
     - target: {fileID: 5649867233318510933, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
@@ -5119,11 +5127,11 @@ PrefabInstance:
     - target: {fileID: 8839479718793676788, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+      objectReference: {fileID: 11400000, guid: 1b0a2299a1b53dc4da8977ed60f9e382, type: 2}
     - target: {fileID: 8839479718793676788, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 6865200828485344883, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+      objectReference: {fileID: -711647183983300044, guid: 1b0a2299a1b53dc4da8977ed60f9e382, type: 2}
     - target: {fileID: 8839479718793676788, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
@@ -6151,8 +6159,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
-  m_sharedMaterial: {fileID: 6865200828485344883, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1b0a2299a1b53dc4da8977ed60f9e382, type: 2}
+  m_sharedMaterial: {fileID: -711647183983300044, guid: 1b0a2299a1b53dc4da8977ed60f9e382, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6176,8 +6184,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56
-  m_fontSizeBase: 56
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
