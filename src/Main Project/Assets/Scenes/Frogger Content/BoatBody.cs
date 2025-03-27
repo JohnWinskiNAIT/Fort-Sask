@@ -23,6 +23,9 @@ public class BoatBody : MonoBehaviour
 
     public bool gameOver = false;
 
+    [SerializeField]
+    public Goal goal;
+
     private void Start()
     {
         audioSource = gameObject.GetComponent<AudioSource>();
@@ -104,7 +107,6 @@ public class BoatBody : MonoBehaviour
             Debug.Log("Live Lost!");
             //Scoring.Score = 0;
             LifeSystem.Lives -= 1;
-
             Respawn();
 
             //SceneManager.LoadScene(7); 
