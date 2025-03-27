@@ -4942,7 +4942,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 280575268542160293, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2064858633557701445, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_Name
+      value: GameOver Top Text
       objectReference: {fileID: 0}
     - target: {fileID: 3865010037462112849, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_SizeDelta.x
@@ -4957,6 +4961,10 @@ PrefabInstance:
         Canada and Europe.  \n          Once the North-West Mounted Police were established
         in the area, rivers were used to transport officers and supplies between
         forts using York-boats."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869929786249382683, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_Name
+      value: GameOver Bottom Text
       objectReference: {fileID: 0}
     - target: {fileID: 5344615075286629919, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_fontAsset
