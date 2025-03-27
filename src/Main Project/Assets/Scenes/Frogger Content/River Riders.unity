@@ -3229,13 +3229,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   log: {fileID: 5725758431695578277, guid: 27524fb15d7b50044a35709d027dfc72, type: 3}
+  log2: {fileID: 6038171063838001950, guid: e152eed0cb21bc24aaa8dbf72e986907, type: 3}
+  log3: {fileID: 303070358784611876, guid: ffcaf8bd05bef4b4ab02cb18f49e85e7, type: 3}
   crate: {fileID: 1350147254909272000, guid: 218f037f8aa8a6f4480a9d2e40c74fb3, type: 3}
+  crate2: {fileID: 2516608466545444751, guid: cdc1b5cfca3fc0746af90fe44bddb914, type: 3}
+  crate3: {fileID: 6350533933946632172, guid: 6370eaab35e2c7d4f81ede6ced917246, type: 3}
   spawnPoints:
   - {fileID: 1033983455}
   - {fileID: 833835402}
   - {fileID: 2021538426}
   - {fileID: 2070919976}
-  spawnDelay: 0.3
+  spawnDelay: 0.5
 --- !u!1 &1507265175
 GameObject:
   m_ObjectHideFlags: 0
@@ -3531,7 +3535,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   log: {fileID: 31780410600137962, guid: 7d4a3cb6e3b695140a89936400d57c5e, type: 3}
+  log2: {fileID: 0}
+  log3: {fileID: 0}
   crate: {fileID: 0}
+  crate2: {fileID: 0}
+  crate3: {fileID: 0}
   spawnPoints:
   - {fileID: 1997070920}
   - {fileID: 338892633}
