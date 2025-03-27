@@ -10,6 +10,7 @@ public class MapProgressionScript : MonoBehaviour
 
     public GameObject miniGameScene;
     public GameObject endCreditScene;
+    public GameObject FinalMapMarker;
 
     public GameObject playerCart;
 
@@ -67,8 +68,9 @@ public class MapProgressionScript : MonoBehaviour
         {
             playerIcon.StopPlayback();
             MovePlayer();
+           
         }
-
+       
         /* 
          * Activates once the texts are finished displaying
          * Refer to TextDisplay.Update()
@@ -92,14 +94,17 @@ public class MapProgressionScript : MonoBehaviour
      */
     void MovePlayer()
     {
+       
         // Moves the icon towards the designated location
         playerCart.transform.position = Vector3.MoveTowards(playerCart.transform.position, 
             mapMarkers[GameProgress.gpInstance.locationCount].transform.position,
             2 * Time.deltaTime);
+       
 
         // Will constantly shift the player icon until it reaches the main location
         if (playerCart.transform.position == mapMarkers[GameProgress.gpInstance.locationCount].transform.position)
         {
+
             moving = false;
             playerIcon.StartPlayback();
         }

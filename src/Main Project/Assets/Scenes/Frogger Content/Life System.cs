@@ -21,6 +21,7 @@ public class LifeSystem : MonoBehaviour
     {
         livesText.text = $"Boats: {Lives}";
         BoatText.text = " You Have Made " + Boats + "/3 Boats Across";
+        Debug.Log(Boats.ToString());
 
         if (Lives < 0)
         {

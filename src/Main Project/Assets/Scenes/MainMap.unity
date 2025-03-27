@@ -1557,6 +1557,7 @@ MonoBehaviour:
   - {fileID: 1757290571}
   miniGameScene: {fileID: 1005903916}
   endCreditScene: {fileID: 2140343037}
+  FinalMapMarker: {fileID: 1757290571}
   playerCart: {fileID: 624336252}
   playerIcon: {fileID: 624336255}
   progressClick:
