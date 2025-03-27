@@ -41,14 +41,16 @@ public class TextDisplay : MonoBehaviour
 
     void Start()
     {
-
+       
     }
 
     void Update()
     {
+       
         if (mapProg.textRunning)
         {
             SetText(testText[GameProgress.gpInstance.locationCount]);
+            
             mapProg.textRunning = false;
         }
         

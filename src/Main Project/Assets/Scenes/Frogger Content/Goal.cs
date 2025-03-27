@@ -24,6 +24,7 @@ public class Goal : MonoBehaviour
 
     public void GoToEndScreen()
     {
-        SceneManager.LoadScene(7);
+        //SceneManager.LoadScene(7);
+        SceneManager.LoadScene(2);
     }
 }
