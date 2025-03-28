@@ -9,7 +9,7 @@ public class LifeSystem : MonoBehaviour
     public static int Boats = 0;
 
     public Text livesText;
-    public TextMeshProUGUI BoatText;
+    //public TextMeshProUGUI BoatText;
 
     private void Start()
     {
@@ -20,7 +20,7 @@ public class LifeSystem : MonoBehaviour
     private void Update()
     {
         livesText.text = $"Boats: {Lives}";
-        BoatText.text = " You Have Made " + Boats + "/3 Boats Across";
+        //BoatText.text = " You Have Made " + Boats + "/3 Boats Across";
         Debug.Log(Boats.ToString());
 
         if (Lives < 0)

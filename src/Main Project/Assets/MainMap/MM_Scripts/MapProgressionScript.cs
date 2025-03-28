@@ -62,7 +62,7 @@ public class MapProgressionScript : MonoBehaviour
                 textLaidOut = true;
             }
         }
-
+        
         // Will constantly shift the player icon until it reaches the main location
         if (moving)
         {
@@ -104,7 +104,7 @@ public class MapProgressionScript : MonoBehaviour
         // Will constantly shift the player icon until it reaches the main location
         if (playerCart.transform.position == mapMarkers[GameProgress.gpInstance.locationCount].transform.position)
         {
-            Debug.Log("check");
+           
             moving = false;
             playerIcon.StartPlayback();
         }
@@ -122,8 +122,9 @@ public class MapProgressionScript : MonoBehaviour
                 mapMarkers[i].SetActive(true);
             }
         }
-
+        
         playerCart.transform.position = mapMarkers[GameProgress.gpInstance.locationCount].transform.position;
+        
     }
 
     private void OnEnable()

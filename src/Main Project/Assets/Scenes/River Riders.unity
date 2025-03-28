@@ -2323,6 +2323,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 73373086}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &643492894 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8626314438503620726, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
+  m_PrefabInstance: {fileID: 1430303532}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &643492899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643492894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bae3c9bc3ccf654d8e289f1110a4b85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &648055472
 GameObject:
   m_ObjectHideFlags: 0
@@ -3708,7 +3725,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   livesText: {fileID: 1964575020}
-  BoatText: {fileID: 1900552493}
 --- !u!1 &1297792483 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 280575268542160293, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
@@ -3821,7 +3837,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -3834,7 +3850,7 @@ PrefabInstance:
     - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1430303534}
+      objectReference: {fileID: 2138007249}
     - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -3853,11 +3869,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SkipButton
+      value: GoToEndScreen
       objectReference: {fileID: 0}
     - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SkipToMaxTimer
+      value: StopTheAnimation
       objectReference: {fileID: 0}
     - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -3865,11 +3881,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PauseMenu, Assembly-CSharp
+      value: Goal, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: BalanceBoatSkip, Assembly-CSharp
+      value: BalanceGameManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -3893,7 +3909,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4160286242822324323, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2130392691}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8626314438503620726, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 643492899}
   m_SourcePrefab: {fileID: 100100000, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
 --- !u!114 &1430303534 stripped
 MonoBehaviour:
@@ -4905,6 +4924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd2b88f4de6e4741b21e9a4a8a7a6f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endtext: {fileID: 1900552493}
 --- !u!1 &1932076616
 GameObject:
   m_ObjectHideFlags: 0
@@ -5337,7 +5357,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   livesText: {fileID: 1964575020}
-  BoatText: {fileID: 1900552493}
 --- !u!1 &1981118483
 GameObject:
   m_ObjectHideFlags: 0
