@@ -462,7 +462,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 0aa8a70ab0ffa56409a1c2d0e4586e76, type: 3}
+  m_Texture: {fileID: 2800000, guid: 4b58c6103f7cccd4ea37e3de108e403b, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -12106,9 +12106,17 @@ PrefabInstance:
         the arrow buttons to scan the landscape. \r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1012236089477532039, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
+      propertyPath: m_fontSize
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 1012236089477532039, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+      objectReference: {fileID: 11400000, guid: 1b0a2299a1b53dc4da8977ed60f9e382, type: 2}
+    - target: {fileID: 1012236089477532039, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 48
+      objectReference: {fileID: 0}
     - target: {fileID: 1012236089477532039, guid: a38589279099d5a4aa24116bb8ef8ced, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 1
@@ -13811,7 +13819,7 @@ PrefabInstance:
     - target: {fileID: 5344615075286629919, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+      objectReference: {fileID: 11400000, guid: 1b0a2299a1b53dc4da8977ed60f9e382, type: 2}
     - target: {fileID: 5344615075286629919, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 1
@@ -13826,14 +13834,14 @@ PrefabInstance:
     - target: {fileID: 5649867233318510933, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+      objectReference: {fileID: 11400000, guid: 1b0a2299a1b53dc4da8977ed60f9e382, type: 2}
     - target: {fileID: 5649867233318510933, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 6865200828485344883, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
     - target: {fileID: 5649867233318510933, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7941723376922522395, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_Pivot.x
@@ -13920,9 +13928,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1983602561}
     - target: {fileID: 8839479718793676788, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839479718793676788, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: b73e04611a592be4390f9e0cefc86e76, type: 2}
+      objectReference: {fileID: 11400000, guid: 1b0a2299a1b53dc4da8977ed60f9e382, type: 2}
+    - target: {fileID: 8839479718793676788, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8839479718793676788, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 1
