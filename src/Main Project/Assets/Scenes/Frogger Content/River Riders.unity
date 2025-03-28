@@ -4090,6 +4090,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1472301934 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4869929786249382683, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+  m_PrefabInstance: {fileID: 1959208030}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1485375687
 GameObject:
   m_ObjectHideFlags: 0
@@ -4168,7 +4173,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1507265176
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4882,10 +4887,22 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8839479718793676788, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
   m_PrefabInstance: {fileID: 1959208030}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1472301934}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1900552496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472301934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cd2b88f4de6e4741b21e9a4a8a7a6f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1932076616
@@ -4942,11 +4959,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 280575268542160293, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2064858633557701445, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
-      propertyPath: m_Name
-      value: GameOver Top Text
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3865010037462112849, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_SizeDelta.x
@@ -4964,7 +4977,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4869929786249382683, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_Name
-      value: GameOver Bottom Text
+      value: endtext
       objectReference: {fileID: 0}
     - target: {fileID: 5344615075286629919, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_fontAsset
@@ -5135,6 +5148,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4194308500714918295, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1232976623}
+    - targetCorrespondingSourceObject: {fileID: 4869929786249382683, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1900552496}
   m_SourcePrefab: {fileID: 100100000, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
 --- !u!1 &1962343092
 GameObject:
