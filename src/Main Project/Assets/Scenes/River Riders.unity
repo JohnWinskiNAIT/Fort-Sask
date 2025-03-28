@@ -3834,7 +3834,7 @@ PrefabInstance:
     - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2138007249}
+      objectReference: {fileID: 1430303534}
     - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -3853,7 +3853,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GoToEndScreen
+      value: SkipButton
       objectReference: {fileID: 0}
     - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -3865,7 +3865,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Goal, Assembly-CSharp
+      value: PauseMenu, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9221546882088074831, guid: 7945dc9a0c4e1514eb509b60b0964d18, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName

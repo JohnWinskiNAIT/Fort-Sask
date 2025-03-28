@@ -104,7 +104,7 @@ public class MapProgressionScript : MonoBehaviour
         // Will constantly shift the player icon until it reaches the main location
         if (playerCart.transform.position == mapMarkers[GameProgress.gpInstance.locationCount].transform.position)
         {
-
+            Debug.Log("check");
             moving = false;
             playerIcon.StartPlayback();
         }
