@@ -25,8 +25,8 @@ public class LogSpawn : MonoBehaviour
     //[SerializeField]
     //public GameObject brokenBoat;
 
-    //[SerializeField]
-    //public GameObject whirlPool;
+    [SerializeField]
+    public GameObject whirlPool;
 
     [SerializeField]
     public Transform[] spawnPoints;
@@ -53,7 +53,7 @@ public class LogSpawn : MonoBehaviour
         //Instantiate(log, spawnPoint.position, spawnPoint.rotation);
 
         //randomize what object spawns
-        int trashspwner = Random.Range(1, 7);
+        int trashspwner = Random.Range(1, 8);
         if (trashspwner == 1)
         {
             Instantiate(log, spawnPoint.position, spawnPoint.rotation);
@@ -84,14 +84,14 @@ public class LogSpawn : MonoBehaviour
             Instantiate(crate3, spawnPoint.position, spawnPoint.rotation);
         }
 
-        //if (trashspwner == 7)
-        //{
-        //    Instantiate(brokenBoat, spawnPoint.position, spawnPoint.rotation);
-        //}
+        if (trashspwner == 7)
+        {
+            Instantiate(whirlPool, spawnPoint.position, spawnPoint.rotation);
+        }
 
         //if (trashspwner == 8)
         //{
-        //    Instantiate(whirlPool, spawnPoint.position, spawnPoint.rotation);
+        //    Instantiate(, spawnPoint.position, spawnPoint.rotation);
         //}
     }
 
