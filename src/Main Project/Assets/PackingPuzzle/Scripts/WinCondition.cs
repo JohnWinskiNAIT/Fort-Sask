@@ -8,9 +8,11 @@ public class WinCondition : MonoBehaviour
     public GameObject button;
     public GameObject loreInfo;
     bool playable = true;
+    public AudioManager audioManager;
 
     private void Start()
     {
+       
         manager = PackingPuzzleManager.Instance;
         loreInfo.SetActive(false);
         button.SetActive(false);

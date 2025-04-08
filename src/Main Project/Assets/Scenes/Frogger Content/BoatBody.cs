@@ -19,6 +19,10 @@ public class BoatBody : MonoBehaviour
     [SerializeField] GameObject EndScreen;
     [SerializeField] GameObject LoseScreen;
 
+    [SerializeField] GameObject Cross1;
+    [SerializeField] GameObject Cross2;
+    [SerializeField] GameObject Cross3;
+
     public AudioManager audioManager;
 
     public bool gameOver = false;
@@ -30,8 +34,12 @@ public class BoatBody : MonoBehaviour
     {
         audioSource = gameObject.GetComponent<AudioSource>();
         LifeSystem.Lives = 3;
+        Cross1.SetActive(false);
+        Cross2.SetActive(false);
+        Cross3.SetActive(false);
         EndScreen.SetActive(false);
         gameOver = false;
+
     }
     void Update()
     {
@@ -96,6 +104,7 @@ public class BoatBody : MonoBehaviour
             else 
             {
                 EndScreen.SetActive(true);
+                audioManager.Play("Win");
             }
         }
     }
@@ -105,6 +114,7 @@ public class BoatBody : MonoBehaviour
         {
             audioManager.Play("Crash");
             Debug.Log("Live Lost!");
+            boathit();
             //Scoring.Score = 0;
             LifeSystem.Lives -= 1;
             Respawn();
@@ -115,6 +125,22 @@ public class BoatBody : MonoBehaviour
         if (collision.tag == "Wall")
         {
             //Respawn();
+        }
+    }
+
+    public void boathit()
+    {
+        if (LifeSystem.Lives == 3)
+        {
+            Cross1.SetActive(true);
+        }
+        if (LifeSystem.Lives == 2)
+        {
+            Cross2.SetActive(true);
+        }
+        if (LifeSystem.Lives == 1)
+        {
+            Cross3.SetActive(true);
         }
     }
 

@@ -222,6 +222,7 @@ public class MatchingScript : MonoBehaviour
 
     public void CompletedGame()
     {
+        FindAnyObjectByType<AudioManager>().Play("Win");
         gameComplete = true;
         gameCompleteCanvas.SetActive(true);
     }
