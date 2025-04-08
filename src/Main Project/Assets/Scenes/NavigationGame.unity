@@ -1161,7 +1161,11 @@ PrefabInstance:
     - target: {fileID: 3235540472798480869, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 87fc577bea6059b4f920ea6c6c822945, type: 3}
+      objectReference: {fileID: 21300000, guid: 8b597433cfa13a74982f1c70641b36a1, type: 3}
+    - target: {fileID: 3235540472798480869, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3488057542689684326, guid: d7261ebf50034fb479bd012d6a22fc74, type: 3}
       propertyPath: m_Transition
       value: 2
@@ -12242,7 +12246,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -79.8, y: 1.6391996}
+  m_AnchoredPosition: {x: 17, y: 44}
   m_SizeDelta: {x: 167.8304, y: 42.9562}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1887727778
@@ -14097,6 +14101,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3660488581817936523, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 207.6452
+      objectReference: {fileID: 0}
+    - target: {fileID: 3660488581817936523, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 128.5036
+      objectReference: {fileID: 0}
+    - target: {fileID: 3660488581817936523, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 3660488581817936523, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 23.390804
+      objectReference: {fileID: 0}
+    - target: {fileID: 3865010037462112849, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -3
+      objectReference: {fileID: 0}
     - target: {fileID: 3934515671628721392, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: lines.Array.data[0]
       value: "          The rail line between Edmonton and Calgary wouldn\u2019t
@@ -14105,12 +14129,24 @@ PrefabInstance:
         Railway connected Fort Saskatchewan to a transcontinental line."
       objectReference: {fileID: 0}
     - target: {fileID: 5344615075286629919, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_fontSize
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 5344615075286629919, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 1b0a2299a1b53dc4da8977ed60f9e382, type: 2}
     - target: {fileID: 5344615075286629919, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 5344615075286629919, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -711647183983300044, guid: 1b0a2299a1b53dc4da8977ed60f9e382, type: 2}
+    - target: {fileID: 5344615075286629919, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5649867233318510933, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_text
@@ -14217,7 +14253,7 @@ PrefabInstance:
       objectReference: {fileID: 1983602561}
     - target: {fileID: 8839479718793676788, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_fontSize
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8839479718793676788, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_fontAsset
@@ -14225,11 +14261,15 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 1b0a2299a1b53dc4da8977ed60f9e382, type: 2}
     - target: {fileID: 8839479718793676788, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_fontSizeBase
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8839479718793676788, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -711647183983300044, guid: 1b0a2299a1b53dc4da8977ed60f9e382, type: 2}
+    - target: {fileID: 8839479718793676788, guid: 9619fdbfeb946514ab4cd1d9e8e89326, type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

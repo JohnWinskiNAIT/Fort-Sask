@@ -101,7 +101,6 @@ public class MatchingScript : MonoBehaviour
                 if (grandchild.gameObject.activeSelf)
                 {
                     selectedDirection = grandchild.parent.tag;
-
                 }
             }
         }
@@ -129,7 +128,6 @@ public class MatchingScript : MonoBehaviour
                 if (grandchild.gameObject.activeSelf)
                 {
                     selectedItem = grandchild.parent.tag;
-
                 }
             }
         }
@@ -148,6 +146,7 @@ public class MatchingScript : MonoBehaviour
             if (obj.transform.parent == findItemsParent.transform)
             {
                 obj.transform.SetParent(stopParent.transform);
+                obj.SetActive(false);
             }
 
 
@@ -158,7 +157,6 @@ public class MatchingScript : MonoBehaviour
             if (button != null)
             {
                 button.interactable = false;
-
             }
             else
             {
@@ -185,15 +183,14 @@ public class MatchingScript : MonoBehaviour
             if (button != null)
             {
                 button.interactable = true;
-
             }
             else
             {
                 Debug.LogWarning("No Button component found on");
             }
         }
-
     }
+
 
     public void goNextLevel()
     {
