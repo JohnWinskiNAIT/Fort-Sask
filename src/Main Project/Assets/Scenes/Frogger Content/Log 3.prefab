@@ -101,8 +101,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 3865684196476866067}
-  minSpeed: 8
-  maxSpeed: 12
+  minSpeed: 3
+  maxSpeed: 7
   speed: 1
 --- !u!50 &3865684196476866067
 Rigidbody2D:

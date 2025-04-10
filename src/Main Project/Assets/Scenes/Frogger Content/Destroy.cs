@@ -11,7 +11,7 @@ public class Destroy : MonoBehaviour
 
     IEnumerator DestroyObject()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(6f);
         Destroy(gameObject);
     }
 }
