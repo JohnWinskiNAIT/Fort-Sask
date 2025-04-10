@@ -49,8 +49,9 @@ public class EndSceneScript : MonoBehaviour
     private IEnumerator ResetGame()
     {
         yield return new WaitForSeconds(35f);
-        gsm.LoadStartScene();
-    }
+		gsm.LoadStartScene();
+		//gsm.LoadLevelSelect();
+	}
 	
 	public void ResetGameInstant()
 	{

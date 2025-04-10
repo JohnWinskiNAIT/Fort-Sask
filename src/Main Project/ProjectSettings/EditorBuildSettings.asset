@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/CarterElderFrogger/CarterFroggerTest.unity
     guid: dead2c6323cbfe3458009dfdb90b5667
+  - enabled: 1
+    path: Assets/Scenes/LevelSelect.unity
+    guid: 677b5106dbf78f143a0036c361f62d6f
   m_configObjects: {}

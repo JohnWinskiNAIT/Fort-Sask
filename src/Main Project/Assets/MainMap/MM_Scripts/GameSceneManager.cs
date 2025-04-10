@@ -26,4 +26,36 @@ public class GameSceneManager : MonoBehaviour
     {
         SceneManager.LoadScene(gameProgress.locationCount + 3);
     }
+
+    public void LoadLevelSelect()
+    {
+        SceneManager.LoadScene("LevelSelect");
+    }
+
+    public void LoadPacking()
+    {
+
+        SceneManager.LoadScene(1);
+
+    }
+    public void LoadNavagation()
+    {
+        
+        SceneManager.LoadScene(3);
+    }
+    public void LoadRepair()
+    {
+
+        SceneManager.LoadScene(4);
+    }
+    public void LoadHorse()
+    {
+
+        SceneManager.LoadScene(5);
+    }
+    public void LoadRiverCrossing()
+    {
+
+        SceneManager.LoadScene(6);
+    }
 }
