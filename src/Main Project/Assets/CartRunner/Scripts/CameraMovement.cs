@@ -19,6 +19,7 @@ public class CameraMovement : MonoBehaviour
     {
         loreInfo.SetActive(false);
 		gameOverScreen.SetActive(false);
+
         //button.SetActive(false);
     }
 
@@ -54,7 +55,8 @@ public class CameraMovement : MonoBehaviour
 	
 	public void GameOver()
 	{
-		isMoving = false;
+		FindAnyObjectByType<AudioManager>().Pause("HorseGalloping");
+        isMoving = false;
 		gameOverScreen.SetActive(true);
 	}
 }

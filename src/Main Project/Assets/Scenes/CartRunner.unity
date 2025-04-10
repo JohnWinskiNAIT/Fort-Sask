@@ -10922,8 +10922,8 @@ Transform:
   m_GameObject: {fileID: 293200003}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.26, y: -0.07, z: -2.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2.96, y: -0.0079, z: -2.5}
+  m_LocalScale: {x: 0.44283134, y: 0.5493605, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1666214131}
@@ -10969,7 +10969,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 23f1f9c37f45dd54ebc2472c8ada39bf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f62353b9d6b69fa4a8e9c134bbc031ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -13342,31 +13342,31 @@ MonoBehaviour:
   sounds:
   - name: HorseGalloping
     clip: {fileID: 8300000, guid: d1d63ac26a7e12a4aab4e7f1d14fc54e, type: 3}
-    volume: 0.5
+    volume: 0.3
     pitch: 0.98
     loop: 1
     source: {fileID: 0}
   - name: HorseSqueel8
     clip: {fileID: 8300000, guid: 873d1dd5e170fb0488c9a96e6eac09da, type: 3}
-    volume: 1
+    volume: 0.25
     pitch: 1.04
     loop: 0
     source: {fileID: 0}
   - name: HorseSqueel9
     clip: {fileID: 8300000, guid: 85631d35af344b4479d2d328d40fc8a4, type: 3}
-    volume: 1
+    volume: 0.25
     pitch: 1.04
     loop: 0
     source: {fileID: 0}
   - name: HorseSqueel7
     clip: {fileID: 8300000, guid: f2ceeb05bca66744a973b98090474bb5, type: 3}
-    volume: 1
+    volume: 0.25
     pitch: 1.04
     loop: 0
     source: {fileID: 0}
   - name: HorseSqueel6
     clip: {fileID: 8300000, guid: 0197749ff232f944cb8a0f9ff4a9486b, type: 3}
-    volume: 1
+    volume: 0.25
     pitch: 1.04
     loop: 0
     source: {fileID: 0}
@@ -31965,7 +31965,7 @@ Transform:
   m_GameObject: {fileID: 1666214129}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.38, y: 0, z: 20}
+  m_LocalPosition: {x: -4.57, y: 0, z: 20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -32013,9 +32013,9 @@ MonoBehaviour:
   heartFull: {fileID: 21300000, guid: 305e065d982c69d46b37721b015e295b, type: 3}
   heartEmpty: {fileID: 21300000, guid: 080acbae742861844bb2e5873290b1c4, type: 3}
   carts:
-  - {fileID: 21300000, guid: 23834c465d3710b4f8b58a7a82dd2f40, type: 3}
-  - {fileID: 21300000, guid: bfc9de8eef42c124fb308da3f5d8cbc5, type: 3}
-  - {fileID: 21300000, guid: 23f1f9c37f45dd54ebc2472c8ada39bf, type: 3}
+  - {fileID: 21300000, guid: 015ae8cc685a8194f98a68f73c71f1e4, type: 3}
+  - {fileID: 21300000, guid: adb6c514fd5813b408efd3ed91e39dc6, type: 3}
+  - {fileID: 21300000, guid: f62353b9d6b69fa4a8e9c134bbc031ac, type: 3}
   cart: {fileID: 293200005}
 --- !u!61 &1666214134
 BoxCollider2D:
