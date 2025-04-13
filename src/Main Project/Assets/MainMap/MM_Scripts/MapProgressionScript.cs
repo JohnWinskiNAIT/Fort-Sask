@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MapProgressionScript : MonoBehaviour
@@ -25,7 +26,32 @@ public class MapProgressionScript : MonoBehaviour
 
     void Start()
     {
-        // Hide all current markers at start
+        //if (GameProgress.gpInstance.locationCount == 6)
+        //{
+
+        //    SceneManager.LoadScene("LevelSelect");
+        //}
+        //else 
+        //{
+        //    for (int i = 0; i < mapMarkers.Count; i++)
+        //    {
+        //        mapMarkers[i].SetActive(false);
+        //    }
+        //    completed = false;
+        //    textRunning = false;
+        //    textLaidOut = false;
+
+        //    miniGameScene.SetActive(false);
+        //    endCreditScene.SetActive(false);
+        //    GameProgress.gpInstance.played = false;
+
+        //    // Will not work until a player has progressed
+        //    if (GameProgress.gpInstance.locationCount > -1)
+        //    {
+        //        LoadProgress();
+        //    }
+        //}
+        //Hide all current markers at start
         for (int i = 0; i < mapMarkers.Count; i++)
         {
             mapMarkers[i].SetActive(false);
@@ -122,7 +148,7 @@ public class MapProgressionScript : MonoBehaviour
                 mapMarkers[i].SetActive(true);
             }
         }
-        
+       
         playerCart.transform.position = mapMarkers[GameProgress.gpInstance.locationCount].transform.position;
         
     }

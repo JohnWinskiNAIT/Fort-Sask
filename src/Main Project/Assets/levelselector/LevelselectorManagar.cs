@@ -42,4 +42,9 @@ public class LevelselectorManagar : MonoBehaviour
     {
         gsm.LoadRiverCrossing();
     }
+
+    public void NewGame()
+    {
+        gsm.LoadStartScene();
+    }
 }

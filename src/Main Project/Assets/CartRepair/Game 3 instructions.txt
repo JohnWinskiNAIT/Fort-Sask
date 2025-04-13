@@ -1,0 +1,6 @@
+Game 3 instructions
+
+On start of the game the game will make of the three things on the cart broken(wheel, pin, joint). you have to take them off one by one.
+
+by click and dragging and dropping them in the boxes. then you open the chest by clicking on it. the you select the fixed version of the broken object.
+ and then you build the cart again the same order in which you took the items off
