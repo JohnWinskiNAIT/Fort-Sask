@@ -26,7 +26,7 @@ public class StartGame : MonoBehaviour
         logo.SetActive(false);
         credsButton.SetActive(false);
         exitButton.SetActive(false);
-
+       
         StartCoroutine(MoveToPacking());
 		
 		isPlayingCutscene = true;

@@ -27,6 +27,10 @@ public class GameProgress : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+       
+    }
     //public void LoadMainScene()
     //{
     //    SceneManager.LoadScene(0);

@@ -24,7 +24,7 @@ public class GameSceneManager : MonoBehaviour
 
     public void GoNext() { SceneManager.LoadScene(1); }
 
-    public void LoadStartScene() { SceneManager.LoadScene(0); GameProgress.gpInstance = null; }
+    public void LoadStartScene() { SceneManager.LoadScene(0); GameProgress.gpInstance.locationCount = -1; }
 
     public void LoadGameScene()
     {
